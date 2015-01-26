@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng:app="app" class="align-v-end">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1, height=device-height, width=device-width" />
+		<link type="text/css" rel="stylesheet" href="style/css/al.css" />
+		<link type="text/css" rel="stylesheet" href="style/css/media.css" />
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="libs/sprintf.js"></script>
+		<script type="text/javascript" src="libs/hammer.js"></script>
+		<script type="text/javascript" src="libs/angular.js"></script>
+		<script type="text/javascript" src="libs/angular-route.js"></script>
+		<script type="text/javascript" src="libs/angular-sanitize.js"></script>
+		<script type="text/javascript" src="libs/angular-animate.js"></script>
+		<script type="text/javascript" src="libs/al.js"></script>
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true"></script> 
+		<script type="text/javascript" src='libs/underscore-min.js'></script>
+		<script type="text/javascript" src='libs/angular-google-maps-1.2.1.js'></script>
+		<script type="text/javascript" src='libs/videogular.js'></script>
+		<script type="text/javascript" src='libs/controls.js'></script>
+		<script type="text/javascript" src='libs/overlay-play.js'></script>
+		<script type="text/javascript" src='libs/poster.js'></script>
+		<script type="text/javascript" src='libs/jquery-2.1.1.js'></script>
+		<script type="text/javascript">
+			(function () {
+
+			'use strict';
+
+			angular.module('app', ['google-maps','ngSanitize', 'ngAnimate','ngRoute','al', "com.2fdevs.videogular", "com.2fdevs.videogular.plugins.controls","com.2fdevs.videogular.plugins.overlayplay","com.2fdevs.videogular.plugins.poster"], ['$locationProvider', '$routeProvider', function (loc, route) {
+				route
+					.when('/map', {
+						templateUrl: 'views/map.htm',
+						controller: 'Ctrler',
+						controllerAs: 'ctrler'
+					})
+					.when('/login', {
+						templateUrl: 'views/login.htm',
+						controller: 'Ctrler',
+						controllerAs: 'ctrler'
+					})
+					.otherwise({
+						redirectTo: '/map'
+					});
+
+				// loc.html5Mode(true).hashPrefix('!');
+			}]);
+
+			})();
+		</script>
+		<script type="text/javascript" src="models/map.js"></script>
+		<script type="text/javascript" src="controllers/map.js"></script>
+		
+	</head>
+	<body ng:style="mainStyle" ng:view></body>
+</html>

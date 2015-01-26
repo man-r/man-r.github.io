@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html ng-app="demoapp">
+<head>
+   <script src="lib/angular-1.2.js"></script>
+   <script src="lib/leaflet/leaflet.js"></script>
+   <script src="lib/leaflet/leaflet.markercluster.js"></script>
+   <script src="lib/leaflet/angular-leaflet-directive.js"></script>
+
+    
+   <link rel="stylesheet" href="lib/leaflet/leaflet.css" />
+   <link rel="stylesheet" href="lib/leaflet/MarkerCluster.css" />
+   <link rel="stylesheet" href="lib/leaflet/MarkerCluster.Default.css" />
+
+
+   <script src="data/leaflet.DATA.50.js"></script>
+   <script>
+      var app = angular.module("demoapp", ['leaflet-directive']);
+      app.controller("DemoController", [ "$scope","leafletEvents","leafletData", "$timeout", function($scope,leafletEvents,leafletData,$timeout) {
+         $scope.defaults= {
+            center: {
+               lat:18.827407250920054,
+               lng:-56.627269426420185,
+               zoom: 3
+            }//tileLayer: "http://api.tiles.mapbox.com/v4/man-r.k788b0ia/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFuLXIiLCJhIjoidWVOT3g2cyJ9.MBeJ47Rnt7yryhvwyvFTvw"//,
+            /*maxZoom: 14,
+            minZoom: 1,
+            markerZoomAnimation: true,
+            doubleClickZoom: true,
+            scrollWheelZoom: true,
+            attributionControl: true,
+            ,
+            icon: {
+               url: 'http://cdn.leafletjs.com/leaflet-0.6.4/images/marker-icon.png',
+               retinaUrl: 'http://cdn.leafletjs.com/leaflet-0.6.4/images/marker-icon@2x.png',
+               size: [25, 41],
+               anchor: [12, 40],
+               popup: [0, -40],
+               shadow: {
+                  url: 'http://cdn.leafletjs.com/leaflet-0.6.4/images/marker-shadow.png',
+                  retinaUrl: 'http://cdn.leafletjs.com/leaflet-0.6.4/images/marker-shadow.png',
+                  size: [41, 41],
+                  anchor: [12, 40]
+               }
+            },
+
+            path: {
+               weight: 10,
+               opacity: 1,
+               color: '#0000ff'
+            }*/
+         };
+
+         $scope.markers = addressPoints;
+
+         $scope.layers= {
+            baselayers: {
+               osm: {
+                  name: 'DarbMap',
+                  url: 'http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png',
+                  type: 'xyz'
+               }
+            },
+
+            overlays: {
+               cast: {
+                  name: "cast",
+                  type: "markercluster",
+                  visible: true,
+                  layerOptions: {
+                     spiderfyOnMaxZoom: false,
+                     showCoverageOnHover: false,
+                     removeOutsideVisibleBounds: true,
+                     zoomToBoundsOnClick: false,
+                     disableClusteringAtZoom: 17,
+                     singleMarkerMode: false,
+                     spiderfyDistanceMultiplier: 0
+
+                     //iconCreateFunction: function(cluster) {return new L.DivIcon({ html: '<b>' + cluster.getChildCount() + '</b>' });}
+                    
+                     //showCoverageOnHover: When you mouse over a cluster it shows the bounds of its markers.
+                     //zoomToBoundsOnClick: When you click a cluster we zoom to its bounds.
+                     //spiderfyOnMaxZoom: When you click a cluster at the bottom zoom level we spiderfy it so you can see all of its markers. (Note: the spiderfy occurs at the current zoom level if all items within the cluster are physically located at the same latitude and longitude.)
+                     //removeOutsideVisibleBounds: Clusters and markers too far from the viewport are removed from the map for performance.
+                     //animateAddingMarkers: If set to true then adding individual markers to the MarkerClusterGroup after it has been added to the map will add the marker and animate it in to the cluster. Defaults to false as this gives better performance when bulk adding markers. addLayers does not support this, only addLayer with individual Markers.
+                     //disableClusteringAtZoom: If set, at this zoom level and below markers will not be clustered. This defaults to disabled.maxClusterRadius: The maximum radius that a cluster will cover from the central marker (in pixels). Default 80. Decreasing will make more, smaller clusters. You can also use a function that accepts the current map zoom and returns the maximum cluster radius in pixels.
+                     //polygonOptions: Options to pass when creating the L.Polygon(points, options) to show the bounds of a cluster
+                     //singleMarkerMode: If set to true, overrides the icon for all added markers to make them appear as a 1 size cluster
+                     //spiderfyDistanceMultiplier: Increase from 1 to increase the distance away from the center that spiderfied markers are placed. Use if you are using big marker icons (Default:1)
+                     //iconCreateFunction: Function used to create the cluster icon
+                  }
+               }
+            }
+         }
+         
+         $scope.events = {
+            markers: {
+               enable: leafletEvents.getAvailableMarkerEvents()
+            },
+
+            map: {
+               enable: leafletEvents.getAvailableMapEvents()
+            }
+         };
+
+         console.log(leafletEvents.getAvailableMarkerEvents());
+         console.log(leafletEvents.getAvailableMapEvents());
+
+         /*var markerEvents = leafletEvents.getAvailableMarkerEvents();
+         for (var k in markerEvents){
+            var eventName = 'leafletDirectiveMarker.' + markerEvents[k];
+            $scope.$on(eventName, function(event, args){
+               console.log(event.name);
+            });
+         }
+
+         var mapEvents = leafletEvents.getAvailableMarkerEvents();
+         for (var k in mapEvents){
+            var eventName = 'leafletDirectiveMap.' + mapEvents[k];
+            $scope.$on(eventName, function(event, args){
+               console.log(event.name);
+            });
+         }*/
+
+         $scope.$on('leafletDirectiveMarker.click', function(event, args){
+            alert('markerClick:' + args);
+            console.log(args);
+         });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+
+         $timeout(function(){
+            leafletData.getLayers().then(function(layers) {
+               $scope.markerClusterGrp = layers.overlays.cast; 
+               $scope.markerClusterGrp.on('clusterclick', function(a){
+                  //console.log(a.layer.getAllChildMarkers());
+                  alert('clusterclick');
+               });
+            });
+         },1000);
+      }]);
+   </script>                                                         
+
+   <style>
+  .angular-leaflet-map {
+    width: 100%;
+    height: 1000px;
+  }
+</style>
+</head>
+<body ng-controller="DemoController">
+   <leaflet 
+      defaults="defaults" 
+      markers="markers" 
+      watch-markers="false"
+      watch-paths="false" 
+      event-broadcast="events"
+      layers="layers" ></leaflet>
+  </body>
+</html>

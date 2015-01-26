@@ -1,0 +1,67 @@
+<style type="text/css">
+  .container {
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    height: 100%;
+    width: 100%;
+    Overflow: visible;
+    display: block;
+  }
+  .map-container {
+    height: 90%;
+    width: 100%;
+    Overflow: visible; 
+    display: block;
+  }
+  .angular-google-map { 
+    height: 100%;
+    width: 100%;
+    Overflow: visible; 
+    display: block;
+  }
+  .angular-google-map-container { 
+    height: 100%;
+    width: 100%;
+    Overflow: visible; 
+    display: block;
+  }
+
+</style>
+
+<div ng-init="getMarks();" class="container">
+<div class="map-container">
+<google-map
+            center="map.center" 
+            zoom="map.zoom" 
+            draggable="map.draggable" 
+            dragging="map.dragging" 
+            bounds='map.bounds'
+            mark-click="map.markClick"
+            options='map.options'
+            events="map.events"
+          >
+            <markers 
+              models="map.markers" 
+              coords="'self'"
+              doCluster="map.doCluster" 
+              clusterOptions="map.clusterOptions"
+              options="map.markersOptions"
+              click="map.markersClick"
+            >
+            </markers>
+
+            <marker 
+              coords="map.userMarker.coords" 
+              options="map.userMarker.options" 
+              events="map.userMarker.events" >
+            </marker>
+          </google-map>
+</div>
+<table style="height: 10%;width: 100%">
+  <tr>
+    <td><button style="height: 100%;width: 100%" ng-click="captureImage();">CAPTURE IMG</button></td>
+    <td><button style="height: 100%;width: 100%" ng-click="genRandomMarkers(1000);">GENERATE RANDOM</button></td>
+  </tr>
+</table>
+</div>

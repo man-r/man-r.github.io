@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mapbox Angular directive</title>
+  <link rel="stylesheet" href="lib/mapbox/mapbox.v2.1.4.css" />
+  <link rel="stylesheet" href="lib/mapbox/MarkerCluster.css" />
+  <link rel="stylesheet" href="lib/mapbox/MarkerCluster.Default.css" />
+
+  <script src="lib/mapbox/mapbox.v1.6.2.js"></script>
+  <script src="lib/angular-1.2.js"></script>
+  <script src="lib/mapbox/leaflet.markercluster.js"></script>
+  <script src="lib/mapbox/angular-mapbox.js"></script>
+  <script src="data/realworld.500.js"></script>
+
+  <style>
+    body { margin:0; padding:0; }
+    #map { position:absolute; top:0; bottom:0; width:100%;}
+  </style>
+  <script type="text/javascript">
+    var angularMapboxExample = angular.module('angular-mapbox-example', ['angularMapbox']);
+
+    angularMapboxExample.controller('demoController', function($scope) {
+      $scope.clusteredMarkers = addressPoints;
+      
+      $scope.mapMovedCallback = function(bounds) {
+        console.log('You repositioned the map to:');
+        console.log(bounds);
+      };
+
+      $scope.mapZoomedCallback = function(bounds) {
+        console.log('You zoomed the map to:');
+        console.log(bounds);
+      };
+
+      $scope.clusterClick = function() {
+        alert("ok");
+      };
+    });
+
+  </script>
+</head>
+<body ng-app="angular-mapbox-example" ng-controller="demoController">
+  <mapbox  map-id="man-r.k788b0ia"
+          lat="-37.82"
+          lng="175.215"
+          zoom=3
+          on-reposition="mapMovedCallback"
+          cluster-markers
+          on-cluster-click="clusterClick"
+          >
+    
+    <marker ng-repeat="market in clusteredMarkers"
+            lat="{{market.location.latitude}}"
+            lng="{{market.location.longitude}}"
+            on-click="clusterClick"
+            >
+      <h1>{{market.title}}</h1>
+    </marker>
+  </mapbox>
+
+
+  
+</body>
+</html>

@@ -1,0 +1,39 @@
+<link type="text/css" rel="stylesheet" href="style/css/map.css" />
+<div id="view" class="region fill-hv">
+	<div id="main" class="overlay fill-hv vertical slide" al:states="{'slide-right-5rem': 'model.leftPanel', 'slide-right-18rem': 'model.leftPanel2'}">
+		<div class="region expand"> <!-- to be on same level with alert -->
+			<div id="map" class="overlay fill-hv vertical">
+	 			<div ng-init="getMarks();" class="fill-hv">
+					<div id="container" class="fill-hv vertical">
+						<google-map 
+							center="map.center" 
+							zoom="map.zoom" 
+							draggable='true' 
+							dragging='map.dragging' 
+							bounds='map.bounds'
+							mark-click="true"
+							options='map.options' 
+							events="map.events"
+							control="map.control">
+						<markers 
+							models="map.markers" 
+							idkey="map.markers.id"
+							coords="'location'"
+							doCluster="map.doCluster" 
+							clusterOptions="map.clusterOptions"
+							options="'options'"
+							click="map.markersClick"
+							icon="'perview'">
+						</markers>
+						<marker 
+							idKey="map.userMarker.id"
+			              	coords="map.userMarker.coords" 
+			            	options="map.userMarker.options" 
+			              	events="map.userMarker.events" >
+			            </marker>
+					</div>
+				</div> 
+			</div>
+		</div>
+	</div>
+</div>

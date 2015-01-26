@@ -1,0 +1,25 @@
+[
+{
+	"id":0,
+	"location": { "type": "Point", "coordinates": [-30.953894248232245,35.93986785508798]},
+	"latitude":35.93986785508798,
+	"longitude":-30.953894248232245
+},
+{
+	"id":1,
+	"location": { "type": "Point", "coordinates": [140.8295515459031,4.869219860914953]},
+	"latitude":4.869219860914953,
+	"longitude":140.8295515459031
+},
+{
+	"id":2,
+	"location": { "type": "Point", "coordinates": [111.62152432836592,63.62974185551964]},
+	"latitude":63.62974185551964,
+	"longitude":111.62152432836592
+},
+{
+	"id":3,
+	"location": { "type": "Point", "coordinates": [50.06,26.56]},
+	"latitude":26.56,
+	"longitude":50.06
+}]

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<script src="lib/angular-1.2.js"></script>
+	<script src='lib/googlemap/lodash.js'></script>
+	<script src='lib/googlemap/angular-google-maps.js'></script>
+	<script src='http://maps.googleapis.com/maps/api/js?sensor=true'></script>
+    <script src="data/realworld.500.js"></script>
+	<style type="text/css">
+	.angular-google-map-container { height: 100vh; }
+	</style>
+    <script type="text/javascript">
+        angular.module('app', ['uiGmapgoogle-maps'])
+          .controller('mainCtrl', function($scope) {
+            $scope.map = {
+              center: {
+                latitude: 40.1451,
+                longitude: -99.6680
+              },
+              zoom: 4,
+              bounds: {}
+            };
+            $scope.options = {
+              scrollwheel: false
+            };
+            var createRandomMarker = function(i, bounds, idKey) {
+              var lat_min = bounds.southwest.latitude,
+                lat_range = bounds.northeast.latitude - lat_min,
+                lng_min = bounds.southwest.longitude,
+                lng_range = bounds.northeast.longitude - lng_min;
+
+              if (idKey == null) {
+                idKey = 'm' + i;
+              }
+
+              var latitude = lat_min + (Math.random() * lat_range);
+              var longitude = lng_min + (Math.random() * lng_range);
+              var ret = {};
+              ret[idKey] = {
+                  group: "cast",
+                  lat: latitude,
+                  lng: longitude
+                };
+              return ret;
+            };
+            $scope.randomMarkers = [];
+            $scope.randomMarkers2 = addressPoints;
+            
+            // Get the bounds from the map once it's loaded
+            $scope.$watch(function() {
+              return $scope.map.bounds;
+            }, function(nv, ov) {
+              // Only need to regenerate once
+              if (!ov.southwest && nv.southwest) {
+                var markers = [];
+                for (var i = 0; i < 500; i++) {
+                  markers.push(createRandomMarker(i, $scope.map.bounds))
+                }
+                console.log(JSON.stringify(markers));
+                $scope.randomMarkers = markers;
+              }
+            }, true);
+          });
+            </script>
+</head>
+<body>
+	<div id="map_canvas" ng-controller="mainCtrl">
+    <ui-gmap-google-map 
+    	center="map.center" 
+    	zoom="map.zoom" 
+    	draggable="true" 
+    	options="options" 
+    	bounds="map.bounds">
+        
+        <ui-gmap-markers 
+        	models="randomMarkers2" 
+        	coords="'location'" 
+        	icon="'icon'"
+        	doCluster="true">
+        </ui-gmap-markers>
+    </ui-gmap-google-map>
+</div>
+</body>
+</html>
