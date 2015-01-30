@@ -85,6 +85,14 @@
         'Thanks for logging in, ' + response.name + '!';
     });
   }
+
+  function facebook () {
+    var login_url = "https://www.facebook.com/dialog/oauth?&
+      client_id=712231042182932&
+      redirect_uri=https://www.facebook.com/connect/login_success.html";
+
+    window.open(login_url);
+  }
 </script>
 
 <!--
@@ -95,6 +103,8 @@
 
 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 </fb:login-button>
+
+<button onclick="facebook();"></button>
 
 <div id="status">
 </div>
