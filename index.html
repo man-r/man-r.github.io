@@ -1,40 +1,127 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>man-r</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <link href="color/default.css" rel="stylesheet" media="screen">
+    <script src="js/modernizr.custom.js"></script>
+      </head>
+  <body>
+    <div class="menu-area">
+            <div id="dl-menu" class="dl-menuwrapper">
+                        <button class="dl-trigger">Open Menu</button>
+                        <ul class="dl-menu">
+                            <li>
+                                <a href="#intro">Home</a>
+                            </li>
+                            <li><a href="#contact">Contact</a></li>
+                            
+                        </ul>
+                    </div><!-- /dl-menuwrapper -->
+    </div>  
 
-<head>
-    <title></title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=false;">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script type="text/javascript">
-    function switchColor() {
-        var property=document.body;
-        console.log(property.style.backgroundColor);
-        if (property.style.backgroundColor != "rgb(19, 19, 20)") {
-            property.style.backgroundColor = "rgb(19, 19, 20)";
-            property.style.color = "rgb(255,255,255)";
-        }
-        else {
-            property.style.backgroundColor = "rgb(255,255,255)";
-            property.style.color = "rgb(19, 19, 20)";
-        }
-        
-    }
-    </script>
-</head>
-
-<body>
-    <div class="container">
-        <div class="header">
-            <h1>man-r</h1>
-            <button onclick="switchColor()">switchColor</button>
-        </div>
-        <div class="body">
-            <div class="section">
-                <h3>خلو الناس تستانس!</h3>
+      <!-- intro area -->     
+      <div id="intro">
+      
+            <div class="intro-text">
+                <div class="container">
+                    <div class="row">
+                    
+                        
+                    <div class="col-md-12">
+            
+                        <div class="brand">
+                            <h1><a href="index.html">man-r</a></h1>
+                            <div class="line-spacer"></div>
+                            <p><span>خلو الناس تستانس</span></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</body>
+            
+     </div>
+      
 
+    <!-- Contact -->
+      <section id="contact" class="home-section bg-white">
+        <div class="container">
+              <div class="row mar-top30 ">
+                <div class="col-md-offset-2 col-md-8">
+                    <ul class="social-network">
+                        <li><a href="https://www.facebook.com/manar.sughayer">
+                        <span class="fa-stack fa-2x">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                        </span></a>
+                        </li>
+                        <li><a href="https://twitter.com/man_r0">
+                        <span class="fa-stack fa-2x">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span></a>
+                        </li>
+                        <li><a href="https://plus.google.com/u/0/115679204240344028403">
+                        <span class="fa-stack fa-2x">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                        </span></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/man_r/">
+                        <span class="fa-stack fa-2x">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                        </span></a>
+                        </li>
+                        
+                    </ul>
+                </div>              
+            </div>
+
+        </div>
+      </section>      
+    
+        <!-- spacer 2 -->     
+        <section id="spacer2" class="home-section spacer">  
+           <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="color-light">
+                        <h2 class="wow bounceInDown" data-wow-delay="1s">THE UNATTAINABLE IS INVARIABLY ATTRACTIVE</h2>
+                        <p class="lead wow bounceInUp" data-wow-delay="2s">We mix all detailed things together</p>  
+                        </div>
+                    </div>              
+                </div>
+            </div>
+        </section>  
+      
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Copyright &copy;2014 Mamba company. All rights reserved. By <a href="http://bootstraptaste.com">Bootstrap Themes</a></p>
+                </div>
+                <!-- 
+                    All links in the footer should remain intact. 
+                    Licenseing information is available at: http://bootstraptaste.com/license/
+                    You can buy this theme without footer links online at: http://bootstraptaste.com/buy/?theme=Mamba
+                -->
+            </div>      
+        </div>  
+    </footer>
+     
+     <!-- js -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.smooth-scroll.min.js"></script>
+    <script src="js/jquery.dlmenu.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/custom.js"></script>
+    
 </html>
