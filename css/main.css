@@ -1,12 +1,11 @@
 body {
-    background-image: url("../bgBlack.jpg");
     background-size: cover;
     background-color: rgb(19, 19, 20);
     color: rgb(255,255,255);
     height: 100%;
     font-family: "Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter", monospace;
     text-align: justify;
-    
+
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
