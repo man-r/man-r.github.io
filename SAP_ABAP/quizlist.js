@@ -333,7 +333,7 @@ var quizlist = [
 		"section": "ABAP",
 		"question":"When using a DO…ENDDO loop in a program, conditions 􀅵ay 􀄏e i􀅶􀄐orporated to 􀄐o􀅶trol the loop pass using:",
 		"options": [
-			{"text":"SKIP", "correct" : false}
+			{"text":"SKIP", "correct" : false},
 			{"text":"EXIT", "correct" : true},
 			{"text":"CONTINUE", "correct" : true},
 			{"text":"CHECK", "correct" : true},
