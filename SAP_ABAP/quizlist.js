@@ -69,11 +69,12 @@ var quizlist = [
 	{
 		"section": "ABAP",
 		"question":"User’s login into the SAP system using the credentials assigned to them. What do you mean by 'user context'?",
+		"options": [
 			{"text":"Data that is commonly assigned for all SAP users who login", "correct" : false},
 			{"text":"It is always required during the execution of an ABAP program in the work process", "correct" : true},
 			{"text":"Contains the user data and authorization data", "correct" : true},
 			{"text":"Each user can open up to 9 external sessions", "correct" : false},
-			{"text":"Contains the data that is handled during program execution", "correct" : false}
+			{"text":"Contains the data that is handled during program execution", "correct": false}
 		]
 	},	
 	{
