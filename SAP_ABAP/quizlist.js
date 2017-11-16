@@ -219,5 +219,180 @@ var quizlist = [
 			{"text":"SAP SRM (SAP Supplier Relationship Management)", "correct" : false},
 			{"text":"SAP PLM (SAP Product Lifecycle Management)", "correct" : false}
 		]
+	},
+
+
+
+
+
+
+
+
+
+
+	{
+		"section": "ABAP",
+		"question":"Which of the following aspects of the database layer is/are TRUE in the SAP system?",
+		"options": [
+			{"text":"Contains the installation files for the Java AS", "correct" : false},
+			{"text":"Contains client-specific data", "correct" : true},
+			{"text":"Contains cross-client data", "correct" : true},
+			{"text":"Contains client-specific repository objects", "correct" : false},
+			{"text":"Contains cross-client repository objects", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Select the most suitable breakdown of the repository in SAP ECC.",
+		"options": [
+			{"text":"Repository->Package->Application->Program->Text Symbols", "correct" : false},
+			{"text":"Application->Package->Repository->Text Symbols-> Program", "correct" : false},
+			{"text":"Repository->Application->Package->Program->Text Symbols", "correct" : true},
+			{"text":"Package->Application->Repository->Program->Text Symbols", "correct" : false},
+			{"text":"Application->Program->Package->Repository->Text Symbols", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The ABAP tool that integrates most of the development functionality is the:",
+		"options": [
+			{"text":"ABAP Editor", "correct" : false},
+			{"text":"Package", "correct" : false},
+			{"text":"Object Navigator", "correct" : true},
+			{"text":"ABAP Dictionary", "correct" : false},
+			{"text":"Class Builder", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following are functions possible in the Object Navigator?",
+		"options": [
+			{"text":"User can create, change or display business data", "correct" : false},
+			{"text":"User can view the object and its sub objects if any", "correct" : true},
+			{"text":"User can release/transport an object into the test or production system", "correct" : true},
+			{"text":"User can easily switch between various ABAP development objects", "correct" : true},
+			{"text":"User can manage the user master data of self and others in the system", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"You have created a program ZABCXX_01 which is of type executable. Which of the following statements is/are TRUE for your development?",
+		"options": [
+			{"text":"The program should be saved under SAP packages at all times", "correct" : false},
+			{"text":"The program may be executed only by creating a transaction for it", "correct" : false},
+			{"text":"The program may have two versions during development: inactive version or the active version", "correct" : true},
+			{"text":"The program typically would consist of a selection screen and a list", "correct" : true},
+			{"text":"Activating the program also performs the syntax check on it", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following is NOT TRUE for the transport of a development object?",
+		"options": [
+			{"text":"The object must be stored under a package to initiate a transport", "correct" : false},
+			{"text":"The package $TMP may be used as default to initiate a transport", "correct" : true},
+			{"text":"Team members within the project are assigned specific request numbers", "correct" : false},
+			{"text":"The object may not be transported if it contains a syntax error", "correct" : false},
+			{"text":"The object may not be transported if it is not active", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following declaration syntax is/are the right construct for a variable LV_CARR?",
+		"options": [
+			{"text":"DATA: LV_CARR TYPE I LENGTH 10.", "correct" : false},
+			{"text":"DATA: LV_CARR TYPE C(10).", "correct" : false},
+			{"text":"DATA: LV_CARR(10) TYPE N VALUE '0123456789'.", "correct" : false},
+			{"text":"DATA: LV_CARR1 TYPE C. DATA: LV_CARR2 LIKE LV_CARR1.", "correct" : true},
+			{"text":"DATA: LY_CARR1 TYPE C. DATA: LV_CARR2 TYPE LV_CARR1.", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Mark the Incomplete data types?",
+		"options": [
+			{"text":"Character", "correct" : true},
+			{"text":"Float", "correct" : false},
+			{"text":"Packed", "correct" : true},
+			{"text":"String", "correct" : false},
+			{"text":"Integer", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following entities supports multi-language display for a program output?",
+		"options": [
+			{"text":"List Heading", "correct" : true},
+			{"text":"Selection Screen", "correct" : false},
+			{"text":"Selection Texts", "correct" : true},
+			{"text":"Text Symbols", "correct" : true},
+			{"text":"Text Literals", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"When using a DO…ENDDO loop in a program, conditions 􀅵ay 􀄏e i􀅶􀄐orporated to 􀄐o􀅶trol the loop pass using:",
+		"options": [
+			{"text":"SKIP", "correct" : false}
+			{"text":"EXIT", "correct" : true},
+			{"text":"CONTINUE", "correct" : true},
+			{"text":"CHECK", "correct" : true},
+			{"text":"RETURN", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following are benefits of SAP Netweaver?",
+		"options": [
+			{"text":"SAP Netweaver offers a monolithic software environment which limits business flexibility", "correct" : false},
+			{"text":"SAP NetWeaver provides the flexibility to integrate applications that run across SAP, SAP-certified partners, and custom-built applications.", "correct" : true},
+			{"text":"SAP Netweaver supports rapid deployment through pre-built integration content", "correct" : true},
+			{"text":"SAP NetWeaver enables companies to entirely replace their current software and systems.", "correct" : false},
+			{"text":"SAP NetWeaver is based on a technology that uses industry standards and can be enhanced using popular development tools.", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following is not a capability of SAP Netweaver?",
+		"options": [
+			{"text":"User Productivity", "correct" : false},
+			{"text":"Custom Development", "correct" : false},
+			{"text":"Business Intelligence", "correct" : false},
+			{"text":"Customer Relationship Management", "correct" : true},
+			{"text":"Security and Identity Management", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Mark some of the key products of SAP Netweaver?",
+		"options": [
+			{"text":"Business Process Management", "correct" : true},
+			{"text":"Composition Environment", "correct" : true},
+			{"text":"Enterprise Resource Planning", "correct" : false},
+			{"text":"Supply Chain Management", "correct" : false},
+			{"text":"Process Integration", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following is the platform for SAP Application development, runtime and/or intergration?",
+		"options": [
+			{"text":"SAP Business Suite", "correct" : false},
+			{"text":"SAP ECC 6.07", "correct" : false},
+			{"text":"SAP Netweaver", "correct" : true},
+			{"text":"SAP Supplier Relationship Management", "correct" : false},
+			{"text":"SAP Master Data Management", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following make up the Architecture of the SAP System?",
+		"options": [
+			{"text":"Composite Layer", "correct" : false},
+			{"text":"Database Layer", "correct" : true},
+			{"text":"Presentation Layer", "correct" : true},
+			{"text":"Hybrid Layer", "correct" : false},
+			{"text":"Application Layer", "correct" : true}
+		]
 	}
 ]
