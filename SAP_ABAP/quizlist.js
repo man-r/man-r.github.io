@@ -218,5 +218,6 @@ var quizlist = [
 			{"text":"SAP BI (Business Intelligence)", "correct" : true},
 			{"text":"SAP SRM (SAP Supplier Relationship Management)", "correct" : false},
 			{"text":"SAP PLM (SAP Product Lifecycle Management)", "correct" : false}
+		]
 	}
 ]
