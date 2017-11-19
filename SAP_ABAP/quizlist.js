@@ -220,16 +220,6 @@ var quizlist = [
 			{"text":"SAP PLM (SAP Product Lifecycle Management)", "correct" : false}
 		]
 	},
-
-
-
-
-
-
-
-
-
-
 	{
 		"section": "ABAP",
 		"question":"Which of the following aspects of the database layer is/are TRUE in the SAP system?",
@@ -393,6 +383,171 @@ var quizlist = [
 			{"text":"Presentation Layer", "correct" : true},
 			{"text":"Hybrid Layer", "correct" : false},
 			{"text":"Application Layer", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following are functions possible in the Debugging tool?",
+		"options": [
+			{"text":"Monitor a variable content using a Breakpoint", "correct" : false},
+			{"text":"Monitor a variable content using a Watchpoint", "correct" : true},
+			{"text":"View or change the contents of DATA, PARAMETERS, CONSTANTS and other data objects", "correct" : false},
+			{"text":"Stop control at a required line by setting a breakpoint at it", "correct" : true},
+			{"text":"Stop control at a required line by setting a watchpoint at it", "correct" : false}
+		]
+	},	
+	{
+		"section": "ABAP",
+		"question":"The debugging tool can be started using when the application has a selection screen using:",
+		"options": [
+			{"text":"/D", "correct" : false},
+			{"text":"/F", "correct" : false},
+			{"text":"/T", "correct" : false},
+			{"text":"/C", "correct" : false},
+			{"text":"/H", "correct" : true}
+		]
+	},	
+	{
+		"section": "ABAP",
+		"question":"Which of the following data objects supports reading data using the row position?",
+		"options": [
+			{"text":"Standard Table", "correct" : true},
+			{"text":"Sorted Table", "correct" : true},
+			{"text":"Hashed Table", "correct" : false},
+			{"text":"Transparent Table", "correct" : false},
+			{"text":"Indexed Table", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Mark the characteristics required to declare an internal table in your program.",
+		"options": [
+			{"text":"The program must be an executable program", "correct" : false},
+			{"text":"Declaration with ‹line type› is a mandatory property", "correct" : true},
+			{"text":"Header line property is optional in the declaration", "correct" : true},
+			{"text":"Initial size when not specified allocates 100 rows as default", "correct" : false},
+			{"text":"Declaration may be done using ‹structure type›, ‹table type›, ‹data element›", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"DATA: it_spfli TYPE TABLE OF SPFLI. Where SPFLI is a database table used to declare the internal table in my program. Mark the correct statements.",
+		"options": [
+			{"text":"The internal table it_spfli is a HASHED table by default", "correct" : false},
+			{"text":"The internal table also requires an explicit structure to process the data", "correct" : true},
+			{"text":"All the columns in the internal table form the keys of the table", "correct" : false},
+			{"text":"The internal table may store duplicate entries", "correct" : true},
+			{"text":"The internal table may be accessed using the row numbers", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The successful execution of an internal table INSERT command may be determined by checking the value of:",
+		"options": [
+			{"text":"SY-TABIX = 0", "correct" : false},
+			{"text":"SY-SUBRC = 0", "correct" : true},
+			{"text":"SY-INDEX = 0", "correct" : false},
+			{"text":"SY-DBCNT = 0", "correct" : false},
+			{"text":"SY-TFILL = 0", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Publishing information to the user informing the status of the program or an activity is done using messages. Which of the following statements are TRUE for messages?",
+		"options": [
+			{"text":"A warning message stops control on screen and proceeds only if input is corrected", "correct" : false},
+			{"text":"Information message displays a pop-up and then continues to the next screen in the navigation order", "correct" : true},
+			{"text":"An Abort message terminates the program and issues a ROLLBACK", "correct" : true},
+			{"text":"A detailed description of a message is maintained as long text in the message class", "correct" : true},
+			{"text":"A message from the message class can handle up to 8 place holders", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following is valid in the MESSAGE syntax?",
+		"options": [
+			{"text":"“...DISPLAY LIKE mstype.” addition may be used to publish the message as another type other than the definition", "correct" : true},
+			{"text":"“...DISPLAY LIKE mstype.” addition is NOT recommended for an “A” – Abort Message", "correct" : false},
+			{"text":"“...RAISING exception.” addition will publish the message if the exception parameter was not defined in the function module or method", "correct" : true},
+			{"text":"“...RAISING exception.” addition may be used in Includes or Subroutines to trigger messages", "correct" : false},
+			{"text":"“...WITH dobj1 dobj2.” addition may be used to pass runtime values to be published along with the message", "correct" : true}
+		]
+	},
+	{	
+		"section": "ABAP",
+		"question":"How many types of internal tables may be defined in an ABAP program?",
+		"options": [
+			{"text":"Only One", "correct" : false},
+			{"text":"Two", "correct" : false},
+			{"text":"Three", "correct" : false},
+			{"text":"Four", "correct" : true},
+			{"text":"Five", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following are a suitable methods to declare an explicit work area for an internal table? SCARR is the name of a database table and lt_scarr is an internal table.",
+		"options": [
+			{"text":"DATA: ls_scarr TYPE TABLE OF SCARR.", "correct" : false},
+			{"text":"TYPES: ls_scarr TYPE TABLE OF SCARR.", "correct" : false},
+			{"text":"DATA: ls_scarr TYPE LINE OF lt_scarr.", "correct" : false},
+			{"text":"DATA: ls_scarr LIKE LINE OF lt_scarr.", "correct" : true},
+			{"text":"DATA: ls_scarr TYPE SCARR.", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The SAP product that is designed specifically for small businesses covering all business aspects from sales and customer relationships to financials and operations is the:",
+		"options": [
+			{"text":"SAP Business Suite", "correct" : false},
+			{"text":"SAP Business One", "correct" : true},
+			{"text":"SAP All-in-One", "correct" : false},
+			{"text":"SAP Business ByDesign", "correct" : false},
+			{"text":"SAP Netweaver", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Mark the features offered by SAP Business ByDesign product.",
+		"options": [
+			{"text":"Is suitable for mid-sized companies or subsidiaries of bigger firms", "correct" : true},
+			{"text":"It offers a cloud based on-demand software-as-a-service (SaaS) solution", "correct" : true},
+			{"text":"It covers business aspects from sales and customer relationships to financials and operations only.", "correct" : false},
+			{"text":"It requires an in-house IT team to maintain, monitor and manage the solution", "correct" : false},
+			{"text":"It offers numerous industry-specific functions", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Select the suitable SAP platform used by marketing, sales, and service professionals to manage customers and customer-related processes.",
+		"options": [
+			{"text":"SAP ERP", "correct" : false},
+			{"text":"SAP CRM", "correct" : true},
+			{"text":"SAP SRM", "correct" : false},
+			{"text":"SAP PLM", "correct" : false},
+			{"text":"SAP SCM", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of SAP’s offering enables companies to take advantage of ongoing innovations while keeping their core software stable?",
+		"options": [
+			{"text":"Industry Applications", "correct" : false},
+			{"text":"Composition Environment", "correct" : false},
+			{"text":"Supplementary Applications", "correct" : false},
+			{"text":"Enhancement Packages", "correct" : true},
+			{"text":"Core Applications", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which offering from SAP provides access to fresh data at any level of granularity, combined with the ability to perform predictive analysis?",
+		"options": [
+			{"text":"SAP Business One", "correct" : false},
+			{"text":"SAP Business Warehouse", "correct" : false},
+			{"text":"SAP Business Intelligence", "correct" : false},
+			{"text":"SAP Business Objects", "correct" : false},
+			{"text":"SAP HANA", "correct" : true}
 		]
 	}
 ]
