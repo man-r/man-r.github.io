@@ -701,7 +701,9 @@ var quizlist = [
 			{"text":"⁄ O", "correct" : false},
 			{"text":"⁄ H", "correct" : false},
 			{"text":"⁄ NEX", "correct" : false},
-			{"text":"⁄ I", "correct" : true},
+			{"text":"⁄ I", "correct" : true}
+		]
+	},
 	{
 		"section": "ABAP",
 		"question":"What does the co􀅵􀅵a􀅶d ⁄ O do whe􀅶 you use it in the command box?",
