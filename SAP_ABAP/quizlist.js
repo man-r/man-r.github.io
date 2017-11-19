@@ -549,5 +549,266 @@ var quizlist = [
 			{"text":"SAP Business Objects", "correct" : false},
 			{"text":"SAP HANA", "correct" : true}
 		]
+	},
+		{
+		"section": "ABAP",
+		"question":"Buffering technique improves access on a database table. When can this option be enabled for the database table?",
+		"options": [
+			{"text":"When table read access is relatively low versus write access", "correct" : false},
+			{"text":"When table read access is relatively high versus write access", "correct" : true},
+			{"text":"When the most recent data from the table is required", "correct" : false},
+			{"text":"When the table is designed as a transparent table", "correct" : true},
+			{"text":"When the table contains master or organization data", "correct" : true}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"The role of ABAP Dictionary when coding a program is to:",
+		"options": [
+			{"text":"Provide access to definitions that can be used in program declarations", "correct" : true},
+			{"text":"Provide documentation on SAP system, keyword glossary etc.", "correct" : false},
+			{"text":"Provide access to global definitions at runtime", "correct" : true},
+			{"text":"Provide create/change/display access to programs", "correct" : false},
+			{"text":"Provide F1 and F4 help for input fields during design and runtime", "correct" : true}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"Which of the following may be TRUE for a table in the ABAP Dictionary?",
+		"options": [
+			{"text":"The table and its data is always client specific", "correct" : true},
+			{"text":"The table and its data is always cross client", "correct" : false},
+			{"text":"The table is cross client whereas the data maybe client specific", "correct" : true},
+			{"text":"The table is cross client whereas the data maybe cross client", "correct" : true},
+			{"text":"The table is client specific whereas the data maybe cross client", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"A SELECT statement may use which of the following to optimize the access to the database?",
+		"options": [
+			{"text":"A buffer if the table setting has buffer activated", "correct" : true},
+			{"text":"The primary index if the WHERE clause uses the non-key fields of the table", "correct" : false},
+			{"text":"The primary index if the WHERE clause uses the key fields of the table", "correct" : true},
+			{"text":"The secondary index if the WHERE clause uses the non-key fields of the table", "correct" : true},
+			{"text":"The secondary index if the WHERE clause uses the key fields of the table", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"Mark the TRUE characteristics of the database interface:",
+		"options": [
+			{"text":"Converts DB data into SAP internal format", "correct" : true},
+			{"text":"Converts SAP internal format to Native DB data", "correct" : true},
+			{"text":"Converts Native SQL statement into Open SQL", "correct" : false},
+			{"text":"Converts Open SQL statement into Native SQL", "correct" : true},
+			{"text":"Enforce buffer if explicit Native SQL was coded in the program", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"In the given list of statements for SELECT, mark the ones that do not require an ENDSELECT.",
+		"options": [
+			{"text":"SELECT * FROM dbtable INTO ls_str. Where ls_str is a local structure.", "correct" : false},
+			{"text":"SELECT SINGLE * FROM dbtable INTO ls_str. Where ls_str is a local structure.", "correct" : false},
+			{"text":"SELECT * FROM dbtable INTO ls_str UP TO 1 ROWS. Where ls_str is a local structure.", "correct" : false},
+			{"text":"SELECT * FROM dbtable INTO lt_itab. Where lt_itab is an internal table.", "correct" : false},
+			{"text":"SELECT * FROM dbtable INTO TABLE lt_itab. Where lt_itab is an internal table.", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"Your program states that the number of records normally fetched are 500 entries from the database table. Choose the most suitable syntax given below:",
+		"options": [
+			{"text":"SELECT * FROM dbtab INTO ls_str WHERE condt...ENDSELECT", "correct" : false},
+			{"text":"SELECT * FROM dbtab UP TO 500 ROWS INTO ls_str WHERE condt...ENDSELECT", "correct" : true},
+			{"text":"SELECT * FROM dbtab UP TO TO 500 ROWS INTO CORRESPONDING FIELDS OF ls_str WHERE condt...ENDSELECT", "correct" : false},
+			{"text":"SELECT * FROM dbtab UP TO 500 ROWS INTO TABLE lt_itab WHERE condt.", "correct" : false},
+			{"text":"SELECT * FROM dbtab UP TO 500 ROWS INTO CORRESPONDING FIELDS OF TABLE lt_itab WHERE condt.", "correct" : true}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"What does the CLIENT-SPECIFIED addition do in a SELECT command?",
+		"options": [
+			{"text":"Get data from the login client: for example 800 being the login client", "correct" : false},
+			{"text":"Get data from other than the login client: for example 800 being the login client", "correct" : true},
+			{"text":"Must use the MANDT field in the WHERE clause of the statement", "correct" : true},
+			{"text":"MANDT if not specified will fetch data from the default login client", "correct" : false},
+			{"text":"MANDT if not specified will fetch data from all existing clients", "correct" : true}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"A selection screen for an executable program may be defined using which of these keywords?",
+		"options": [
+			{"text":"DATA keyword", "correct" : false},
+			{"text":"PARAMETERS keyword", "correct" : true},
+			{"text":"RANGES keyword", "correct" : false},
+			{"text":"SELECT-OPTIONS keyword", "correct" : true},
+			{"text":"STATICS keyword", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"Which of the following are events associated with a selection screen?",
+		"options": [
+			{"text":"LOAD OF PROGRAM", "correct" : false},
+			{"text":"START OF SELECTION", "correct" : false},
+			{"text":"END OF SELECTION", "correct" : false},
+			{"text":"INITIALIZATION", "correct" : true},
+			{"text":"AT SELECTION SCREEN", "correct" : true}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"What are the characteristics of ‘Client’ in the SAP System?",
+		"options": [
+			{"text":"Client corresponds to a business partner or customer within the company running the SAP system", "correct" : false},
+			{"text":"Client correspond to independent business entities and represent a company in an SAP system", "correct" : true},
+			{"text":"One SAP system can have only one client", "correct" : false},
+			{"text":"One SAP system can have several clients", "correct" : true},
+			{"text":"Client gives access to business data only from the same client.", "correct" : true}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"Which of the following is not an option to call functions in an SAP system?",
+		"options": [
+			{"text":"Entering transaction codes in the command field", "correct" : false},
+			{"text":"Choosing items from the SAP menu", "correct" : false},
+			{"text":"Choosing items from a user menu", "correct" : false},
+			{"text":"Choosing items from buttons of the standard tool bar", "correct" : true},
+			{"text":"Choosing items from the Favorites list", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"Select the command that is not part of the list that may be used in the command box.",
+		"options": [
+			{"text":"use ⁄ N to cancel the current transaction", "correct" : false},
+			{"text":"⁄ NXXXX to call transaction XXXX directly from another transaction.", "correct" : false},
+			{"text":"⁄ NEND to end the log on session", "correct" : false},
+			{"text":"⁄ NEXIT to end the log on session", "correct" : true},
+			{"text":"⁄ NEX to end the log on session", "correct" : false}
+
+	{
+		"section": "ABAP",
+		"question":"Which of these commands may be used to delete or close a transaction window that you may be using?",
+		"options": [
+			{"text":"⁄ N", "correct" : false},
+			{"text":"⁄ O", "correct" : false},
+			{"text":"⁄ H", "correct" : false},
+			{"text":"⁄ NEX", "correct" : false},
+			{"text":"⁄ I", "correct" : true},
+	{
+		"section": "ABAP",
+		"question":"What does the co􀅵􀅵a􀅶d ⁄ O do whe􀅶 you use it in the command box?",
+		"options": [
+			{"text":"It cancels the current transaction", "correct" : false},
+			{"text":"It closes the window you are currently using", "correct" : false},
+			{"text":"It ends the log on session", "correct" : false},
+			{"text":"It displays the overview of the SAP GUI sessions", "correct" : true},
+			{"text":"It calls a transaction in a new window", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of these special characters may be used in the SELECT statement to filter records based on a pattern?",
+		"options": [
+			{"text":"*", "correct" : false},
+			{"text":"+", "correct" : false},
+			{"text":"_", "correct" : true},
+			{"text":"!", "correct" : false},
+			{"text":"%", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following are NOT allowed for a field in the WHERE condition of a SELECT statement?",
+		"options": [
+			{"text":"WHERE field = parameter_name...", "correct" : false},
+			{"text":"WHERE field = structure_name...", "correct" : true},
+			{"text":"WHERE field = table_name~field_name...", "correct" : false},
+			{"text":"WHERE field = range_internal_table...", "correct" : true},
+			{"text":"WHERE field IN range_internal_table", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The SELECT...ENDSELECT may process data in a loop using a multiline target area (internal table) by using which of the given addition?",
+		"options": [
+			{"text":"UP TO N ROWS - where N is the number of lines processed", "correct" : false},
+			{"text":"LIMIT N - where N is the number of lines processed", "correct" : false},
+			{"text":"BLOCK SIZE N - where N number of lines processed", "correct" : false},
+			{"text":"PACKAGE SIZE N - where N is the number of lines processes", "correct" : true},
+			{"text":"ORDER SIZE N - where N is the number of lines processed", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the given CURSOR command executes the database access but does not pass any data to the application program?",
+		"options": [
+			{"text":"GET CURSOR...", "correct" : false},
+			{"text":"FETCH CURSOR...", "correct" : false},
+			{"text":"OPEN CURSOR...", "correct" : true},
+			{"text":"SET CURSOR...", "correct" : false},
+			{"text":"CLOSE CURSOR...", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Mark the statements that determine the use of explicit cursor in the SELECT query.",
+		"options": [
+			{"text":"The SET CURSOR positions the cursor variable at any line in the result set as needed from the application", "correct" : false},
+			{"text":"The OPEN CURSOR sets the cursor variable to a position before the first line of the result set", "correct" : true},
+			{"text":"The cursor variable stores the position in the result set of the database access up to which processing is already complete", "correct" : true},
+			{"text":"The OPEN CURSOR executes the access and passes result data to the application program", "correct" : false},
+			{"text":"each FETCH..CURSOR allows you to read different numbers of records into a different data object as the target", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following are NOT TRUE with regard to the prerequisites when using ORDER BY clause for the SELECT statement?",
+		"options": [
+			{"text":"The FROM clause if contains a view, the SELECT statement may use the addition ORDER BY PRIMARY KEY", "correct" : true},
+			{"text":"You can sort pooled tables and cluster tables only by their key field", "correct" : true},
+			{"text":"The field list after SELECT must contain all the key fields of the table including client, when ORDER BY PRIMARY KEY addition is used", "correct" : false},
+			{"text":"The sort columns in ORDER BY COL1 COL2... must be part of the result set and therefore must appear after the SELECT statement", "correct" : false},
+			{"text":"You cannot sort by fields with type LCHAR, LRAW, STRING, or RAWSTRING", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The result set of a SELECT statement is aggregated and duplicates entries are removed by using the addition:",
+		"options": [
+			{"text":"UNIQUE", "correct" : false},
+			{"text":"PRIMARY", "correct" : false},
+			{"text":"DISTINCT", "correct" : true},
+			{"text":"DISJUNCT", "correct" : false},
+			{"text":"INDIVIDUAL", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The aggregate functions that may not be used on a SELECT field list if the field is of text or character type are:",
+		"options": [
+			{"text":"MIN( col )", "correct" : false},
+			{"text":"MAX( col )", "correct" : false},
+			{"text":"SUM( col )", "correct" : true},
+			{"text":"AVG( col )", "correct" : true},
+			{"text":"COUNT( * )", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A SELECT statement consists of field list and aggregate functions. Mark the TRUE statements. Example: SELECT CARRID CONNID SUM( SEATSOCC )....",
+		"options": [
+			{"text":"the result set is always multiline and may be loaded into an internal table", "correct" : true},
+			{"text":"The SELECT statement must contain ORDER BY clause and all fields from the field list must be listed after ORDER BY", "correct" : false},
+			{"text":"The SELECT statement must contain GROUP BY clause and all fields from the field list must be listed after GROUP BY", "correct" : true},
+			{"text":"SELECT * may be used along with any of the aggregate functions in the statement", "correct" : false},
+			{"text":"When using the GROUP BY clause, a logical expression may be specified after the HAVING expression", "correct" : true}
+		]
 	}
 ]
