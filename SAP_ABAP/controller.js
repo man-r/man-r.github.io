@@ -104,11 +104,13 @@ $(document).ready(function () {
 	    		if (correctAnswer == correctAns.length) {
 	    			document.getElementById(htmlstage).appendChild(correct);
 	    			score++;
+				setTimeout(function(){changeQuestion()},1000);
 	    		}
 	    		else {
 	    			document.getElementById(htmlstage).appendChild(wrong);
+				setTimeout(function(){changeQuestion()},2000);
 	    		}
-	    		setTimeout(function(){changeQuestion()},2000);
+	    		
 		 	}
 		}
 	}//display question
