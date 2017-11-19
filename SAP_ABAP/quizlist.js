@@ -691,7 +691,8 @@ var quizlist = [
 			{"text":"⁄ NEND to end the log on session", "correct" : false},
 			{"text":"⁄ NEXIT to end the log on session", "correct" : true},
 			{"text":"⁄ NEX to end the log on session", "correct" : false}
-
+		]
+	},
 	{
 		"section": "ABAP",
 		"question":"Which of these commands may be used to delete or close a transaction window that you may be using?",
