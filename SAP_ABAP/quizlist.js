@@ -1384,5 +1384,554 @@ var quizlist = [
 			{"text":"Message Type I", "correct" : false},
 			{"text":"Rollback Work", "correct" : true}
 		]
+	},	{
+		"section": "ABAP",
+		"question":"Which of the following may be possible for data objects within the debugging mode?",
+		"options": [
+			{"text":"The value of a field may be altered", "correct" : true},
+			{"text":"The data type of a field may be altered", "correct" : false},
+			{"text":"The field may be monitored for a value condition", "correct" : true},
+			{"text":"The structure components may be deleted or new components may be added", "correct" : false},
+			{"text":"The internal table data may be deleted or new entries may be inserted", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A feature of the debugger to monitor contents of data objects at runtime is the:",
+		"options": [
+			{"text":"Break Point - External", "correct" : false},
+			{"text":"Break Point - Internal", "correct" : false},
+			{"text":"Check Point", "correct" : false},
+			{"text":"Value Point", "correct" : false},
+			{"text":"Watch Point", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A local copy of the actual parameter when passed to the subroutine without having to alter its value is referred as:",
+		"options": [
+			{"text":"Call by Value", "correct" : true},
+			{"text":"Call by Reference", "correct" : false},
+			{"text":"Call by Value and Result", "correct" : false},
+			{"text":"Call by Process", "correct" : false},
+			{"text":"Call by Request", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"In subroutines/function modules, to ensure that an actual parameter is the same type as its corresponding formal parameter, the developer must:",
+		"options": [
+			{"text":"Check return code SY-SUBRC of the subroutine/function call", "correct" : false},
+			{"text":"Specify a type definition for each parameter", "correct" : true},
+			{"text":"Verify their types when designing the subroutine or function module", "correct" : false},
+			{"text":"Use the DESCRIBE FIELD statement", "correct" : false},
+			{"text":"Use syntax check to confirm any conflict", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"When subroutine parameters are not specified a data type during definition it will cause it to:",
+		"options": [
+			{"text":"Use type C data type by default", "correct" : false},
+			{"text":"Raise syntax error during program check", "correct" : false},
+			{"text":"Lead to short dump or runtime error", "correct" : false},
+			{"text":"Bypass the subroutine call in the program", "correct" : false},
+			{"text":"Be a generic parameter and accept any datatype from the subroutine call", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"For a subroutine or a function module That do you meant by 'pass by value and result'?",
+		"options": [
+			{"text":"Actual parameters may be altered within the execution period of the subroutine", "correct" : false},
+			{"text":"Actual parameter may not be altered during the execution period of the subroutine", "correct" : false},
+			{"text":"Actual parameter may be altered after the execution period of the subroutine", "correct" : true},
+			{"text":"Syntax used is - USING VALUE(P1) VALUE(P2)", "correct" : false},
+			{"text":"Syntax used is - CHANGING VALUE(P1) VALUE(P2)", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A program contains some data fetched from a database table and this information needs to be displayed using a subroutine. Which of these must be used for the definition of the subroutine?",
+		"options": [
+			{"text":"Internal tables may cannot be passed to subroutines", "correct" : false},
+			{"text":"The formal parameter must use a TYPE table type definition", "correct" : true},
+			{"text":"The formal parameter must use a TYPE structure type definition", "correct" : false},
+			{"text":"Internal tables must be passed 'By Value'", "correct" : false},
+			{"text":"Internal ta􀄏les 􀅵ust 􀄏e passed 'By Refererence'", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"PERFORM subroutine USING lv_var1. The lv_var1 field is known as what type of parameter?",
+		"options": [
+			{"text":"Formal", "correct" : false},
+			{"text":"Actual", "correct" : true},
+			{"text":"Static", "correct" : false},
+			{"text":"Value", "correct" : false},
+			{"text":"Data", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"With regards to the PERFORM keyword of a subroutine, which of the following is NOT a true statement?",
+		"options": [
+			{"text":"PERFORM may also be used inside the definition of a subroutine", "correct" : false},
+			{"text":"PERFORM will raise a syntax error if it has lesser parameters than that of the subroutine definition", "correct" : false},
+			{"text":"PERFORM will not raise a syntax error if it has lesser parameters than that of the subroutine definition", "correct" : true},
+			{"text":"PERFORM can be used to call subroutines that exist within an include of the same program", "correct" : false},
+			{"text":"PERFORM can be used to call subroutines that exist within an include of the another program", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Function modules can be created using:",
+		"options": [
+			{"text":"Object Navigator", "correct" : true},
+			{"text":"ABAP Editor", "correct" : false},
+			{"text":"ABAP Dictionary", "correct" : false},
+			{"text":"Function Builder", "correct" : true},
+			{"text":"Class Builder", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following is NOT a component of a functiol module's interface?",
+		"options": [
+			{"text":"Importing parameters", "correct" : false},
+			{"text":"Exporting parameters", "correct" : false},
+			{"text":"Returning parameters", "correct" : true},
+			{"text":"Changing parameters", "correct" : false},
+			{"text":"Exceptions", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following are characteristics when designing the interface of a Function module?",
+		"options": [
+			{"text":"The IMPORT parameter is by default an optional parameter", "correct" : false},
+			{"text":"The EXPORT parameter is by default an optional parameter", "correct" : true},
+			{"text":"The internal table is preferably passed using CHANGING parameter", "correct" : true},
+			{"text":"The internal table is preferably passed using TABLES parameter", "correct" : false},
+			{"text":"The EXCEPTIONS parameters are assigned numeric values 0 and above to identifyerrors", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A BAPI in the ABAP workbench may be used for external communications. Mark their properties.",
+		"options": [
+			{"text":"Interface parameters must use generic or freely used definitions", "correct" : false},
+			{"text":"Interface parameters must use specific BAPI definitions", "correct" : true},
+			{"text":"EXCEPTIONS raised by the BAPI are handled by checking for SY-SUBRC values", "correct" : false},
+			{"text":"BAPI must not call or use dialog screens during an external call", "correct" : true},
+			{"text":"BAPI must be created as a function module of type Update", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Components of a structure are always addressed using:",
+		"options": [
+			{"text":"dot", "correct" : false},
+			{"text":"hyphen", "correct" : true},
+			{"text":"~", "correct" : false},
+			{"text":"semicolon", "correct" : false},
+			{"text":"plus", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"In a line of code, text-ABC, is an example of which type of text entity?",
+		"options": [
+			{"text":"Text title", "correct" : false},
+			{"text":"Text table", "correct" : false},
+			{"text":"Text symbol", "correct" : true},
+			{"text":"Selection text", "correct" : false},
+			{"text":"Text literal", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of these may NOT be specified when declaring a local structure using BEGIN OF...END OF?",
+		"options": [
+			{"text":"comp_name TYPE data type", "correct" : false},
+			{"text":"comp_name TYPE structure type", "correct" : false},
+			{"text":"comp_name LIKE data type", "correct" : true},
+			{"text":"INCLUDE structure_type", "correct" : true},
+			{"text":"INCLUDE STRUCTURE structure_type", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Integrating components of a dynamic type in a structure makes a structure:",
+		"options": [
+			{"text":"Deep structure", "correct" : true},
+			{"text":"Nested structure", "correct" : false},
+			{"text":"Flat structure", "correct" : false},
+			{"text":"Complex structure", "correct" : false},
+			{"text":"Generic Structure", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"There are two internal tables declared in your program, itab1 and itab2. The tables are compatible if:",
+		"options": [
+			{"text":"Both itab1 and itab2 use the same table type", "correct" : true},
+			{"text":"Both itab1 and itab2 use the same structure type", "correct" : false},
+			{"text":"Both itab1 and itab2 use the same key definitions", "correct" : false},
+			{"text":"Both itab1 and itab2 use the same fields names", "correct" : false},
+			{"text":"Both itab1 and itab2 use the same structure, key and table kind", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"We can specify the columns to be included in the definition of itab using",
+		"options": [
+			{"text":"Key", "correct" : false},
+			{"text":"Line type", "correct" : true},
+			{"text":"Table kind", "correct" : false},
+			{"text":"Size", "correct" : false},
+			{"text":"Header", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A program you develop uses a hashed internal table to handle data. Which of these are not applicable for a hashed table?",
+		"options": [
+			{"text":"You must not SORT the hashed table", "correct" : false},
+			{"text":"You must not APPEND data to the hashed table", "correct" : false},
+			{"text":"You must READ data only using the addition WITH TABLE KEY.", "correct" : false},
+			{"text":"You must not MODIFY data using the addition INDEX", "correct" : true},
+			{"text":"You must READ data only using the addition WITH KEY.", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The system field that stores the total no of lines in an internal table is",
+		"options": [
+			{"text":"SY-TABIX", "correct" : false},
+			{"text":"SY-INDEX", "correct" : true},
+			{"text":"SY-TFILL", "correct" : false},
+			{"text":"SY-LOOPC", "correct" : false},
+			{"text":"SY-DBCNT", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The READ command for a sorted internal table uses the addition WITH TABLE KEY. Select the search technique that will be applied.",
+		"options": [
+			{"text":"Linear search", "correct" : false},
+			{"text":"Internal search", "correct" : false},
+			{"text":"Hash Function", "correct" : false},
+			{"text":"Field search", "correct" : false},
+			{"text":"Binary Search", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which key property does a Hashed internal table use?",
+		"options": [
+			{"text":"Unique", "correct" : true},
+			{"text":"Non-Unique", "correct" : false},
+			{"text":"Primary", "correct" : false},
+			{"text":"Index", "correct" : false},
+			{"text":"Secondary", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"When modifying an internal table using MODIFY keyword, which of these statements are valid?",
+		"options": [
+			{"text":"MODIFY TABLE itab FROM ls.", "correct" : true},
+			{"text":"MODIFY TABLE itab1 FROM TABLE itab2.", "correct" : false},
+			{"text":"MODIFY TABLE itab FROM ls INDEX 10.", "correct" : false},
+			{"text":"MODIFY TABLE itab FROM ls INDEX SY-TABIX.", "correct" : false},
+			{"text":"MODIFY itab FROM ls.", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which table type would be most appropriate for accessing table rows using an index.",
+		"options": [
+			{"text":"Sorted table", "correct" : true},
+			{"text":"Hashed table", "correct" : false},
+			{"text":"Standard table", "correct" : true},
+			{"text":"Transparent table", "correct" : false},
+			{"text":"Cluster table", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"DATA itab TYPE TABLE OF spfli. This syntax provides a:",
+		"options": [
+			{"text":"Sorted table", "correct" : false},
+			{"text":"Standard table", "correct" : true},
+			{"text":"Hashed table", "correct" : false},
+			{"text":"Indexed table", "correct" : false},
+			{"text":"Transparent table", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following commands will work for an internal table?",
+		"options": [
+			{"text":"INSERT ls INTO TABLE itab. for the hashed table", "correct" : true},
+			{"text":"APPEND ls TO itab. for the sorted table", "correct" : false},
+			{"text":"INSERT ls INTO itab INDEX SY-INDEX for the sorted table", "correct" : false},
+			{"text":"READ TABLE itab INTO ls INDEX lv_number. for a standard table", "correct" : true},
+			{"text":"COLLECT ls INTO itab. for the standard table.", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The following code indicates: The internal table it_scarr contains 50 records fetched from the database table SPFLI. At a later part in your program you fetch 30 records more. Which of the following commands will achieve this?",
+		"options": [
+			{"text":"SELECT...INTO TABLE it_spfli...", "correct" : false},
+			{"text":"SELECT...INTO CORRESPONDING FIELDS OF TABLE it_spfli...", "correct" : false},
+			{"text":"SELECT...APPENDING FIELDS OF TABLE it_spfli...", "correct" : false},
+			{"text":"SELECT...APPENDING it_spfli...", "correct" : true},
+			{"text":"SELECT...APPENDING CORRESPONDING FIELDS OF TABLE it_spfli...", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following syntax forms do not have an ENDSELECT?",
+		"options": [
+			{"text":"Select * from db_table...into itab...", "correct" : false},
+			{"text":"Select * from db_table...into table itab...", "correct" : true},
+			{"text":"Select Single * from db_table into ls...", "correct" : true},
+			{"text":"Select * from db_table up to 1 rows...", "correct" : false},
+			{"text":"Select * from db_table...into ls...", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"If a table contains many duplicate values for a field, minimize the number of records returned by using this SELECT statement addition.",
+		"options": [
+			{"text":"UP TO", "correct" : false},
+			{"text":"ORDER BY", "correct" : false},
+			{"text":"DISTINCT", "correct" : true},
+			{"text":"APPEND", "correct" : false},
+			{"text":"GROUP BY", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which system field provides the count of records fetched from the database table?",
+		"options": [
+			{"text":"SY-INDEX", "correct" : false},
+			{"text":"SY-COUNT", "correct" : false},
+			{"text":"SY-TABIX", "correct" : false},
+			{"text":"SY-DBCNT", "correct" : true},
+			{"text":"SY-DBROW", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which ABAP program attribute provides access protection?",
+		"options": [
+			{"text":"Role", "correct" : false},
+			{"text":"User Menu", "correct" : false},
+			{"text":"Package", "correct" : false},
+			{"text":"Authorization", "correct" : true},
+			{"text":"Request", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Authority check can be done in which of the following events:",
+		"options": [
+			{"text":"At Selection-Screen.", "correct" : true},
+			{"text":"At Selection-Screen output.", "correct" : false},
+			{"text":"At Selection-Screen on field.", "correct" : true},
+			{"text":"Start-of-selection.", "correct" : false},
+			{"text":"At Selection-Screen on radio_button_group.", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Authorization checks are carried out using the syntax:",
+		"options": [
+			{"text":"Authorization Check...", "correct" : false},
+			{"text":"Call fu􀅶􀄐tio􀅶 􀍚Authorizatio􀅶-Che􀄐k􀍛", "correct" : false},
+			{"text":"Authority-Check...", "correct" : true},
+			{"text":"Call fu􀅶􀄐tio􀅶 􀍚Authority-Che􀄐k􀍛...", "correct" : false},
+			{"text":"Perform Authority-Check...", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The keyword that allows user to enter a range of values on a selection screen:",
+		"options": [
+			{"text":"Data", "correct" : false},
+			{"text":"Ranges", "correct" : false},
+			{"text":"Parameters", "correct" : false},
+			{"text":"Select-options", "correct" : true},
+			{"text":"Statics", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following is NOT a field of a selection screen range internal table?",
+		"options": [
+			{"text":"Sign", "correct" : false},
+			{"text":"Value", "correct" : true},
+			{"text":"Low", "correct" : false},
+			{"text":"High", "correct" : false},
+			{"text":"Option", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"This selection screen syntax forces the user to input a value",
+		"options": [
+			{"text":"REQUIRED", "correct" : false},
+			{"text":"OBLIGATORY", "correct" : true},
+			{"text":"DEFAULT", "correct" : false},
+			{"text":"SUPPLY", "correct" : false},
+			{"text":"MANDATORY", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which is a PBO event",
+		"options": [
+			{"text":"LOAD-OF-PROGRAM", "correct" : false},
+			{"text":"AT-SELECTION SCREEN OUTPUT", "correct" : true},
+			{"text":"INITIALIZATION", "correct" : false},
+			{"text":"START-OF-SELECTION", "correct" : false},
+			{"text":"AT SELECTION SCREEN.", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The selection screen event at which the dynamic modification code may be placed is the:",
+		"options": [
+			{"text":"INITIALIZATION", "correct" : false},
+			{"text":"START OF SELECTION.", "correct" : false},
+			{"text":"LOAD OF PROGRAM", "correct" : false},
+			{"text":"AT SELECTION SCREEN OUTPUT.", "correct" : true},
+			{"text":"AT SELECTION SCREEN.", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The INITIALIZATION event may be used for which of the following?",
+		"options": [
+			{"text":"Declaring parameters and select-options", "correct" : false},
+			{"text":"Supplying value for a parameter field", "correct" : true},
+			{"text":"Adding a new row into the range table", "correct" : true},
+			{"text":"checking input value of a parameter field and publish error/warning message", "correct" : false},
+			{"text":"checking input value of a select-option range and publish error/warning message", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"PARAMETERS keyword may be used to define which of the following:",
+		"options": [
+			{"text":"Radio-button", "correct" : true},
+			{"text":"Field with Integer datatype", "correct" : true},
+			{"text":"Structure", "correct" : false},
+			{"text":"Checkbox", "correct" : true},
+			{"text":"Field with Float datatype", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which keyword addition enables more than one field to be modified in selection screen runtime?",
+		"options": [
+			{"text":"OBLIGATORY", "correct" : false},
+			{"text":"MODIFY GROUP ID", "correct" : false},
+			{"text":"MODIF ID", "correct" : true},
+			{"text":"CHANGE ID", "correct" : false},
+			{"text":"MEMORY ID", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The multiple selection can be disabled in a select-options variable using:",
+		"options": [
+			{"text":"NO-SELECTION", "correct" : false},
+			{"text":"NO-EXTENSION", "correct" : true},
+			{"text":"NO-INTERVALS", "correct" : false},
+			{"text":"NO-DISPLAY", "correct" : false},
+			{"text":"NO-HIGH", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"An input field in the selection screen is to be disabled at runtime. Which property given is the suitable option?",
+		"options": [
+			{"text":"INPUT = 0.", "correct" : true},
+			{"text":"INPUT = 1.", "correct" : false},
+			{"text":"OUTPUT = 0.", "correct" : false},
+			{"text":"OUTPUT = 1.", "correct" : true},
+			{"text":"INPUT = 􀍚X􀍛.", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"All selection screen elements can be displayed on the same line using",
+		"options": [
+			{"text":"Begin of Block", "correct" : false},
+			{"text":"Begin of Line", "correct" : true},
+			{"text":"Begin of Screen", "correct" : false},
+			{"text":"Begin of Sub Screen", "correct" : false},
+			{"text":"Begin of Uline.", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Field attributes of selection screens can be dynamically modified using:",
+		"options": [
+			{"text":"SCREEN internal table", "correct" : true},
+			{"text":"SCREEN Structure", "correct" : false},
+			{"text":"Variants", "correct" : true},
+			{"text":"Background Processing", "correct" : false},
+			{"text":"Initialization Event.", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Mark the statements that are true:",
+		"options": [
+			{"text":"Submit program_name. Is synchronous and a new start.", "correct" : true},
+			{"text":"Submit program_name. Is synchronous and insert.", "correct" : false},
+			{"text":"􀍚Su􀄏􀅵it􀍛 􀄐a􀅶􀅶ot 􀄏e used if the 􀄐alled progra􀅵 has a􀅶 user i􀅶terfa􀄐e", "correct" : false},
+			{"text":"􀍚Su􀄏􀅵it a􀅶d Retur􀅶..􀍛the 􀄏a􀄐k 􀄏utto􀅶 􀄏ri􀅶gs the 􀄐o􀅶trol to the 􀄐alli􀅶g progra􀅵 immediately after the call.", "correct" : true},
+			{"text":"Submit program_name. Is Asynchronous and a new start.", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Mark the statements that are true:",
+		"options": [
+			{"text":"SUBMIT pgm AND RETURN. or CALL TRANSACTION tcode. have the same effect on the ABAP Me􀅵ory 􀇁he􀅶 the 􀍚Ba􀄐k􀍛 􀄏utto􀅶 is used.", "correct" : true},
+			{"text":"SUBMIT pgm. or CALL TRANSACTION tcode. Both have the same effect on the ABAP Me􀅵ory 􀇁he􀅶 the 􀍚Ba􀄐k􀍛 􀄏utto􀅶 is used.", "correct" : false},
+			{"text":"SUBMIT pgm. or LEAVE TO TRANSACTION tcode. Both will exit the program memory sta􀄐k 􀇁he􀅶 the 􀍚Ba􀄐k􀍛 􀄏utto􀅶 is used.", "correct" : true},
+			{"text":"SUBMIT pgm. When used within an existing multilevel memory stack will delete memory allo􀄐atio􀅶 of just o􀅶e progra􀅵 if the 􀍚Ba􀄐k􀍛 􀄏utto􀅶 is pressed.", "correct" : true},
+			{"text":"SUBMIT pgm. When used within an existing multilevel memory stack will delete 􀅵e􀅵ory allo􀄐atio􀅶 of all the progra􀅵s if the 􀍚Ba􀄐k􀍛 􀄏utto􀅶 is pressed.", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Mark the statements that are true for SAP Memory Management:",
+		"options": [
+			{"text":"SAP memory is available for all internal sessions", "correct" : true},
+			{"text":"SAP Memory can accommodate only character type data", "correct" : true},
+			{"text":"SAP memory can import/export an internal table", "correct" : false},
+			{"text":"SET PARAMETER can only transfer the value of a field to the memory", "correct" : true},
+			{"text":"ABAP memory is available for all internal sessions", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The SUBMIT command may be used with which of the following program types?",
+		"options": [
+			{"text":"Include", "correct" : false},
+			{"text":"Executable", "correct" : true},
+			{"text":"Module Pool", "correct" : false},
+			{"text":"Function Group", "correct" : false},
+			{"text":"Class Pool", "correct" : false}
+		]
 	}
 ]
