@@ -812,5 +812,577 @@ var quizlist = [
 			{"text":"SELECT * may be used along with any of the aggregate functions in the statement", "correct" : false},
 			{"text":"When using the GROUP BY clause, a logical expression may be specified after the HAVING expression", "correct" : true}
 		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A company ABC Inc. with a small employee strength (less than 100) wishes to setup an IT department enabled with SAP in the shortest possible time. The most suitable SAP product is:",
+		"options": [
+			{"text":"SAP Business One", "correct" : true},
+			{"text":"SAP All-in-One", "correct" : false},
+			{"text":"SAP Business By Design", "correct" : false},
+			{"text":"SAP Business Suite", "correct" : false},
+			{"text":"SAP Netweaver", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"Enabling SAP business solutions for a manufacturing giant [like Boeing, Samsung, Ferrari etc.] interested in the SAP Business Suite enables:",
+		"options": [
+			{"text":"Components that can be adapted to meet multiple business requirements", "correct" : true},
+			{"text":"interfaces for integrating non-SAP systems of the company", "correct" : true},
+			{"text":"a very short implementation cycle (less than 4 weeks)", "correct" : false},
+			{"text":"an IT system that is mature and stable", "correct" : true},
+			{"text":"limited scalability, and limited collaboration over the Internet", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"An SAP Application running on the SAP Netweaver ABAP AS platform:",
+		"options": [
+			{"text":"can be accessed using SAP GUI for Windows", "correct" : false},
+			{"text":"can be accessed using SAP GUI for Java", "correct" : false},
+			{"text":"can be accessed using SAP GUI for HTML", "correct" : false},
+			{"text":"can be accessed using SAP GUI for Windows, SAP GUI for Java or SAP GUI for HTML", "correct" : true},
+			{"text":"can be accessed using SAP Netweaver Business Client", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"The company ABC Inc. needs a comprehensive solution to manage customers and related processes. Identify the possible SAP solution that may be used.",
+		"options": [
+			{"text":"SAP Sales and Distribution", "correct" : false},
+			{"text":"SAP Supplier Relationship Management", "correct" : false},
+			{"text":"SAP Customer Relationship Management", "correct" : true},
+			{"text":"SAP Enterprise Resource Planning", "correct" : false},
+			{"text":"SAP Supply Chain Management", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"Mark the statements that describe an SAP Component:",
+		"options": [
+			{"text":"Can be separately installed or combined with other components to provide a business solution", "correct" : true},
+			{"text":"Component is a collection of SAP Applications", "correct" : false},
+			{"text":"Components can be separately developed and delivered by SAP", "correct" : true},
+			{"text":"All SAP Applications contain the same set of components when delivered", "correct" : false},
+			{"text":"An SAP Application is a collection of Components", "correct" : true}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"The Central Services Instance for the Java AS 7.1x and higher comprises which of the following processes?",
+		"options": [
+			{"text":"Dispatcher", "correct" : false},
+			{"text":"Message Server", "correct" : true},
+			{"text":"Gateway Server", "correct" : true},
+			{"text":"Enqueue Server", "correct" : true},
+			{"text":"ICM - Internet Communication Manager", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"The company ABC Inc. wishes to integrate its employees, vendors and customers to increase its business efficiency. Choose the Netweaver components that can offer a suitable solution.",
+		"options": [
+			{"text":"Enhancement Packages", "correct" : false},
+			{"text":"Enterprise Portal", "correct" : true},
+			{"text":"Mobility", "correct" : true},
+			{"text":"Composite Applications", "correct" : false},
+			{"text":"Industry Applications", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"The user may logoff from the SAP system without saving any data entered on the screen by using:",
+		"options": [
+			{"text":"/N in the command box", "correct" : false},
+			{"text":"/I in the command box", "correct" : false},
+			{"text":"/NEND in the command box", "correct" : false},
+			{"text":"/NEX in the command box", "correct" : true},
+			{"text":"/OFF in the command box", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"For a user logging into the SAP system, mark the statements that are TRUE:",
+		"options": [
+			{"text":"A new session can be opened using /O in the command field", "correct" : false},
+			{"text":"The maximum number of sessions is 6 for the user logon", "correct" : true},
+			{"text":"SAP licensing permits a user to logon multiple times on the SAP system", "correct" : false},
+			{"text":"The user will be prompted to change password when logging in for the first time", "correct" : true},
+			{"text":"The user is not allowed to personalize the GUI", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"For a user who is logged into the SAP system, mark the statements that are TRUE:",
+		"options": [
+			{"text":"The command field is also known as the OK CODE field", "correct" : true},
+			{"text":"The command field is the only way to access transactions/applications", "correct" : false},
+			{"text":"The command field displays the value list using the F4 key", "correct" : false},
+			{"text":"The command field displays the value list using the F1 key", "correct" : false},
+			{"text":"The command field does not have an explicit F4 value help", "correct" : true}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"An SAP user is provided with a set of functions based on his role in the system. Which of the following denotes this list?",
+		"options": [
+			{"text":"Favourites Menu", "correct" : false},
+			{"text":"Favourites List", "correct" : false},
+			{"text":"SAP Menu", "correct" : false},
+			{"text":"User Menu", "correct" : true},
+			{"text":"Activity Menu", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"SAP user places the cursor on an input field of screen '100' in the application. Which of the following is available for this input field?",
+		"options": [
+			{"text":"View the documentation of the field using F1 key", "correct" : true},
+			{"text":"View the documentation of the field using F4 key", "correct" : false},
+			{"text":"View the technical-name of the field using F1 key", "correct" : true},
+			{"text":"View the Value List of the field using F4 key", "correct" : true},
+			{"text":"View the Value List of the field using F1 key", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"The company ABC Inc. While setting up the SAP ERP solution has the Netweaver ABAP AS configured with the three-tier architecture. Mark the statement/s that are TRUE for the Presentation Layer (PS):",
+		"options": [
+			{"text":"The SAP users may log-on to this system using the SAP GUI for Java if the PS is on Mac/Linux", "correct" : true},
+			{"text":"The PS can be extended horizontally to support any number of users by adding new client terminals", "correct" : true},
+			{"text":"The SAP users may log-on to this system using the SAP GUI for Java if the Application platform is Java AS", "correct" : false},
+			{"text":"The SAP users may log-on to this system using the SAP GUI for Java if theApplication Platform is ABAP AS", "correct" : true},
+			{"text":"The SAP users may log-on to this system using the SAP GUI for HTML if the Application Platform is Java AS", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"The company ABC Inc. has its SAP ERP System configured along with Netweaver AS dual stack. Mark the statement/s that are TRUE for the AS:",
+		"options": [
+			{"text":"A central instance offers services that no other instance of the system offers.", "correct" : true},
+			{"text":"Multiple instances must be hosted on the same computer", "correct" : false},
+			{"text":"Additional instances can be hosted on separate hardware.", "correct" : true},
+			{"text":"Central System is one in which both the central instance and dialog instance are installed", "correct" : false},
+			{"text":"Central System is one in which both the central instance and database are installed", "correct" : true}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"The Netweaver AS of ABC Inc. has one instance configured comprising of AS ABAP. Which of the following statements would be TRUE if ABC Inc. was to increase the no. of employees working on the SAP system?",
+		"options": [
+			{"text":"additional instances must/can be set up inorder to balance the load on the system", "correct" : true},
+			{"text":"the dispatcher takes care of the log-on load balancing when additional instances are present", "correct" : false},
+			{"text":"the SAP system would require more of Dialog Work Processes", "correct" : true},
+			{"text":"additional Enqueue work process can be configured but should be done on the same instance where the first Enqueue wp exists", "correct" : true},
+			{"text":"the Gateway takes care of the log-on load balancing when additional instances are present", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The central instance component of JAVA AS in Netweaver 7.0x and lower version is:",
+		"options": [
+			{"text":"SDM", "correct" : true},
+			{"text":"Message Service", "correct" : false},
+			{"text":"Server Processes", "correct" : false},
+			{"text":"Enqueue Service", "correct" : false},
+			{"text":"ICM", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"For an Insatance in the Netweaver AS. Mark the statements that are NOT TRUE",
+		"options": [
+			{"text":"the ICM occurs in the central instance only, either Java AS or ABAP AS", "correct" : true},
+			{"text":"the Message server communicates between multiple server instances", "correct" : false},
+			{"text":"the Dispatcher stores the user requests in the request queue and processes them in a last-in-first-out manner", "correct" : true},
+			{"text":"the shared memory of one instance is not shared with the other instances", "correct" : false},
+			{"text":"the Dispatcher stores the user requests in the request queue and processes them in a first-in-first-out manner", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"An SAP ERP system has a Netweaver platform with ABAP AS. The server has been configured with a number of work processes. Mark the statements that are TRUE.",
+		"options": [
+			{"text":"the Dialog WP processes the online requests and each instance requires a minimum of 4 Dialog work processes", "correct" : false},
+			{"text":"the Spool WP raises the spool request and transfers the data to the OS printer", "correct" : false},
+			{"text":"the Enqueue WP prevents users from simultaneously changing a record, thereby providing a lock mechanism", "correct" : true},
+			{"text":"the Update WP is the only work process that is connected with the database for performing database operations (insert, update, modify..etc)", "correct" : false},
+			{"text":"the Dialog WP raises the print request and Spool WP transfers the data to the OS printer", "correct" : true}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"In a SAP Netweaver AS having a Central Services instance, mark the statement/s that are TRUE",
+		"options": [
+			{"text":"consists of the Message Service, Enqueue Service and Gateway", "correct" : true},
+			{"text":"consists of the Message Service, Enqueue Service and Server Process", "correct" : false},
+			{"text":"consists of the Message Service, Enqueue Service and ICM", "correct" : false},
+			{"text":"Implies that the AS is a Netweaver ABAP AS", "correct" : false},
+			{"text":"Implies that the AS is a Netweaver Java AS", "correct" : true}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"In a SAP Netweaver ABAP AS. Mark the statement/s that are TRUE.",
+		"options": [
+			{"text":"the Dialog WP converts dialog(screen) data into SAP format internal data", "correct" : false},
+			{"text":"each instance should contain atleast 2 Dialog WP", "correct" : true},
+			{"text":"the Dialog WP executes programs in the background after scheduling", "correct" : false},
+			{"text":"the database changes may be performed by Dialog WP or an Update WP upon reaching the COMMIT WORK.", "correct" : true},
+			{"text":"the Dialog WP communicates between the Presentation layer and the Application Server", "correct" : true}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"Mark the true statements that define the characteristics of the database interface.",
+		"options": [
+			{"text":"Processes a database request from the ABAP Processor", "correct" : true},
+			{"text":"Processes a database request from the Screen Processor", "correct" : false},
+			{"text":"Translates Open SQL into Native SQL", "correct" : true},
+			{"text":"Translates Native SQL into Open SQL", "correct" : false},
+			{"text":"Converts Database format data into SAP format data", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The prerequisite for scaling parallel processing application servers is",
+		"options": [
+			{"text":"Dialog work process", "correct" : false},
+			{"text":"Message server", "correct" : true},
+			{"text":"Gateway server", "correct" : false},
+			{"text":"Spool work process", "correct" : false},
+			{"text":"Shared Memory", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"For a Dialog work process, mark the TRUE statements.",
+		"options": [
+			{"text":"the Dialog WP can perform DB changes through Open SQL statements.", "correct" : true},
+			{"text":"the duration of a dialog step is represented by time taken to process all the screens in the application.", "correct" : false},
+			{"text":"a single Dialog WP that can process dialog steps from different programs is called WP Multiplexing.", "correct" : true},
+			{"text":"The Dialog WP ends its execution period by implicitly triggering a DB COMMIT", "correct" : true},
+			{"text":"The Dialog WP ends its execution period by explicitly triggering a DB COMMIT", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"The dialog step forms a physical and logical unit called:",
+		"options": [
+			{"text":"SAP Transaction", "correct" : false},
+			{"text":"SAP LUW", "correct" : false},
+			{"text":"Database transaction", "correct" : true},
+			{"text":"ABAP LUW", "correct" : false},
+			{"text":"ABAP Transaction", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"Based on the SAP lock concept, mark the statements that are valid",
+		"options": [
+			{"text":"Locking application data is done at the database server level", "correct" : false},
+			{"text":"Locking application data is done at the application server level", "correct" : true},
+			{"text":"The lock is set and released by the Enqueue Work Process", "correct" : true},
+			{"text":"The lock is set and released by the Message Server", "correct" : false},
+			{"text":"Users can explicitly remove a lock set by other users", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"Which of these work processes often perform database updates?",
+		"options": [
+			{"text":"Dialog", "correct" : true},
+			{"text":"Spool", "correct" : false},
+			{"text":"V1 Updates", "correct" : true},
+			{"text":"Enqueue", "correct" : false},
+			{"text":"V2 Updates", "correct" : true}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"The database update that makes the dialog WP wait till the data is either saved or rolled back in the update WP is called:",
+		"options": [
+			{"text":"Dialog Update", "correct" : false},
+			{"text":"Synchronous Update", "correct" : true},
+			{"text":"Asynchronous Update", "correct" : false},
+			{"text":"Local Update", "correct" : false},
+			{"text":"Remote Update", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"Mark the attributes of V1 and V2 updates of the ABAP AS.",
+		"options": [
+			{"text":"V1 is the primary update and V2 is the secondary update", "correct" : true},
+			{"text":"V2 updates critical data and V1 updates non-critical data", "correct" : false},
+			{"text":"V1 updates are executed first and then the V2 updates", "correct" : true},
+			{"text":"V1 updates critical data and V2 updates non-critical data", "correct" : true},
+			{"text":"V2 updates lock data and release lock when starting V1 updates", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"Which of these statements are true for a Spool request?",
+		"options": [
+			{"text":"The Spool WP creates the spool request", "correct" : false},
+			{"text":"The Dialog WP creates the spool request", "correct" : true},
+			{"text":"The printing data of Spool requests are stored as TemSe files", "correct" : true},
+			{"text":"The fastest way to print is by connecting to the printer configured to the SAP server", "correct" : false},
+			{"text":"The fastest way to print is by connecting to the printer configured to the OS (Operating System)", "correct" : true}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"All SAP objects (Standard or Customer objects) are stored in a section of the database referred to as the:",
+		"options": [
+			{"text":"Standard Drive", "correct" : false},
+			{"text":"Main Folder", "correct" : false},
+			{"text":"Source Drive", "correct" : false},
+			{"text":"Repository", "correct" : true},
+			{"text":"Library", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"Development objects within the SAP system are organised by saving them under:",
+		"options": [
+			{"text":"Repository", "correct" : false},
+			{"text":"Database Table", "correct" : false},
+			{"text":"Package", "correct" : true},
+			{"text":"Transport Request", "correct" : false},
+			{"text":"Activity Number", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The unique ID that identifies the objects that were created by a developer working in your project team is the:",
+		"options": [
+			{"text":"Request Number", "correct" : false},
+			{"text":"Task Number", "correct" : true},
+			{"text":"Serial Number", "correct" : false},
+			{"text":"Object Number", "correct" : false},
+			{"text":"Client Number", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"Objects that may be created but not transported to the QA or PROD server can be stored under which of the given options?",
+		"options": [
+			{"text":"$TEMP", "correct" : false},
+			{"text":"$TMP", "correct" : true},
+			{"text":"TMP$", "correct" : false},
+			{"text":"TEMP$", "correct" : false},
+			{"text":"ZPACK", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"The dialog WP during the execution of a DB transaction moves data between the shared memory and its internal memory. Which of the options signify this?",
+		"options": [
+			{"text":"The WP at the beginning of the dialog step will Roll-out data to the shared memory", "correct" : false},
+			{"text":"The WP at the beginning of the dialog step will Roll-in data from the shared memory", "correct" : true},
+			{"text":"The WP at the end of the dialog step will Roll-out data to the shared memory", "correct" : true},
+			{"text":"The WP at the end of the dialog step will Roll-in data from the shared memory", "correct" : false},
+			{"text":"The WP at the end of the dialog step will Roll-out data from the internal memory", "correct" : true}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"Transport of an development object created in the repository is done using:",
+		"options": [
+			{"text":"Package", "correct" : true},
+			{"text":"Customizing Request", "correct" : false},
+			{"text":"Activity or Task", "correct" : true},
+			{"text":"Workbench Request", "correct" : true},
+			{"text":"Local Object", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"Which of the following is user specific?",
+		"options": [
+			{"text":"SAP Menu", "correct" : false},
+			{"text":"Favorite Menu", "correct" : true},
+			{"text":"Program", "correct" : false},
+			{"text":"Task", "correct" : true},
+			{"text":"Date Format", "correct" : true}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"An ABAP program with database access may be executed on different SAP systems without any errors if:",
+		"options": [
+			{"text":"Native SQL is used in the code", "correct" : false},
+			{"text":"Messages are used in the code", "correct" : false},
+			{"text":"Open SQL is used in the code", "correct" : true},
+			{"text":"Buffer Optimization is used in the code", "correct" : false},
+			{"text":"Internal tables are used in the code", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"A developer activates an object in the ABAP Workbench because:",
+		"options": [
+			{"text":"Object must always be stored in the active status in the repository", "correct" : false},
+			{"text":"Object may not be again revised or edited after activation", "correct" : false},
+			{"text":"Object may not be edited by other developers", "correct" : false},
+			{"text":"Object may be used within other development objects", "correct" : true},
+			{"text":"Object may be transported to follow-on systems", "correct" : true}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"Identify elementary data type that is incomplete",
+		"options": [
+			{"text":"Date", "correct" : false},
+			{"text":"Packed", "correct" : true},
+			{"text":"Float", "correct" : false},
+			{"text":"Integer", "correct" : false},
+			{"text":"STRING", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"Which addition is NOT applicable for the ABAP keyword TYPES?",
+		"options": [
+			{"text":"DECIMALS", "correct" : false},
+			{"text":"LENGTH", "correct" : false},
+			{"text":"DEFAULT", "correct" : true},
+			{"text":"VALUE", "correct" : true},
+			{"text":"TYPE", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"The default data type in ABAP is",
+		"options": [
+			{"text":"Numeric Text", "correct" : false},
+			{"text":"Character", "correct" : true},
+			{"text":"String", "correct" : false},
+			{"text":"Integer", "correct" : false},
+			{"text":"Date", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"What is the default length of the packed data type (P) if the length specification is missing?",
+		"options": [
+			{"text":"2", "correct" : false},
+			{"text":"4", "correct" : false},
+			{"text":"6", "correct" : false},
+			{"text":"8", "correct" : true},
+			{"text":"22", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"A data object defined in the program contains a value that must stay the same during runtime. What are the characteristics of this data object?",
+		"options": [
+			{"text":"The data object has been declared using STATICS keyword", "correct" : false},
+			{"text":"The data object has been declared using the CONSTANTS keyword", "correct" : true},
+			{"text":"The data object if assigned a new value will cause a run-time error", "correct" : false},
+			{"text":"The data object if assigned a new value will cause a syntax error", "correct" : true},
+			{"text":"The data object has been declared using the DATA keyword", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"MOVE A1 to A2. What will the MOVE statement do if variable A1 (is type P decimals 2) and A2 (is type I) contain values 111.57 and 100 respectively:",
+		"options": [
+			{"text":"Will transfer the contents of A1 into A2", "correct" : false},
+			{"text":"Will copy the contents of A1 into A2", "correct" : true},
+			{"text":"Will cause a syntax error because the data types of A1 and A2 do not match", "correct" : false},
+			{"text":"Will convert the contents of A1 as per the data type of A2", "correct" : true},
+			{"text":"Will cause a runtime error because the data types of A1 and A2 do not match", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"The system field that provides the loop count for the WHILE...ENDWHILE statement is:",
+		"options": [
+			{"text":"SY-TABIX", "correct" : false},
+			{"text":"SY-COUNT", "correct" : false},
+			{"text":"SY-INDEX", "correct" : true},
+			{"text":"SY-DBCNT", "correct" : false},
+			{"text":"SY-SUBRC", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"Which message type in an ABAP program creates a short dump?",
+		"options": [
+			{"text":"Type - A", "correct" : false},
+			{"text":"Type - E", "correct" : false},
+			{"text":"Type - X", "correct" : true},
+			{"text":"Type - W", "correct" : false},
+			{"text":"Type – I", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"Which message type in an ABAP program creates a pop-up dialog?",
+		"options": [
+			{"text":"Type - S", "correct" : false},
+			{"text":"Type - I", "correct" : true},
+			{"text":"Type - E", "correct" : false},
+			{"text":"Type - W", "correct" : false},
+			{"text":"Type – A", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"Message types can have up to ______ place holders in the WITH addition.",
+		"options": [
+			{"text":"2", "correct" : false},
+			{"text":"4", "correct" : true},
+			{"text":"6", "correct" : false},
+			{"text":"8", "correct" : false},
+			{"text":"10", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"The ABAP runtime system writes a return code of a statement into",
+		"options": [
+			{"text":"SY-LSIND", "correct" : false},
+			{"text":"SY-DBCNT", "correct" : false},
+			{"text":"SY-SUBRC", "correct" : true},
+			{"text":"SY-TCODE", "correct" : false},
+			{"text":"SY-CPROG", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"The developer calls a transaction which displays the initial screen, and the developer wants to debug the application. How can the debugger be started?",
+		"options": [
+			{"text":"Choose from the menu bar: System->Program->Debugging", "correct" : false},
+			{"text":"Go to program source code and set break-point", "correct" : false},
+			{"text":"In the command box type /I and then enter", "correct" : false},
+			{"text":"In the command box type /H and then enter", "correct" : true},
+			{"text":"In the command box type /DBUG and then enter", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"Which of the following are incomplete types?",
+		"options": [
+			{"text":"C", "correct" : true},
+			{"text":"N", "correct" : true},
+			{"text":"P", "correct" : true},
+			{"text":"XString", "correct" : false},
+			{"text":"String", "correct" : false}
+		]
+	},	
+	{	
+		"section": "ABAP",
+		"question":"What are the ways to issues a rollback within a LUW?",
+		"options": [
+			{"text":"Message Type X", "correct" : false},
+			{"text":"Message Type A", "correct" : true},
+			{"text":"Message Type W", "correct" : false},
+			{"text":"Message Type I", "correct" : false},
+			{"text":"Rollback Work", "correct" : true}
+		]
 	}
 ]
