@@ -2152,7 +2152,8 @@ var quizlist = [
 			{"text":"VB* tables", "correct" : true},
 			{"text":"UP* tables", "correct" : false},
 			{"text":"UD* tables", "correct" : false}
-
+		]
+	},
 	{
 		"section": "ABAP",
 		"question":"A classic report ZABC_REP is required to be scheduled for background processing. What characteristics should the program have so that it qualifies for background processing?",
