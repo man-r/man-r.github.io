@@ -98,19 +98,7 @@ $(document).ready(function () {
 	        		}
 	    		}
 	    		
-	    		i = 0;
-		 		j = 0;
-		 		x = document.getElementsByClassName('option');
-		 		for (i = 0; i < x.length; i++) {
-		 			j = 0;
-	        		for (j = 0; j < correctAns.length; j++) {
-	        			if (correctAns[j] == x[i].innerHTML) {
-	        				x[i].className ="correctoption";
-	        			}
-	        		}
-	    		}
 	    		
-
 	    		if (correctAnswer == correctAns.length) {
 	    			document.getElementById(htmlstage).appendChild(correct);
 	    			score++;
@@ -118,6 +106,17 @@ $(document).ready(function () {
 	    		}
 	    		else {
 	    			document.getElementById(htmlstage).appendChild(wrong);
+	    			i = 0;
+			 		j = 0;
+			 		x = document.getElementsByClassName('option');
+		 			for (i = 0; i < x.length; i++) {
+			 			j = 0;
+		        		for (j = 0; j < correctAns.length; j++) {
+		        			if (correctAns[j] == x[i].innerHTML) {
+		        				x[i].className ="correctoption";
+		        			}
+		        		}
+		    		}
 					setTimeout(function(){changeQuestion()},2000);
 	    		}
 	    		
