@@ -1933,5 +1933,27 @@ var quizlist = [
 			{"text":"Function Group", "correct" : false},
 			{"text":"Class Pool", "correct" : false}
 		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The generated version of an ABAP program in the database is called:",
+		"option": [
+			{"text":"PACKAGE", "correct" : false},
+			{"text":"BUNDLE", "correct" : false},
+			{"text":"LOAD", "correct" : true},
+			{"text":"INCLUDE", "correct" : false},
+			{"text":"TRANSPORT ", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Under which situations does the system generate the LOAD of a program automatically?",
+		"option": [
+			{"text":"When the program is saved in the repository", "correct" : false},
+			{"text":"When the program is called and no load exists yet", "correct" : true},
+			{"text":"When an object that the program uses is changed in the ABAP Dictionary and later activated in the Dictionary", "correct" : true},
+			{"text":"When using the menu path Program-Generate", "correct" : false},
+			{"text":"When the program is imported into the target system after a transport ", "correct" : false}
+		]
 	}
 ]
