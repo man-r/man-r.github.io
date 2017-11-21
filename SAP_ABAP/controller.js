@@ -75,7 +75,7 @@ $(document).ready(function () {
 		}
 
 		function optionClicked(event) {
-			console.log(event.target.className);
+			
 			if (event.target.className == 'option') {
 				event.target.className = 'selectedoption'
 			} else {
@@ -92,15 +92,13 @@ $(document).ready(function () {
 		 		for (i = 0; i < x.length; i++) {
 		 			j = 0;
 	        		for (j = 0; j < correctAns.length; j++) {
-	        			console.log('correctAns[j]' + correctAns[j]);
-	        			console.log('innerHTML' + x[i].innerHTML);
 	        			if (correctAns[j] == x[i].innerHTML) {
+	        				//x[i].className ="questionText";
 	        				correctAnswer++;
 	        			}
 	        		}
 	    		}
-	    		console.log(correctAnswer);
-	    		console.log(correctAns.length);
+	    		
 	    		if (correctAnswer == correctAns.length) {
 	    			document.getElementById(htmlstage).appendChild(correct);
 	    			score++;
