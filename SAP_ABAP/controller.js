@@ -93,7 +93,6 @@ $(document).ready(function () {
 		 			j = 0;
 	        		for (j = 0; j < correctAns.length; j++) {
 	        			if (correctAns[j] == x[i].innerHTML) {
-	        				x[i].className ="correctoption";
 	        				correctAnswer++;
 	        			}
 	        		}
