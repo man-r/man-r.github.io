@@ -1955,5 +1955,224 @@ var quizlist = [
 			{"text":"When using the menu path Program-Generate", "correct" : false},
 			{"text":"When the program is imported into the target system after a transport ", "correct" : false}
 		]
+	},
+		{
+		"section": "ABAP",
+		"question":"The functionality offered within an application depends on the design of the GUI of the application. Which of these are TRUE?",
+		"option": [
+			{"text":"The “Print” function is part of the standard tool bar", "correct" : true},
+			{"text":"The “Activate” function is part of the standard tool ba", "correct" : false},
+			{"text":"System and Help functions are available for all SAP screens", "correct" : true},
+			{"text":"The application/program description is displayed in the first row of the GUI, abovethe menu bar", "correct" : false},
+			{"text":"Messages informing the user about the control of the program is published in thestatus bar", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"When declaring or using an internal table within a program, the characteristics that are TRUE for the internal tables are?",
+		"option": [
+			{"text":"A Sorted or Standard internal table declared can store duplicate entries", "correct" : true},
+			{"text":"A sorted or standard internal table are indexed tables", "correct" : true},
+			{"text":"A hashed internal table cannot be sorted using the SORT command", "correct" : false},
+			{"text":"A standard table may apply a faster search using READ TABLE...BINARY SEARCH", "correct" : true},
+			{"text":"A standard table must have at least one UNIQUE KEY field defined in the declaration", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"An ‘Application table’ created in ABAP Dictionary stores which of the following form of data in the database?",
+		"option": [
+			{"text":"Transparent data", "correct" : false},
+			{"text":"Transaction data", "correct" : true},
+			{"text":"Master data", "correct" : true},
+			{"text":"Customizing data", "correct" : false},
+			{"text":"System data", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"DATA: lt_scarr TYPE HASHED TABLE OF SCARR. For the given declaration of the internal table, select the most suitable statement to read one record form the table:",
+		"option": [
+			{"text":"READ TABELE lt_scarr INTO ls_scarr INDEX N.", "correct" : false},
+			{"text":"READ TABELE lt_scarr INTO ls_scarr INDEX SY-TABIX.", "correct" : false},
+			{"text":"READ TABELE lt_scarr INTO ls_scarr WITH KEY F1 = V1 F2 = V2.", "correct" : false},
+			{"text":"READ TABELE lt_scarr INTO ls_scarr WITH TABLE KEY F1 = V1 F2 = V2.", "correct" : true},
+			{"text":"READ TABELE lt_scarr INTO ls_scarr WITH KEY F1 = V1 F2 = V2 BINARY SEARCH", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"When creating a data element in the ABAP Dictionary, the data type may be mentioned via which of the following?",
+		"option": [
+			{"text":"Using a Domain", "correct" : true},
+			{"text":"Using a Structure Type", "correct" : false},
+			{"text":"Using a Predefined type", "correct" : true},
+			{"text":"Using a Reference Type", "correct" : true},
+			{"text":"Using a Table Type", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Select the objects for which multi language support is available during program output.",
+		"option": [
+			{"text":"Program Name", "correct" : false},
+			{"text":"Text-symbols", "correct" : true},
+			{"text":"Field Name", "correct" : false},
+			{"text":"Field Label", "correct" : true},
+			{"text":"Field Documentation", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"DATA: lt_spfli TYPE SORTED TABLE OF SPFLI. Which of the following commands is NOT supported for the declaration provided?",
+		"option": [
+			{"text":"READ TABLE lt_spfli INTO ls_spfli WITH TABLE KEY...", "correct" : false},
+			{"text":"INSERT TABLE lt_spfli FROM ls_spfli INDEX N.", "correct" : true},
+			{"text":"LOOP AT lt_spfli FROM 5 TO 50.... ENDLOOP. Where 5 and 50 are index positions", "correct" : false},
+			{"text":"SORT lt_spfli BY f1 ASCENDING f2 DESCENDING.", "correct" : true},
+			{"text":"MODIFY TABLE lt_spfli FROM ls_spfli.", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The F1 documentation required for an input parameter on the selection screen can be derived from which of the following?",
+		"option": [
+			{"text":"Table field", "correct" : false},
+			{"text":"Domain", "correct" : false},
+			{"text":"Structure fields", "correct" : false},
+			{"text":"Data Element", "correct" : true},
+			{"text":"Type Group", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following may not be used in the declaration of a program with the DATA keyword?",
+		"option": [
+			{"text":"Data Element", "correct" : false},
+			{"text":"Domain", "correct" : true},
+			{"text":"Table", "correct" : false},
+			{"text":"Structure", "correct" : false},
+			{"text":"Type Group", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A structure that has been defined in the ABAP dictionary may be reused within a number of transparent tables with the addition:",
+		"option": [
+			{"text":".INSERT structure_name", "correct" : false},
+			{"text":".INCLUDE structure_name", "correct" : true},
+			{"text":".ADD structure_name", "correct" : false},
+			{"text":".APPEND structure_name", "correct" : false},
+			{"text":".EXTEND structure_name", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Select the characteristics that are TRUE when creating a domain in the ABAP dictionary.",
+		"option": [
+			{"text":"Provide the length for a field", "correct" : true},
+			{"text":"Provide the short description for a field", "correct" : false},
+			{"text":"Provide the documentation for a field", "correct" : false},
+			{"text":"Provide a possible set of values for a field", "correct" : true},
+			{"text":"Provide an internal routine for formatting data in the field", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A transparent table when activated does the which of following:",
+		"option": [
+			{"text":"Creates a definition of the table in the repository", "correct" : true},
+			{"text":"Creates a non-unique index in the database", "correct" : false},
+			{"text":"Creates a unique index in the database", "correct" : true},
+			{"text":"Creates a physical table in the database", "correct" : true},
+			{"text":"Creates a table buffer in the shared memory", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"While using SAP memory concept in a program, the Parameter ID is required for an SAP defined input field on screen. Which of the following ways would you suggest to identify the Parameter ID?",
+		"option": [
+			{"text":"Place the cursor on the input field and press F4 key", "correct" : false},
+			{"text":"Place the cursor on the input field and press F1 key", "correct" : false},
+			{"text":"Place the cursor on the input field and press F1 key and then Technical Information button", "correct" : true},
+			{"text":"Place the cursor on the input field and press F4 key and then the Technical Information button", "correct" : false},
+			{"text":"Place the cursor on the input field and press F8 key", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"How many windows (session) can a user open in an SAP system?",
+		"option": [
+			{"text":"4", "correct" : false},
+			{"text":"6", "correct" : true},
+			{"text":"8", "correct" : false},
+			{"text":"9", "correct" : false},
+			{"text":"10", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following is NOT a principal characteristic of a TRANSACTION in ABAP?",
+		"option": [
+			{"text":"Atomic", "correct" : false},
+			{"text":"Durable", "correct" : false},
+			{"text":"Isolated", "correct" : false},
+			{"text":"Consistent", "correct" : false},
+			{"text":"Temporary", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The lock mode for a transaction where the data may be edited only once even by the same transaction is referred to as:",
+		"option": [
+			{"text":"Write locks, Cumulative", "correct" : false},
+			{"text":"Read locks, Shared", "correct" : false},
+			{"text":"Write locks, Sequential", "correct" : false},
+			{"text":"Write locks, non-Cumulative", "correct" : true},
+			{"text":"Optimistic locks", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A lock that is currently set by an application by another user may be removed by which of the following ways?",
+		"option": [
+			{"text":"Closing the application in the current user session will release the lock", "correct" : false},
+			{"text":"Closing the user session of the lock owner will release the lock", "correct" : true},
+			{"text":"Writing a program to explicitly delete the lock from the lock table", "correct" : false},
+			{"text":"Creating a function module DEQUEUE to release the lock entry", "correct" : false},
+			{"text":"Manually deleting the lock entry from the lock table if the lock owner is no longer logged in", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The database update tables used to store calls to update function modules are called as:",
+		"option": [
+			{"text":"VX* tables", "correct" : false},
+			{"text":"VD* tables", "correct" : false},
+			{"text":"VB* tables", "correct" : true},
+			{"text":"UP* tables", "correct" : false},
+			{"text":"UD* tables", "correct" : false}
+
+	{
+		"section": "ABAP",
+		"question":"A classic report ZABC_REP is required to be scheduled for background processing. What characteristics should the program have so that it qualifies for background processing?",
+		"option": [
+			{"text":"The program has a selection screen which requires user input every time the program is executed", "correct" : false},
+			{"text":"The program has a selection screen which contains variants that are usually used during execution", "correct" : true},
+			{"text":"The program at run time calls additional screens that further require input from the user", "correct" : false},
+			{"text":"The program usually takes a long time to execute and is preferably executed during off-peak times", "correct" : true},
+			{"text":"The program needs to be executed on a periodic basis like daily, weekly, monthly etc.", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The processing of user requests may be sped up or be made faster by storing data in an instance. This may be achieved by using which of the following techniques?",
+		"option": [
+			{"text":"Work process multiplexing", "correct" : false},
+			{"text":"Indexes", "correct" : false},
+			{"text":"Buffering", "correct" : true},
+			{"text":"Memory Optimization", "correct" : false},
+			{"text":"Data substitution", "correct" : false}
+		]
 	}
 ]
