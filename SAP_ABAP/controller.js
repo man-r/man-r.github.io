@@ -93,20 +93,33 @@ $(document).ready(function () {
 		 			j = 0;
 	        		for (j = 0; j < correctAns.length; j++) {
 	        			if (correctAns[j] == x[i].innerHTML) {
-	        				//x[i].className ="questionText";
+	        				x[i].className ="correctoption";
 	        				correctAnswer++;
 	        			}
 	        		}
 	    		}
 	    		
+	    		i = 0;
+		 		j = 0;
+		 		x = document.getElementsByClassName('option');
+		 		for (i = 0; i < x.length; i++) {
+		 			j = 0;
+	        		for (j = 0; j < correctAns.length; j++) {
+	        			if (correctAns[j] == x[i].innerHTML) {
+	        				x[i].className ="correctoption";
+	        			}
+	        		}
+	    		}
+	    		
+
 	    		if (correctAnswer == correctAns.length) {
 	    			document.getElementById(htmlstage).appendChild(correct);
 	    			score++;
-				setTimeout(function(){changeQuestion()},1000);
+					setTimeout(function(){changeQuestion()},1000);
 	    		}
 	    		else {
 	    			document.getElementById(htmlstage).appendChild(wrong);
-				setTimeout(function(){changeQuestion()},2000);
+					setTimeout(function(){changeQuestion()},2000);
 	    		}
 	    		
 		 	}
