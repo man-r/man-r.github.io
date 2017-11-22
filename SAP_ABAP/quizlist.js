@@ -2175,5 +2175,225 @@ var quizlist = [
 			{"text":"Memory Optimization", "correct" : false},
 			{"text":"Data substitution", "correct" : false}
 		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A developer creates a table ZTAB_00 in the ABAP Dictionary and provides ‘A’ as a value for the delivery class. What does the delivery class signify?",
+		"options": [
+			{"text":"The table is transported with its definition and data from DEV to PROD system", "correct" : false},
+			{"text":"The table is transported with its definition from DEV to PROD system", "correct" : true},
+			{"text":"The table is classified as managing business or application data", "correct" : true},
+			{"text":"The table is classified as managing customizing or configuration data", "correct" : false},
+			{"text":"The table is a client dependant table having the MANDT fields as the first key field", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A dialog screen contains an input field P_CNTRY to accept a value for country. The field was declared using a table field TAB1-CNTRY having a foreign key link with master table ZCNTRY. The field P_CNTRY is termed as which of the following?",
+		"options": [
+			{"text":"Value table field", "correct" : false},
+			{"text":"Check table field", "correct" : false},
+			{"text":"Check Field", "correct" : true},
+			{"text":"Foreign key field", "correct" : false},
+			{"text":"Primary key field", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following are database objects that may be created in the ABAP Dictionary?",
+		"options": [
+			{"text":"Internal Table", "correct" : false},
+			{"text":"Table Type", "correct" : false},
+			{"text":"Transparent Table", "correct" : true},
+			{"text":"View", "correct" : true},
+			{"text":"Index", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"An SAP database table SAPTAB1 has been enhanced with additional fields using an APPEND structure ZTAB1_APP. Mark the statement that is TRUE when the table SAPTAB1 is migrated into a newer version of SAP.",
+		"options": [
+			{"text":"When SAPTAB1 is activated, ZTAB1_APP is deleted by the system and must be created again in the new version", "correct" : false},
+			{"text":"When SAPTAB1 is activated, ZTAB1_APP must then be activated in order to use the append structure in the new version", "correct" : false},
+			{"text":"When SAPTAB1 is activated, ZTAB1_APP is converted into an include structure in the new version", "correct" : false},
+			{"text":"When SAPTAB1 is activated, ZTAB1_APP components become fields within the table in the new version", "correct" : true},
+			{"text":"When SAPTAB1 is activated, ZTAB1_APP components generates an activation error", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"DATA: IT_SCARR TYPE STANDARD TABLE OF SCARR WITH HEADER LINE. While coding the logic for the program you wish to remove all the records buffered within the internal table IT_SCARR. Which of the following options will work?",
+		"options": [
+			{"text":"CLEAR IT_SCARR. Will initialize the body of the internal table", "correct" : false},
+			{"text":"CLEAR IT_SCARR[]. Will initialize the body of the internal table", "correct" : true},
+			{"text":"DELETE TABLE IT_SCARR. Will initialize the body of the internal table", "correct" : false},
+			{"text":"REFRESH IT_SCARR. Will initialize the body of the internal table", "correct" : true},
+			{"text":"DELETE IT_SCARR. Will initialize the body of the internal table.", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following is NOT a data type defined in the ABAP Dictionary?",
+		"options": [
+			{"text":"Domain", "correct" : true},
+			{"text":"Data Element", "correct" : false},
+			{"text":"Table Type", "correct" : false},
+			{"text":"Type Group", "correct" : false},
+			{"text":"Structure", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"An internal table declared with the standard key implies which of the following?",
+		"options": [
+			{"text":"The standard key is formed by the first column of the internal table", "correct" : false},
+			{"text":"The standard key is formed by the character-type columns till the first encountered numeric column", "correct" : true},
+			{"text":"The standard key using elementary line-type is the entire line itself", "correct" : false},
+			{"text":"The standard key is formed by all the character-type columns in the internal table", "correct" : false},
+			{"text":"The standard key is formed by all the numeric-type columns in the internal table", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following may NOT be used as a line type for an internal table?",
+		"options": [
+			{"text":"Nested Structure", "correct" : false},
+			{"text":"Data Element", "correct" : false},
+			{"text":"Internal Table", "correct" : false},
+			{"text":"Elementary Type", "correct" : false},
+			{"text":"Domain", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The system field that holds the row number of a modified record in the standard or sorted internal table is:",
+		"options": [
+			{"text":"SY-INDEX", "correct" : false},
+			{"text":"SY-TABIX", "correct" : true},
+			{"text":"SY-DBCNT", "correct" : false},
+			{"text":"SY-RWNO", "correct" : false},
+			{"text":"SY-SUBRC", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The database table ZTAB_ORDER is using a field to store the amount of cash paid against an order. Which of the statements given below is a necessity when designing the table?",
+		"options": [
+			{"text":"The amount field must reference a field of data type CURR", "correct" : false},
+			{"text":"The amount field must reference a field of data type CUKY", "correct" : true},
+			{"text":"The amount field must reference a field of data type DEC", "correct" : false},
+			{"text":"The amount field must reference a field of data type NUMC", "correct" : false},
+			{"text":"The amount field must reference a field of data type CHAR", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"What is NOT true about a structure being used within a transparent table?",
+		"options": [
+			{"text":"A flat structure can be included within a transparent table", "correct" : false},
+			{"text":"A transparent table can be included within a flat structure", "correct" : false},
+			{"text":"A deep structure may be included within a transparent table.", "correct" : true},
+			{"text":"A structure component can be marked as a key when included in a transparent table", "correct" : true},
+			{"text":"A structure component can have a foreign key relationship with a field of a transparent table", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The attribute size category for a transparent table implies:",
+		"options": [
+			{"text":"The memory size in bytes allocated for the table", "correct" : false},
+			{"text":"The memory size in rows allocated for the table", "correct" : true},
+			{"text":"The table space specification for the table", "correct" : false},
+			{"text":"The table category specification namely master, transaction, or organization table", "correct" : false},
+			{"text":"The memory size in bytes allocated for the buffer", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The physical area in the database where the table is created is addressed as the:",
+		"options": [
+			{"text":"Delivery Class", "correct" : false},
+			{"text":"Data Class", "correct" : true},
+			{"text":"Size Category", "correct" : false},
+			{"text":"Global Class", "correct" : false},
+			{"text":"Memory Class", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"What is NOT TRUE for an index of a transparent table?",
+		"options": [
+			{"text":"Exactly one secondary index is created when the table is activated.", "correct" : true},
+			{"text":"The database interface identifies a suitable index to be used for a select query", "correct" : true},
+			{"text":"Data in an index will be sorted every time the database table is updated", "correct" : false},
+			{"text":"INSERT db_table. The insert command checks the primary index to validate if the inserted record already exists in the table.", "correct" : false},
+			{"text":"The CLIENT field must be used within a secondary if the table is an application table.", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The left-justified part of keys defined within a database table is referred to as the:",
+		"options": [
+			{"text":"Primary key", "correct" : false},
+			{"text":"Combination key", "correct" : false},
+			{"text":"Foreign key", "correct" : false},
+			{"text":"Generic key", "correct" : true},
+			{"text":"Initial key", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A structural change performed on a transparent table containing records will have to be run through a conversion process to overcome the ‘ALTER TABLE’ error. This is performed via the:",
+		"options": [
+			{"text":"Data Browser", "correct" : false},
+			{"text":"Table Maintenance Generator", "correct" : false},
+			{"text":"Database Utility", "correct" : true},
+			{"text":"Database Object Display", "correct" : false},
+			{"text":"ABAP Dictionary", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A Transparent table defined in the ABAP Dictionary get created physically in the database when:",
+		"options": [
+			{"text":"the table name is provided in the initial screen and the user clicks on the CREATE button", "correct" : false},
+			{"text":"the table fields are provided and the user clicks on the SAVE button", "correct" : false},
+			{"text":"the table technical settings are maintained and the user saves it", "correct" : false},
+			{"text":"the table definition is checked for any syntax errors and if the check was a success", "correct" : false},
+			{"text":"the table definition is maintained and the user activates it", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"While creating a transparent table in the ABAP Dictionary which of the following may be used to provide the characteristics of a field in the table?",
+		"options": [
+			{"text":"The table field can refer a Domain for its characteristics", "correct" : false},
+			{"text":"The table field can refer a Data Element for its characteristics", "correct" : false},
+			{"text":"The table field can refer a Predefined Type for its characteristics", "correct" : false},
+			{"text":"The table field can refer a Structure for its characteristics", "correct" : false},
+			{"text":"The table field can refer a Table Type for its characteristics", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following are characteristics that define a TYPE GROUP in the ABAP Dictionary?",
+		"options": [
+			{"text":"Contains data objects declared with predefined values using the DATA keyword", "correct" : false},
+			{"text":"Contains data objects declared with predefined values using the CONSTANTS keyword", "correct" : true},
+			{"text":"Contains definitions maintained using the naming convention typegroupname_", "correct" : true},
+			{"text":"Contains list of all elementary datatypes used in the ABAP Dictionary", "correct" : false},
+			{"text":"Contains data definitions maintained using TYPES keyword", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Application data when being locked by a transaction may be viewed by several users at the same time if:",
+		"options": [
+			{"text":"the lock mode is set as Write Lock", "correct" : false},
+			{"text":"the lock mode is set as Write Lock Enhanced", "correct" : false},
+			{"text":"the lock mode is set as Shared Lock", "correct" : true},
+			{"text":"the lock mode is set as Optimistic Lock", "correct" : false},
+			{"text":"the lock mode is set as Priority Lock", "correct" : false}
+		]
 	}
 ]
