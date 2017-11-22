@@ -2395,5 +2395,225 @@ var quizlist = [
 			{"text":"the lock mode is set as Optimistic Lock", "correct" : false},
 			{"text":"the lock mode is set as Priority Lock", "correct" : false}
 		]
+	},
+		{
+		"section": "ABAP",
+		"question":"An SAP system comprises two application servers AS1 and AS2. What is/are TRUE for the buffers available on AS1 and AS2?",
+		"options": [
+			{"text":"AS1 if changes data in the table, AS2 immediately modifies its buffer", "correct" : false},
+			{"text":"AS1 if changes data in the table, it then triggers a synchronization program to update the AS2 buffer", "correct" : false},
+			{"text":"AS1 if changes data in the table, AS2 might be accessing obsolete data", "correct" : true},
+			{"text":"AS1 if changes data in the table, AS2 during synchronization invalidates its buffer", "correct" : true},
+			{"text":"AS1 if changes data in the table, AS2 waits until its buffer is synchronized", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"To design a foreign key link between two tables, which condition must be established first?",
+		"options": [
+			{"text":"The common fields must have the same elementary type", "correct" : false},
+			{"text":"The common fields must have the same name", "correct" : false},
+			{"text":"The common fields must have the same domain", "correct" : true},
+			{"text":"The common fields must have the same data element", "correct" : false},
+			{"text":"The common fields must have the same key property", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"You adjust a customer table ZABC_TAB for a structural change using the Database Utility but the process goes into a short dump. What could be the reason for this error?",
+		"options": [
+			{"text":"You added more fields to the table therefore caused the short dump", "correct" : false},
+			{"text":"You removed existing fields from the table leading to the short dump", "correct" : false},
+			{"text":"You reduced the length of the field therefore caused the short dump", "correct" : false},
+			{"text":"You altered the datatype of the field therefore causing the short dump", "correct" : true},
+			{"text":"Your database does not sufficient memory to carry out the adjustment", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A user when makes changes to the application or customizing data, the information is logged for future reference. Which of these statements are TRUE for change logs?",
+		"options": [
+			{"text":"Requires a system profile parameter to be activated", "correct" : true},
+			{"text":"The data will have to be modified using the ABAP Dictionary", "correct" : false},
+			{"text":"Log changes must be activated in the technical settings", "correct" : true},
+			{"text":"When SAPTAB1 is activated, ZTAB1_APP components become fields within the table in the new version", "correct" : false},
+			{"text":"When SAPTAB1 is activated, ZTAB1_APP components generates an activation error", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following definitions in the ABAP Dictionary may be considered as ‘Deep’?",
+		"options": [
+			{"text":"If any component of a structure uses a data element", "correct" : false},
+			{"text":"If any component of a structure uses a table type", "correct" : true},
+			{"text":"If any component of a structure uses a structure", "correct" : false},
+			{"text":"If any component of a structure uses type STRING", "correct" : true},
+			{"text":"If any component of a structure uses type Hexadecimal", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following is NOT an option when creating a Data Element in the ABAP Dictionary?",
+		"options": [
+			{"text":"Attach a search help", "correct" : false},
+			{"text":"Assign a parameter ID", "correct" : false},
+			{"text":"Create Documentation", "correct" : false},
+			{"text":"Assign a Foreign Key", "correct" : true},
+			{"text":"Maintain Translation", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A structure ZADDR is defined in the ABAP Dictionary by a developer in your team. You MAY NOT use this structure in which of the following?",
+		"options": [
+			{"text":"used in the program using DATA keyword", "correct" : false},
+			{"text":"used in the program using PARAMETERS keyword", "correct" : true},
+			{"text":"used in the SCREEN Painter of a module pool", "correct" : false},
+			{"text":"used in the Function Builder as an interface parameter type", "correct" : false},
+			{"text":"used in the Structure component of another structure", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"When designing a search help in the ABAP Dictionary which of the following is assigned to a search help parameter?",
+		"options": [
+			{"text":"Domain", "correct" : false},
+			{"text":"Elementary Type", "correct" : false},
+			{"text":"Predefined Type", "correct" : false},
+			{"text":"Data Element", "correct" : true},
+			{"text":"Transparent Table", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The parameter that returns value from the search help to the screen is the:",
+		"options": [
+			{"text":"TABLES parameter", "correct" : false},
+			{"text":"IMPORT parameter", "correct" : false},
+			{"text":"EXPORT parameter", "correct" : true},
+			{"text":"CHANGING parameter", "correct" : false},
+			{"text":"SELECTION parameter", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A structure may be defined in a number of ways in the dictionary. Select the statement that is NOT TRUE.",
+		"options": [
+			{"text":"The structure referencing a data element", "correct" : false},
+			{"text":"The structure referencing another structure", "correct" : false},
+			{"text":"The structure referencing STRING data type", "correct" : false},
+			{"text":"The structure referencing a TYPE GROUP definition", "correct" : true},
+			{"text":"The structure referencing a VIEW definition", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of these options are NOT database objects?",
+		"options": [
+			{"text":"Structure", "correct" : true},
+			{"text":"Transparent Table", "correct" : false},
+			{"text":"Views", "correct" : false},
+			{"text":"Standard Table", "correct" : true},
+			{"text":"Search Help", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following is NOT true for an append structure in the ABAP Dictionary?",
+		"options": [
+			{"text":"Is used to centrally define fields for a number of transparent tables", "correct" : true},
+			{"text":"Is maintained at the end of the table fields", "correct" : false},
+			{"text":"Uses ZZ or YY as a prefix to the field names", "correct" : false},
+			{"text":"Is used to enhance SAP standard tables with character type, numeric type or deep definition", "correct" : true},
+			{"text":"Is used to enhance SAP standard structure with character type, numeric type or deep definition", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The definition that may contain only one table in is design is the:",
+		"options": [
+			{"text":"Maintenance View", "correct" : true},
+			{"text":"Help View", "correct" : true},
+			{"text":"Projection View", "correct" : false},
+			{"text":"Database View", "correct" : false},
+			{"text":"Index View", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"You are asked to explain the use of views within a program to your team members. Which one the following is/are the characteristics of Views?",
+		"options": [
+			{"text":"A view is created in the database consisting of data from multiple tables", "correct" : false},
+			{"text":"A view can contain fields filtered for specific use from one or more tables", "correct" : true},
+			{"text":"A view is created using a minimum of two tables", "correct" : false},
+			{"text":"A view may be buffered in the shared memory to improve access time", "correct" : true},
+			{"text":"A view may be for read, change, insert or delete activity", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The Outer join is used by which of the following list of views?",
+		"options": [
+			{"text":"Maintenance View", "correct" : true},
+			{"text":"Help View", "correct" : true},
+			{"text":"Projection View", "correct" : false},
+			{"text":"Database View", "correct" : false},
+			{"text":"Index View", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"While designing a search help, you are required to design the hit list showing fields from tables ZTABA, ZTABB and ZTABE. The most suitable selection method will be the:",
+		"options": [
+			{"text":"Maintenance View", "correct" : false},
+			{"text":"Help View", "correct" : true},
+			{"text":"Projection View", "correct" : false},
+			{"text":"Database View", "correct" : false},
+			{"text":"Table ZTABC", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A program ZABC_01 calls another program ZABC_02 during its run time using the syntax: SUBMIT program_name AND RETURN. Which of the following options describes this technique?",
+		"options": [
+			{"text":"The program call is Synchronous and an Insert", "correct" : true},
+			{"text":"The program call is Asynchronous and an Insert", "correct" : false},
+			{"text":"The program call is Synchronous and a New Start", "correct" : false},
+			{"text":"Within the external session, program ZABC_01 replaces its internal session with the internal session of program ZABC_02.", "correct" : false},
+			{"text":"Within the external session, program ZABC_01 generates an additional internal session for program ZABC_02 when the call is made.", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of these calling commands when used will pass the control to the called program and also come back to the calling program if the user presses the BACK button?",
+		"options": [
+			{"text":"CALL TRANSACTION tcode AND RETURN.", "correct" : false},
+			{"text":"CALL TRANSACTION tcode AND SKIP FIRST SCREEN.", "correct" : true},
+			{"text":"LEAVE TO TRANSACTION tcode.", "correct" : false},
+			{"text":"SUBMIT program_name AND RETURN.", "correct" : true},
+			{"text":"SUBMIT program_name VIA SELECTION SCREEN.", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The SUBMIT command may use which of the given program type in its syntax?",
+		"options": [
+			{"text":"Include program", "correct" : false},
+			{"text":"Executable program", "correct" : true},
+			{"text":"Module pool program", "correct" : false},
+			{"text":"Function Group", "correct" : false},
+			{"text":"Class Pool", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Writing ABAP keywords and their additions in uppercase letters or lowercase within the ABAP Editor tool may be automatically generated using the:",
+		"options": [
+			{"text":"Activate button", "correct" : false},
+			{"text":"Syntax Check button", "correct" : false},
+			{"text":"Execute button", "correct" : false},
+			{"text":"Pattern button", "correct" : false},
+			{"text":"Pretty Print button", "correct" : true}
+		]
 	}
 ]
