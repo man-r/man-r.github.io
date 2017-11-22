@@ -39,7 +39,6 @@ $(document).ready(function () {
 
 	var quizlistvarsion = suarray(shuffle(quizlist), 20);
 	for (i=0;i<quizlistvarsion.length;i++) {
-		console.log(JSON.stringify(quizlistvarsion[i]));
 		questionBank[i]=new Array;
 		questionBank[i][0]=quizlistvarsion[i].question;
 		questionBank[i][1]=quizlistvarsion[i].option1;
