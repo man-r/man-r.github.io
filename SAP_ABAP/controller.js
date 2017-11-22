@@ -38,8 +38,8 @@ $(document).ready(function () {
 	wrong.appendChild(document.createTextNode('WRONG'));
 
 	var quizlistvarsion = suarray(shuffle(quizlist), 20);
-	console.log(JSON.stringify(quizlistvarsion);
 	for (i=0;i<quizlistvarsion.length;i++) {
+		console.log(JSON.stringify(quizlistvarsion[i]);
 		questionBank[i]=new Array;
 		questionBank[i][0]=quizlistvarsion[i].question;
 		questionBank[i][1]=quizlistvarsion[i].option1;
