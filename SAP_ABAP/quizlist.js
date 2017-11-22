@@ -1937,7 +1937,7 @@ var quizlist = [
 	{
 		"section": "ABAP",
 		"question":"The generated version of an ABAP program in the database is called:",
-		"option": [
+		"options": [
 			{"text":"PACKAGE", "correct" : false},
 			{"text":"BUNDLE", "correct" : false},
 			{"text":"LOAD", "correct" : true},
@@ -1948,7 +1948,7 @@ var quizlist = [
 	{
 		"section": "ABAP",
 		"question":"Under which situations does the system generate the LOAD of a program automatically?",
-		"option": [
+		"options": [
 			{"text":"When the program is saved in the repository", "correct" : false},
 			{"text":"When the program is called and no load exists yet", "correct" : true},
 			{"text":"When an object that the program uses is changed in the ABAP Dictionary and later activated in the Dictionary", "correct" : true},
@@ -1959,7 +1959,7 @@ var quizlist = [
 		{
 		"section": "ABAP",
 		"question":"The functionality offered within an application depends on the design of the GUI of the application. Which of these are TRUE?",
-		"option": [
+		"options": [
 			{"text":"The “Print” function is part of the standard tool bar", "correct" : true},
 			{"text":"The “Activate” function is part of the standard tool ba", "correct" : false},
 			{"text":"System and Help functions are available for all SAP screens", "correct" : true},
@@ -1970,7 +1970,7 @@ var quizlist = [
 	{
 		"section": "ABAP",
 		"question":"When declaring or using an internal table within a program, the characteristics that are TRUE for the internal tables are?",
-		"option": [
+		"options": [
 			{"text":"A Sorted or Standard internal table declared can store duplicate entries", "correct" : true},
 			{"text":"A sorted or standard internal table are indexed tables", "correct" : true},
 			{"text":"A hashed internal table cannot be sorted using the SORT command", "correct" : false},
@@ -1981,7 +1981,7 @@ var quizlist = [
 	{
 		"section": "ABAP",
 		"question":"An ‘Application table’ created in ABAP Dictionary stores which of the following form of data in the database?",
-		"option": [
+		"options": [
 			{"text":"Transparent data", "correct" : false},
 			{"text":"Transaction data", "correct" : true},
 			{"text":"Master data", "correct" : true},
@@ -1992,7 +1992,7 @@ var quizlist = [
 	{
 		"section": "ABAP",
 		"question":"DATA: lt_scarr TYPE HASHED TABLE OF SCARR. For the given declaration of the internal table, select the most suitable statement to read one record form the table:",
-		"option": [
+		"options": [
 			{"text":"READ TABELE lt_scarr INTO ls_scarr INDEX N.", "correct" : false},
 			{"text":"READ TABELE lt_scarr INTO ls_scarr INDEX SY-TABIX.", "correct" : false},
 			{"text":"READ TABELE lt_scarr INTO ls_scarr WITH KEY F1 = V1 F2 = V2.", "correct" : false},
@@ -2003,7 +2003,7 @@ var quizlist = [
 	{
 		"section": "ABAP",
 		"question":"When creating a data element in the ABAP Dictionary, the data type may be mentioned via which of the following?",
-		"option": [
+		"options": [
 			{"text":"Using a Domain", "correct" : true},
 			{"text":"Using a Structure Type", "correct" : false},
 			{"text":"Using a Predefined type", "correct" : true},
@@ -2014,7 +2014,7 @@ var quizlist = [
 	{
 		"section": "ABAP",
 		"question":"Select the objects for which multi language support is available during program output.",
-		"option": [
+		"options": [
 			{"text":"Program Name", "correct" : false},
 			{"text":"Text-symbols", "correct" : true},
 			{"text":"Field Name", "correct" : false},
@@ -2025,7 +2025,7 @@ var quizlist = [
 	{
 		"section": "ABAP",
 		"question":"DATA: lt_spfli TYPE SORTED TABLE OF SPFLI. Which of the following commands is NOT supported for the declaration provided?",
-		"option": [
+		"options": [
 			{"text":"READ TABLE lt_spfli INTO ls_spfli WITH TABLE KEY...", "correct" : false},
 			{"text":"INSERT TABLE lt_spfli FROM ls_spfli INDEX N.", "correct" : true},
 			{"text":"LOOP AT lt_spfli FROM 5 TO 50.... ENDLOOP. Where 5 and 50 are index positions", "correct" : false},
@@ -2036,7 +2036,7 @@ var quizlist = [
 	{
 		"section": "ABAP",
 		"question":"The F1 documentation required for an input parameter on the selection screen can be derived from which of the following?",
-		"option": [
+		"options": [
 			{"text":"Table field", "correct" : false},
 			{"text":"Domain", "correct" : false},
 			{"text":"Structure fields", "correct" : false},
@@ -2047,7 +2047,7 @@ var quizlist = [
 	{
 		"section": "ABAP",
 		"question":"Which of the following may not be used in the declaration of a program with the DATA keyword?",
-		"option": [
+		"options": [
 			{"text":"Data Element", "correct" : false},
 			{"text":"Domain", "correct" : true},
 			{"text":"Table", "correct" : false},
@@ -2058,7 +2058,7 @@ var quizlist = [
 	{
 		"section": "ABAP",
 		"question":"A structure that has been defined in the ABAP dictionary may be reused within a number of transparent tables with the addition:",
-		"option": [
+		"options": [
 			{"text":".INSERT structure_name", "correct" : false},
 			{"text":".INCLUDE structure_name", "correct" : true},
 			{"text":".ADD structure_name", "correct" : false},
@@ -2069,7 +2069,7 @@ var quizlist = [
 	{
 		"section": "ABAP",
 		"question":"Select the characteristics that are TRUE when creating a domain in the ABAP dictionary.",
-		"option": [
+		"options": [
 			{"text":"Provide the length for a field", "correct" : true},
 			{"text":"Provide the short description for a field", "correct" : false},
 			{"text":"Provide the documentation for a field", "correct" : false},
@@ -2080,7 +2080,7 @@ var quizlist = [
 	{
 		"section": "ABAP",
 		"question":"A transparent table when activated does the which of following:",
-		"option": [
+		"options": [
 			{"text":"Creates a definition of the table in the repository", "correct" : true},
 			{"text":"Creates a non-unique index in the database", "correct" : false},
 			{"text":"Creates a unique index in the database", "correct" : true},
@@ -2091,7 +2091,7 @@ var quizlist = [
 	{
 		"section": "ABAP",
 		"question":"While using SAP memory concept in a program, the Parameter ID is required for an SAP defined input field on screen. Which of the following ways would you suggest to identify the Parameter ID?",
-		"option": [
+		"options": [
 			{"text":"Place the cursor on the input field and press F4 key", "correct" : false},
 			{"text":"Place the cursor on the input field and press F1 key", "correct" : false},
 			{"text":"Place the cursor on the input field and press F1 key and then Technical Information button", "correct" : true},
@@ -2102,7 +2102,7 @@ var quizlist = [
 	{
 		"section": "ABAP",
 		"question":"How many windows (session) can a user open in an SAP system?",
-		"option": [
+		"options": [
 			{"text":"4", "correct" : false},
 			{"text":"6", "correct" : true},
 			{"text":"8", "correct" : false},
@@ -2113,7 +2113,7 @@ var quizlist = [
 	{
 		"section": "ABAP",
 		"question":"Which of the following is NOT a principal characteristic of a TRANSACTION in ABAP?",
-		"option": [
+		"options": [
 			{"text":"Atomic", "correct" : false},
 			{"text":"Durable", "correct" : false},
 			{"text":"Isolated", "correct" : false},
@@ -2124,7 +2124,7 @@ var quizlist = [
 	{
 		"section": "ABAP",
 		"question":"The lock mode for a transaction where the data may be edited only once even by the same transaction is referred to as:",
-		"option": [
+		"options": [
 			{"text":"Write locks, Cumulative", "correct" : false},
 			{"text":"Read locks, Shared", "correct" : false},
 			{"text":"Write locks, Sequential", "correct" : false},
@@ -2135,7 +2135,7 @@ var quizlist = [
 	{
 		"section": "ABAP",
 		"question":"A lock that is currently set by an application by another user may be removed by which of the following ways?",
-		"option": [
+		"options": [
 			{"text":"Closing the application in the current user session will release the lock", "correct" : false},
 			{"text":"Closing the user session of the lock owner will release the lock", "correct" : true},
 			{"text":"Writing a program to explicitly delete the lock from the lock table", "correct" : false},
@@ -2146,7 +2146,7 @@ var quizlist = [
 	{
 		"section": "ABAP",
 		"question":"The database update tables used to store calls to update function modules are called as:",
-		"option": [
+		"options": [
 			{"text":"VX* tables", "correct" : false},
 			{"text":"VD* tables", "correct" : false},
 			{"text":"VB* tables", "correct" : true},
@@ -2157,7 +2157,7 @@ var quizlist = [
 	{
 		"section": "ABAP",
 		"question":"A classic report ZABC_REP is required to be scheduled for background processing. What characteristics should the program have so that it qualifies for background processing?",
-		"option": [
+		"options": [
 			{"text":"The program has a selection screen which requires user input every time the program is executed", "correct" : false},
 			{"text":"The program has a selection screen which contains variants that are usually used during execution", "correct" : true},
 			{"text":"The program at run time calls additional screens that further require input from the user", "correct" : false},
@@ -2168,7 +2168,7 @@ var quizlist = [
 	{
 		"section": "ABAP",
 		"question":"The processing of user requests may be sped up or be made faster by storing data in an instance. This may be achieved by using which of the following techniques?",
-		"option": [
+		"options": [
 			{"text":"Work process multiplexing", "correct" : false},
 			{"text":"Indexes", "correct" : false},
 			{"text":"Buffering", "correct" : true},
