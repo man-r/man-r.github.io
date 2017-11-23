@@ -73,7 +73,7 @@ $(document).ready(function () {
 		var d_question = quizlistvarsion[questionNumber].question + " (" + correctAnsCount + " correct)";
 		console.log(d_question);
 		questionText.appendChild(document.createTextNode(d_question));
-		document.getElementById(htmlstage).appendChild(questionText);
+		document.getElementById(htmlstage).insertBefore(questionText, document.getElementById(htmlstage).childNodes[0]);
 		
 		function optionClicked(event) {
 			
