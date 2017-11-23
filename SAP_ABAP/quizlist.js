@@ -2396,7 +2396,7 @@ var quizlist = [
 			{"text":"the lock mode is set as Priority Lock", "correct" : false}
 		]
 	},
-		{
+	{
 		"section": "ABAP",
 		"question":"An SAP system comprises two application servers AS1 and AS2. What is/are TRUE for the buffers available on AS1 and AS2?",
 		"options": [
@@ -2614,6 +2614,226 @@ var quizlist = [
 			{"text":"Execute button", "correct" : false},
 			{"text":"Pattern button", "correct" : false},
 			{"text":"Pretty Print button", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A program that consists a number of screens that collects and stores data within the SAP system is called as an:",
+		"options": [
+			{"text":"Update LUW", "correct" : false},
+			{"text":"ABAP LUW", "correct" : true},
+			{"text":"DB LUW", "correct" : false},
+			{"text":"ABAP Transaction", "correct" : true},
+			{"text":"DB Transaction", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following program type may be executed only by the transaction code?",
+		"options": [
+			{"text":"Executable Program", "correct" : false},
+			{"text":"Function Group", "correct" : false},
+			{"text":"Module Pool", "correct" : true},
+			{"text":"Include", "correct" : false},
+			{"text":"Subroutine", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following are NOT events of the SELECTION SCREEN?",
+		"options": [
+			{"text":"INITIALIZATION", "correct" : false},
+			{"text":"LOAD OF PROGRAM", "correct" : true},
+			{"text":"START OF SELECTION", "correct" : true},
+			{"text":"AT SELECTION SCREEN", "correct" : false},
+			{"text":"AT SELECTION SCREEN OUTPUT", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Dynamic assignment of values for the input elements of a selection screen is performed in which of the following event?",
+		"options": [
+			{"text":"INITIALIZATION", "correct" : true},
+			{"text":"LOAD OF PROGRAM", "correct" : false},
+			{"text":"START OF SELECTION", "correct" : false},
+			{"text":"AT SELECTION SCREEN", "correct" : false},
+			{"text":"AT SELECTION SCREEN OUTPUT", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The range data object on the selection screen requires that its high value to be suppressed. Which addition to the declaration syntax will enable this?",
+		"options": [
+			{"text":"NO EXTENSION", "correct" : false},
+			{"text":"NO DISPLAY", "correct" : false},
+			{"text":"NO INTERVALS", "correct" : false},
+			{"text":"NO HIGHCOL", "correct" : false},
+			{"text":"NO OPTION", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"An additional selection screen was designed in your program for user specific input and navigation. Which of these is the right syntax to call the screen?",
+		"options": [
+			{"text":"CALL SELECTION-SCREEN screen_no.", "correct" : true},
+			{"text":"SET SELECTION-SCREEN screen_no.", "correct" : false},
+			{"text":"LEAVE TO SELECTION-SCREEN screen_no.", "correct" : false},
+			{"text":"CALL SELECTION-SCREEN screen_no ENDING AT col_pos line_no.", "correct" : false},
+			{"text":"CALL SELECTION-SCREEN screen_no STARTING AT col_pos line_no.", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Given the possible commands used to format the layout of the selection screen, which of the following is the correct order of their use?",
+		"options": [
+			{"text":"BEGIN OF BLOCK->ULINE->BEGIN OF SCREEN->BEGIN OF LINE->COMMENT", "correct" : false},
+			{"text":"BEGIN OF SCREEN->BEGIN OF LINE->ULINE->BEGIN OF BLOCK->COMMENT", "correct" : false},
+			{"text":"BEGIN OF LINE->BEGIN OF BLOCK->BEGIN OF SCREEN->ULINE->COMMENT", "correct" : false},
+			{"text":"BEGIN OF SCREEN->BEGIN OF BLOCK->ULINE->BEGIN OF LINE->COMMENT", "correct" : true},
+			{"text":"BEGIN OF LINE->BEGIN OF SCREEN->ULINE->BEGIN OF BLOCK->COMMENT", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following is/are not the type of screen that may be created in the screen painter?",
+		"options": [
+			{"text":"Normal Screen", "correct" : false},
+			{"text":"Modal Dialog", "correct" : false},
+			{"text":"Selection Screen", "correct" : true},
+			{"text":"List", "correct" : true},
+			{"text":"Sub Screen", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A transaction being run by the user terminates midway and raises and Abort message. Select the options that are TRUE for this situation.",
+		"options": [
+			{"text":"The program stores the transaction data in the shared memory and uses for a re-run", "correct" : false},
+			{"text":"The transaction issues COMMIT on the intermediate data in the data base and the remaining data can be processed in a re-run", "correct" : false},
+			{"text":"The transaction issues a ROLLBACK and all data is rolled back from the database and the application goes back to the easy access", "correct" : true},
+			{"text":"The transaction completes the LUW partially and registers a log in the update work process for the reason of termination", "correct" : false},
+			{"text":"The user may directly access the table in the Dictionary and make manual entries to the tables", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following is used to generate a dialog box in the SAP transaction screen?",
+		"options": [
+			{"text":"SET SCREEN screen_num WITH Col_Num Lin_Num.", "correct" : false},
+			{"text":"CALL SCREEN Screen_num STARTING AT Col_Num Lin_Num.", "correct" : true},
+			{"text":"SET SCREEN screen_num STARTING AT Col_Num Lin_Num.", "correct" : false},
+			{"text":"CALL SCREEN screen_num WITH Col_Num Lin_Num.", "correct" : false},
+			{"text":"CALL SCREEN screen_num STARTING AT Col_Num Lin_Num ENDING AT Col_Num Lin_Num.", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which one of these options may be used if screen 200 navigates to screen 400 using “CALL SCREEN 400.” command?",
+		"options": [
+			{"text":"LEAVE TO SCREEN 200. May be used to get the control back to the main screen", "correct" : false},
+			{"text":"SET SCREEN 200. May be used to get the control back to the main screen", "correct" : false},
+			{"text":"LEAVE TO SCREEN 0. May be used to get the control back to the main screen", "correct" : true},
+			{"text":"Next screen = 200. May be used to get the control back to the main screen", "correct" : false},
+			{"text":"Next screen = 0. May be used to get the control back to the main screen", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The special functions for a block of elements, or the screen can be displayed on mouse right click. This is called as the:",
+		"options": [
+			{"text":"Menu Bar", "correct" : false},
+			{"text":"Application menu", "correct" : false},
+			{"text":"Standard menu", "correct" : false},
+			{"text":"List menu", "correct" : false},
+			{"text":"Context menu", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following may be used to ROLLBACK an ABAP LUW?",
+		"options": [
+			{"text":"Message Type E", "correct" : false},
+			{"text":"Message Type W", "correct" : false},
+			{"text":"Message Type A", "correct" : true},
+			{"text":"Message Type X", "correct" : false},
+			{"text":"Message Type I", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"An input field is highlighted if an error message is triggered while all the other fields on the screen will be disabled. Which of the following performs this?",
+		"options": [
+			{"text":"Type E - message in the USER-COMMAND module of the PAI", "correct" : false},
+			{"text":"Type E - message in the FIELD syntax Module of the PAI", "correct" : true},
+			{"text":"Type E - message in the STATUS module of the PBO", "correct" : false},
+			{"text":"Type E - message during Check Table validations", "correct" : false},
+			{"text":"Type E - message during Obligatory field validations", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The user may exit from a program having required fields in a screen by using which of the following button/function?",
+		"options": [
+			{"text":"Window close button", "correct" : false},
+			{"text":"Stop Transaction", "correct" : false},
+			{"text":"Exit Button - E", "correct" : true},
+			{"text":"Cancel button - E", "correct" : true},
+			{"text":"OK button", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The user enters a value for employee id in an input field IM_ID, and requires this value to be available on a screen in another program. What would you suggest as an option?",
+		"options": [
+			{"text":"Store the data in a database table and query it", "correct" : false},
+			{"text":"Store the data in ABAP memory", "correct" : false},
+			{"text":"Store the data in SAP memory", "correct" : true},
+			{"text":"Store the data in SAP buffer", "correct" : false},
+			{"text":"Store the data in internal table and read it", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A program created by the developer was saved under a change request to ensure transport to the production system. What are the characteristics of a change request?",
+		"options": [
+			{"text":"The change request is created by the developer within a project", "correct" : false},
+			{"text":"All development objects created or changed during the project are transported automatically when the change request is released.", "correct" : true},
+			{"text":"Each developer can release their change request once their part of the activities are completed within the project.", "correct" : false},
+			{"text":"A program always belongs to only one package but at different times it may belong to different projects.", "correct" : true},
+			{"text":"A program always belongs to only one package and one project.", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A package if only contains other packages is referred to as the:",
+		"options": [
+			{"text":"Development Package", "correct" : false},
+			{"text":"Customizing Package", "correct" : false},
+			{"text":"Main Package", "correct" : true},
+			{"text":"Structure Package", "correct" : false},
+			{"text":"Transport Package", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"You can combine consecutive statements with an identical beginning into a chained statement by",
+		"options": [
+			{"text":"Using the identical beginning part of the statements, followed by a colon.", "correct" : true},
+			{"text":"Using the identical beginning part of the statements, followed by a semicolon.", "correct" : false},
+			{"text":"Using the identical beginning part of the statements, followed by a period.", "correct" : false},
+			{"text":"Using the identical beginning part of the statements, followed by a comma.", "correct" : false},
+			{"text":"Using the identical beginning part of the statements, followed by a hyphen.", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following are TRUE for objects that are active or inactive in the development system?",
+		"options": [
+			{"text":"Saving the object will activate and save object in the repository", "correct" : false},
+			{"text":"Activating the object will check the syntax or consistency of the inactive version", "correct" : true},
+			{"text":"Activating the object overwrites the previously active version with the inactive version after a successful check", "correct" : false},
+			{"text":"Activating the object overwrites the previously active version with the new active version after a successful check", "correct" : true},
+			{"text":"Activating the object generates the relevant runtime object for later execution, if the object is a program", "correct" : true}
 		]
 	}
 ]
