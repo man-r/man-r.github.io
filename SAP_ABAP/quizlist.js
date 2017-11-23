@@ -1,7 +1,7 @@
 var quizlist = [
 	{
 		"section": "ABAP",
-		"question":"Which of the following is/are the application areas of SAP ECC? (Choose 3)",
+		"question":"Which of the following is/are the application areas of SAP ECC?",
 		"options": [
 			{"text":"Sales and distribution", "correct" : true},
 			{"text":"Human Resources management", "correct" : true},
@@ -12,7 +12,7 @@ var quizlist = [
 	},	
 	{
 		"section": "ABAP",
-		"question":"The deployment strategy for SAP solutions comprises which of the following? (Choose 3)",
+		"question":"The deployment strategy for SAP solutions comprises which of the following?",
 		"options": [
 			{"text":"Deploy on Platform", "correct" : false},
 			{"text":"Deploy on Device", "correct" : true},
@@ -23,7 +23,7 @@ var quizlist = [
 	},	
 	{
 		"section": "ABAP",
-		"question":"SAP has characteristics that have made it a widely used business solution. Mark the statements that are TRUE? (Choose 2)",
+		"question":"SAP has characteristics that have made it a widely used business solution. Mark the statements that are TRUE?",
 		"options": [
 			{"text":"Integrates business functions and data across the enterprise", "correct" : true},
 			{"text":"Has limited level of adaptability or flexibility", "correct" : false},
@@ -34,7 +34,7 @@ var quizlist = [
 	},	
 	{
 		"section": "ABAP",
-		"question":"What are the different layers in the SAP ECC architecture? (Choose 3)",
+		"question":"What are the different layers in the SAP ECC architecture?",
 		"options": [
 			{"text":"Presentation Layer", "correct" : true},
 			{"text":"Gateway Layer", "correct" : false},
@@ -45,7 +45,7 @@ var quizlist = [
 	},	
 	{
 		"section": "ABAP",
-		"question":"Select the components that are the capabilities of SAP Netweaver. (Choose 3)",
+		"question":"Select the components that are the capabilities of SAP Netweaver.",
 		"options": [
 			{"text":"Identity Management", "correct" : false},
 			{"text":"Master Data Management", "correct" : true},
@@ -67,7 +67,7 @@ var quizlist = [
 	},	
 	{
 		"section": "ABAP",
-		"question":"User’s login into the SAP system using the credentials assigned to them. What do you mean by 'user context'? (Choose 2)",
+		"question":"User’s login into the SAP system using the credentials assigned to them. What do you mean by 'user context'?",
 		"options": [
 			{"text":"Data that is commonly assigned for all SAP users who login", "correct" : false},
 			{"text":"It is always required during the execution of an ABAP program in the work process", "correct" : true},
@@ -78,7 +78,7 @@ var quizlist = [
 	},	
 	{
 		"section": "ABAP",
-		"question":"The ABAP AS has a component called the dispatcher. What are the functions of the dispatcher? (Choose 3)",
+		"question":"The ABAP AS has a component called the dispatcher. What are the functions of the dispatcher?",
 		"options": [
 			{"text":"A connection between the presentation layer and application layer", "correct" : true},
 			{"text":"Manages the buffer in the AS", "correct" : false},
@@ -89,7 +89,7 @@ var quizlist = [
 	},	
 	{
 		"section": "ABAP",
-		"question":"What are components included in the structure of a work process? (Choose 3)",
+		"question":"What are components included in the structure of a work process?",
 		"options": [
 			{"text":"Screen processor", "correct" : true},
 			{"text":"ABAP processor", "correct" : true},
@@ -111,7 +111,7 @@ var quizlist = [
 	},	
 	{
 		"section": "ABAP",
-		"question":"Identify the key capabilities of SAP NetWeaver. (Choose 3)",
+		"question":"Identify the key capabilities of SAP NetWeaver.",
 		"options": [
 			{"text":"Service-oriented architecture (SOA) middleware", "correct" : true},
 			{"text":"Security and Identity management", "correct" : true},
@@ -122,7 +122,7 @@ var quizlist = [
 	},	
 	{
 		"section": "ABAP",
-		"question":"Identify the different installation options for SAP NetWeaver Application Server (AS). (Choose 3)",
+		"question":"Identify the different installation options for SAP NetWeaver Application Server (AS).",
 		"options": [
 			{"text":"SAP NetWeaver AS ABAP", "correct" : true},
 			{"text":"SAP NetWeaver AS Java", "correct" : true},
@@ -133,7 +133,7 @@ var quizlist = [
 	},	
 	{
 		"section": "ABAP",
-		"question":"Which of these programming environments are supported on the Netweaver platform? (Choose 2)",
+		"question":"Which of these programming environments are supported on the Netweaver platform?",
 		"options": [
 			{"text":"C++", "correct" : false},
 			{"text":"Java", "correct" : true},
@@ -155,7 +155,7 @@ var quizlist = [
 	},	
 	{
 		"section": "ABAP",
-		"question":"What are the advantages of a three-tier client/server configuration as compared with a singletier or two-tier configuration? (Choose 2)",
+		"question":"What are the advantages of a three-tier client/server configuration as compared with a singletier or two-tier configuration?",
 		"options": [
 			{"text":"Simpler scalability", "correct" : true},
 			{"text":"Simpler administration", "correct" : false},
@@ -177,7 +177,7 @@ var quizlist = [
 	},	
 	{
 		"section": "ABAP",
-		"question":"Which of these statements can be associated with a three-tier configuration? (Choose 3)",
+		"question":"Which of these statements can be associated with a three-tier configuration?",
 		"options": [
 			{"text":"is the configuration where the database may be hosted on multiple servers", "correct" : false},
 			{"text":"the configuration allows distributing the application layer processes among several hosts", "correct" : true},
@@ -188,7 +188,7 @@ var quizlist = [
 	},	
 	{
 		"section": "ABAP",
-		"question":"Mark the statements that are characteristic of an SAP Instance. (Choose 3)",
+		"question":"Mark the statements that are characteristic of an SAP Instance.",
 		"options": [
 			{"text":"combines SAP system components together to provide one or more services", "correct" : true},
 			{"text":"The services of an instance are started and stopped sequentially", "correct" : false},
@@ -221,7 +221,7 @@ var quizlist = [
 	},
 	{
 		"section": "ABAP",
-		"question":"Which of the following aspects of the database layer is/are TRUE in the SAP system? (Choose 3)",
+		"question":"Which of the following aspects of the database layer is/are TRUE in the SAP system?",
 		"options": [
 			{"text":"Contains the installation files for the Java AS", "correct" : false},
 			{"text":"Contains client-specific data", "correct" : true},
@@ -254,7 +254,7 @@ var quizlist = [
 	},
 	{
 		"section": "ABAP",
-		"question":"Which of the following are functions possible in the Object Navigator? (Choose 3)",
+		"question":"Which of the following are functions possible in the Object Navigator?",
 		"options": [
 			{"text":"User can create, change or display business data", "correct" : false},
 			{"text":"User can view the object and its sub objects if any", "correct" : true},
@@ -265,7 +265,7 @@ var quizlist = [
 	},
 	{
 		"section": "ABAP",
-		"question":"You have created a program ZABCXX_01 which is of type executable. Which of the following statements is/are TRUE for your development? (Choose 3)",
+		"question":"You have created a program ZABCXX_01 which is of type executable. Which of the following statements is/are TRUE for your development?",
 		"options": [
 			{"text":"The program should be saved under SAP packages at all times", "correct" : false},
 			{"text":"The program may be executed only by creating a transaction for it", "correct" : false},
@@ -276,7 +276,7 @@ var quizlist = [
 	},
 	{
 		"section": "ABAP",
-		"question":"Which of the following is NOT TRUE for the transport of a development object? (Choose 2)",
+		"question":"Which of the following is NOT TRUE for the transport of a development object?",
 		"options": [
 			{"text":"The object must be stored under a package to initiate a transport", "correct" : false},
 			{"text":"The package $TMP may be used as default to initiate a transport", "correct" : true},
@@ -287,7 +287,7 @@ var quizlist = [
 	},
 	{
 		"section": "ABAP",
-		"question":"Which of the following declaration syntax is/are the right construct for a variable LV_CARR? (Choose 2)",
+		"question":"Which of the following declaration syntax is/are the right construct for a variable LV_CARR?",
 		"options": [
 			{"text":"DATA: LV_CARR TYPE I LENGTH 10.", "correct" : false},
 			{"text":"DATA: LV_CARR TYPE C(10).", "correct" : false},
@@ -298,7 +298,7 @@ var quizlist = [
 	},
 	{
 		"section": "ABAP",
-		"question":"Mark the Incomplete data types? (Choose 2)",
+		"question":"Mark the Incomplete data types?",
 		"options": [
 			{"text":"Character", "correct" : true},
 			{"text":"Float", "correct" : false},
@@ -309,7 +309,7 @@ var quizlist = [
 	},
 	{
 		"section": "ABAP",
-		"question":"Which of the following entities supports multi-language display for a program output? (Choose 3)",
+		"question":"Which of the following entities supports multi-language display for a program output?",
 		"options": [
 			{"text":"List Heading", "correct" : true},
 			{"text":"Selection Screen", "correct" : false},
@@ -320,7 +320,7 @@ var quizlist = [
 	},
 	{
 		"section": "ABAP",
-		"question":"When using a DO...ENDDO loop in a program, which of these conditions may be incorporated to control the loop pass using: (Choose 3)",
+		"question":"When using a DO...ENDDO loop in a program, which of these conditions may be incorporated to control the loop pass using:",
 		"options": [
 			{"text":"SKIP", "correct" : false},
 			{"text":"EXIT", "correct" : true},
@@ -331,7 +331,7 @@ var quizlist = [
 	},
 	{
 		"section": "ABAP",
-		"question":"Which of the following are benefits of SAP Netweaver? (Choose 3)",
+		"question":"Which of the following are benefits of SAP Netweaver?",
 		"options": [
 			{"text":"SAP Netweaver offers a monolithic software environment which limits business flexibility", "correct" : false},
 			{"text":"SAP NetWeaver provides the flexibility to integrate applications that run across SAP, SAP-certified partners, and custom-built applications.", "correct" : true},
@@ -353,7 +353,7 @@ var quizlist = [
 	},
 	{
 		"section": "ABAP",
-		"question":"Mark some of the key products of SAP Netweaver? (Choose 3)",
+		"question":"Mark some of the key products of SAP Netweaver?",
 		"options": [
 			{"text":"Business Process Management", "correct" : true},
 			{"text":"Composition Environment", "correct" : true},
@@ -375,7 +375,7 @@ var quizlist = [
 	},
 	{
 		"section": "ABAP",
-		"question":"Which of the following make up the Architecture of the SAP System? (Choose 3)",
+		"question":"Which of the following make up the Architecture of the SAP System?",
 		"options": [
 			{"text":"Composite Layer", "correct" : false},
 			{"text":"Database Layer", "correct" : true},
@@ -386,7 +386,7 @@ var quizlist = [
 	},
 	{
 		"section": "ABAP",
-		"question":"Which of the following are functions possible in the Debugging tool? (Choose 2)",
+		"question":"Which of the following are functions possible in the Debugging tool?",
 		"options": [
 			{"text":"Monitor a variable content using a Breakpoint", "correct" : false},
 			{"text":"Monitor a variable content using a Watchpoint", "correct" : true},
@@ -419,7 +419,7 @@ var quizlist = [
 	},
 	{
 		"section": "ABAP",
-		"question":"Mark the characteristics required to declare an internal table in your program. (Choose 3)",
+		"question":"Mark the characteristics required to declare an internal table in your program.",
 		"options": [
 			{"text":"The program must be an executable program", "correct" : false},
 			{"text":"Declaration with ‹line type› is a mandatory property", "correct" : true},
@@ -430,7 +430,7 @@ var quizlist = [
 	},
 	{
 		"section": "ABAP",
-		"question":"DATA: it_spfli TYPE TABLE OF SPFLI. Where SPFLI is a database table used to declare the internal table in my program. Mark the correct statements. (Choose 3)",
+		"question":"DATA: it_spfli TYPE TABLE OF SPFLI. Where SPFLI is a database table used to declare the internal table in my program. Mark the correct statements.",
 		"options": [
 			{"text":"The internal table it_spfli is a HASHED table by default", "correct" : false},
 			{"text":"The internal table also requires an explicit structure to process the data", "correct" : true},
@@ -452,7 +452,7 @@ var quizlist = [
 	},
 	{
 		"section": "ABAP",
-		"question":"Publishing information to the user informing the status of the program or an activity is done using messages. Which of the following statements are TRUE for messages? (Choose 3)",
+		"question":"Publishing information to the user informing the status of the program or an activity is done using messages. Which of the following statements are TRUE for messages?",
 		"options": [
 			{"text":"A warning message stops control on screen and proceeds only if input is corrected", "correct" : false},
 			{"text":"Information message displays a pop-up and then continues to the next screen in the navigation order", "correct" : true},
@@ -463,7 +463,7 @@ var quizlist = [
 	},
 	{
 		"section": "ABAP",
-		"question":"Which of the following is valid in the MESSAGE syntax? (Choose 3)",
+		"question":"Which of the following is valid in the MESSAGE syntax?",
 		"options": [
 			{"text":"“...DISPLAY LIKE mstype.” addition may be used to publish the message as another type other than the definition", "correct" : true},
 			{"text":"“...DISPLAY LIKE mstype.” addition is NOT recommended for an “A” – Abort Message", "correct" : false},
@@ -485,7 +485,7 @@ var quizlist = [
 	},
 	{
 		"section": "ABAP",
-		"question":"Which of the following are a suitable methods to declare an explicit work area for an internal table? SCARR is the name of a database table and lt_scarr is an internal table. (Choose 2)",
+		"question":"Which of the following are a suitable methods to declare an explicit work area for an internal table? SCARR is the name of a database table and lt_scarr is an internal table.",
 		"options": [
 			{"text":"DATA: ls_scarr TYPE TABLE OF SCARR.", "correct" : false},
 			{"text":"TYPES: ls_scarr TYPE TABLE OF SCARR.", "correct" : false},
@@ -507,7 +507,7 @@ var quizlist = [
 	},
 	{
 		"section": "ABAP",
-		"question":"Mark the features offered by SAP Business ByDesign product. (Choose 2)",
+		"question":"Mark the features offered by SAP Business ByDesign product.",
 		"options": [
 			{"text":"Is suitable for mid-sized companies or subsidiaries of bigger firms", "correct" : true},
 			{"text":"It offers a cloud based on-demand software-as-a-service (SaaS) solution", "correct" : true},
@@ -551,7 +551,7 @@ var quizlist = [
 	},
 		{
 		"section": "ABAP",
-		"question":"Buffering technique improves access on a database table. When can this option be enabled for the database table? (Choose 3)",
+		"question":"Buffering technique improves access on a database table. When can this option be enabled for the database table?",
 		"options": [
 			{"text":"When table read access is relatively low versus write access", "correct" : false},
 			{"text":"When table read access is relatively high versus write access", "correct" : true},
@@ -562,7 +562,7 @@ var quizlist = [
 	},	
 	{	
 		"section": "ABAP",
-		"question":"The role of ABAP Dictionary when coding a program is to: (Choose 3)",
+		"question":"The role of ABAP Dictionary when coding a program is to:",
 		"options": [
 			{"text":"Provide access to definitions that can be used in program declarations", "correct" : true},
 			{"text":"Provide documentation on SAP system, keyword glossary etc.", "correct" : false},
@@ -573,7 +573,7 @@ var quizlist = [
 	},	
 	{	
 		"section": "ABAP",
-		"question":"Which of the following may be TRUE for a table in the ABAP Dictionary? (Choose 3)",
+		"question":"Which of the following may be TRUE for a table in the ABAP Dictionary?",
 		"options": [
 			{"text":"The table and its data is always client specific", "correct" : true},
 			{"text":"The table and its data is always cross client", "correct" : false},
@@ -584,7 +584,7 @@ var quizlist = [
 	},	
 	{	
 		"section": "ABAP",
-		"question":"A SELECT statement may use which of the following to optimize the access to the database? (Choose 3)",
+		"question":"A SELECT statement may use which of the following to optimize the access to the database?",
 		"options": [
 			{"text":"A buffer if the table setting has buffer activated", "correct" : true},
 			{"text":"The primary index if the WHERE clause uses the non-key fields of the table", "correct" : false},
@@ -595,7 +595,7 @@ var quizlist = [
 	},	
 	{	
 		"section": "ABAP",
-		"question":"Mark the TRUE characteristics of the database interface: (Choose 3)",
+		"question":"Mark the TRUE characteristics of the database interface:",
 		"options": [
 			{"text":"Converts DB data into SAP internal format", "correct" : true},
 			{"text":"Converts SAP internal format to Native DB data", "correct" : true},
@@ -606,7 +606,7 @@ var quizlist = [
 	},	
 	{	
 		"section": "ABAP",
-		"question":"In the given list of statements for SELECT, mark the ones that do not require an ENDSELECT. (Choose 2)",
+		"question":"In the given list of statements for SELECT, mark the ones that do not require an ENDSELECT.",
 		"options": [
 			{"text":"SELECT * FROM dbtable INTO ls_str. Where ls_str is a local structure.", "correct" : false},
 			{"text":"SELECT SINGLE * FROM dbtable INTO ls_str. Where ls_str is a local structure.", "correct" : true},
@@ -617,7 +617,7 @@ var quizlist = [
 	},	
 	{	
 		"section": "ABAP",
-		"question":"Your program states that the number of records normally fetched are 500 entries from the database table. Choose the most suitable syntax given below: (Choose 3)",
+		"question":"Your program states that the number of records normally fetched are 500 entries from the database table. Choose the most suitable syntax given below:",
 		"options": [
 			{"text":"SELECT * FROM dbtab INTO ls_str WHERE condt...ENDSELECT", "correct" : false},
 			{"text":"SELECT * FROM dbtab UP TO 500 ROWS INTO ls_str WHERE condt...ENDSELECT", "correct" : true},
@@ -628,7 +628,7 @@ var quizlist = [
 	},	
 	{	
 		"section": "ABAP",
-		"question":"What does the CLIENT-SPECIFIED addition do in a SELECT command? (Choose 3)",
+		"question":"What does the CLIENT-SPECIFIED addition do in a SELECT command?",
 		"options": [
 			{"text":"Get data from the login client: for example 800 being the login client", "correct" : false},
 			{"text":"Get data from other than the login client: for example 800 being the login client", "correct" : true},
@@ -639,7 +639,7 @@ var quizlist = [
 	},	
 	{	
 		"section": "ABAP",
-		"question":"A selection screen for an executable program may be defined using which of these keywords? (Choose 2)",
+		"question":"A selection screen for an executable program may be defined using which of these keywords?",
 		"options": [
 			{"text":"DATA keyword", "correct" : false},
 			{"text":"PARAMETERS keyword", "correct" : true},
@@ -650,7 +650,7 @@ var quizlist = [
 	},	
 	{	
 		"section": "ABAP",
-		"question":"Which of the following are events associated with a selection screen? (Choose 2)",
+		"question":"Which of the following are events associated with a selection screen?",
 		"options": [
 			{"text":"LOAD OF PROGRAM", "correct" : false},
 			{"text":"START OF SELECTION", "correct" : false},
@@ -661,7 +661,7 @@ var quizlist = [
 	},	
 	{	
 		"section": "ABAP",
-		"question":"What are the characteristics of ‘Client’ in the SAP System? (Choose 3)",
+		"question":"What are the characteristics of ‘Client’ in the SAP System?",
 		"options": [
 			{"text":"Client corresponds to a business partner or customer within the company running the SAP system", "correct" : false},
 			{"text":"Client correspond to independent business entities and represent a company in an SAP system", "correct" : true},
@@ -716,7 +716,7 @@ var quizlist = [
 	},
 	{
 		"section": "ABAP",
-		"question":"Which of these special characters may be used in the SELECT statement to filter records based on a pattern? (Choose 2)",
+		"question":"Which of these special characters may be used in the SELECT statement to filter records based on a pattern?",
 		"options": [
 			{"text":"*", "correct" : false},
 			{"text":"+", "correct" : false},
@@ -727,7 +727,7 @@ var quizlist = [
 	},
 	{
 		"section": "ABAP",
-		"question":"Which of the following are NOT allowed for a field in the WHERE condition of a SELECT statement? (Choose 2)",
+		"question":"Which of the following are NOT allowed for a field in the WHERE condition of a SELECT statement?",
 		"options": [
 			{"text":"WHERE field = parameter_name...", "correct" : false},
 			{"text":"WHERE field = structure_name...", "correct" : true},
@@ -760,7 +760,7 @@ var quizlist = [
 	},
 	{
 		"section": "ABAP",
-		"question":"Mark the statements that determine the use of explicit cursor in the SELECT query. (Choose 3)",
+		"question":"Mark the statements that determine the use of explicit cursor in the SELECT query.",
 		"options": [
 			{"text":"The SET CURSOR positions the cursor variable at any line in the result set as needed from the application", "correct" : false},
 			{"text":"The OPEN CURSOR sets the cursor variable to a position before the first line of the result set", "correct" : true},
@@ -771,7 +771,7 @@ var quizlist = [
 	},
 	{
 		"section": "ABAP",
-		"question":"Which of the following are NOT TRUE with regard to the prerequisites when using ORDER BY clause for the SELECT statement? (Choose 2)",
+		"question":"Which of the following are NOT TRUE with regard to the prerequisites when using ORDER BY clause for the SELECT statement?",
 		"options": [
 			{"text":"The FROM clause if contains a view, the SELECT statement may use the addition ORDER BY PRIMARY KEY", "correct" : true},
 			{"text":"You can sort pooled tables and cluster tables only by their key field", "correct" : true},
@@ -793,7 +793,7 @@ var quizlist = [
 	},
 	{
 		"section": "ABAP",
-		"question":"The aggregate functions that may not be used on a SELECT field list if the field is of text or character type are: (Choose 2)",
+		"question":"The aggregate functions that may not be used on a SELECT field list if the field is of text or character type are:",
 		"options": [
 			{"text":"MIN( col )", "correct" : false},
 			{"text":"MAX( col )", "correct" : false},
@@ -804,7 +804,7 @@ var quizlist = [
 	},
 	{
 		"section": "ABAP",
-		"question":"A SELECT statement consists of field list and aggregate functions. Mark the TRUE statements. Example: SELECT CARRID CONNID SUM( SEATSOCC ).... (Choose 3)",
+		"question":"A SELECT statement consists of field list and aggregate functions. Mark the TRUE statements. Example: SELECT CARRID CONNID SUM( SEATSOCC )....",
 		"options": [
 			{"text":"the result set is always multiline and may be loaded into an internal table", "correct" : true},
 			{"text":"The SELECT statement must contain ORDER BY clause and all fields from the field list must be listed after ORDER BY", "correct" : false},
