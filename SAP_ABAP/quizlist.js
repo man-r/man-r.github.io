@@ -1752,9 +1752,9 @@ var quizlist = [
 		"question":"Authorization checks are carried out using the syntax:",
 		"options": [
 			{"text":"Authorization Check...", "correct" : false},
-			{"text":"Call fu􀅶􀄐tio􀅶 􀍚Authorizatio􀅶-Che􀄐k􀍛", "correct" : false},
+			{"text":"Call function 'Authorization-Check'", "correct" : false},
 			{"text":"Authority-Check...", "correct" : true},
-			{"text":"Call fu􀅶􀄐tio􀅶 􀍚Authority-Che􀄐k􀍛...", "correct" : false},
+			{"text":"Call function 'Authority-Check'...", "correct" : false},
 			{"text":"Perform Authority-Check...", "correct" : false}
 		]
 	},
@@ -2834,6 +2834,226 @@ var quizlist = [
 			{"text":"Activating the object overwrites the previously active version with the inactive version after a successful check", "correct" : false},
 			{"text":"Activating the object overwrites the previously active version with the new active version after a successful check", "correct" : true},
 			{"text":"Activating the object generates the relevant runtime object for later execution, if the object is a program", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The SCREEN internal table of a module pool screen, is refreshed a number of times during the runtime of the program. At which point does the refresh happen?",
+		"options": [
+			{"text":"At the start of the program during the LOAD OF PROGRAM event", "correct" : false},
+			{"text":"At the beginning of the PAI event", "correct" : false},
+			{"text":"At the end of the PAI event", "correct" : false},
+			{"text":"At the beginning of the PBO event", "correct" : true},
+			{"text":"At the end of the PBO event", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"While designing the layout of the screen using the Graphical Screen Painter (GSP) tool, the input elements may be derived quickly from which of the following?",
+		"options": [
+			{"text":"Import the list of fields and properties from a file", "correct" : false},
+			{"text":"Drag and drop from the left column of the GSP", "correct" : false},
+			{"text":"Use a table definition from the ABAP Dictionary", "correct" : true},
+			{"text":"Use a structure definition from the ABAP Dictionary", "correct" : true},
+			{"text":"Use a structure definition from the TOP Include", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following is NOT an element used in a Selection screen?",
+		"options": [
+			{"text":"Input Fields", "correct" : false},
+			{"text":"Push Button", "correct" : false},
+			{"text":"Check Box/Radio Button", "correct" : false},
+			{"text":"Tabstrip Control", "correct" : false},
+			{"text":"Table Control", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"You design a transaction with a set of screens that accept data from the user. You wish to validate a field CONNID and place the cursor on the field if the validation fails. Select the suitable technique using which, this may be achieved:",
+		"options": [
+			{"text":"Use type E message within the USER COMMAND module in the PAI", "correct" : false},
+			{"text":"Use type E message within the USER COMMAND module followed with SET-CURSOR CONNID in the PBO", "correct" : false},
+			{"text":"Use type E message within the AT EXIT-COMMAND module in the PAI", "correct" : false},
+			{"text":"Use FIELD CONNID MODULE CHECK_CONNID in the PAI and use type E message", "correct" : true},
+			{"text":"Use FIELD CONNID MODULE CHECK_CONNID in the PBO and use type E message", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The title bar for the SAP GUI is set in which of the following event?",
+		"options": [
+			{"text":"Process Before Output", "correct" : true},
+			{"text":"Process After Input", "correct" : false},
+			{"text":"Process on Value Request", "correct" : false},
+			{"text":"Process on Help Request", "correct" : false},
+			{"text":"Load of Program", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The UI element that may be used to direct the attention of the user to the data or information displayed on a screen is the:",
+		"options": [
+			{"text":"Error message on the UI element", "correct" : false},
+			{"text":"Bright property of the UI element", "correct" : false},
+			{"text":"Icon Element", "correct" : true},
+			{"text":"Box Element", "correct" : false},
+			{"text":"Check box", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following is/are dynamically modifiable property for a text field?",
+		"options": [
+			{"text":"OUTPUT", "correct" : false},
+			{"text":"ACTIVE", "correct" : true},
+			{"text":"INTENSIFIED", "correct" : true},
+			{"text":"REQUIRED", "correct" : false},
+			{"text":"INPUT", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The user has to execute a program containing a selection screen with a frequent set of input values. The user may store the set of values for later use by creating which of the following?",
+		"options": [
+			{"text":"Create additional selection screens using BEGIN OF SCREEN", "correct" : false},
+			{"text":"Append possible values for the screen input into the SCREEN internal table", "correct" : false},
+			{"text":"Create variants of the selection screen with the set of values", "correct" : false},
+			{"text":"Use INITIALIZATION event to pass values in the program code", "correct" : true},
+			{"text":"Create a local file and upload to the selection screen using a button", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The data from within a program field was transferred to the SAP memory using the SET PARFAMETER keyword. Which statement is TRUE regarding the scope of SAP memory?",
+		"options": [
+			{"text":"Visible across multiple user sessions", "correct" : false},
+			{"text":"Visible across multiple Application servers", "correct" : false},
+			{"text":"Visible across multiple external sessions", "correct" : true},
+			{"text":"Visible across multiple internal sessions", "correct" : true},
+			{"text":"Visible across multiple APG (Additional Program Group)", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A function code may NOT be assigned to which of the following UI element?",
+		"options": [
+			{"text":"Push Button", "correct" : false},
+			{"text":"Check Box", "correct" : false},
+			{"text":"Radio Button", "correct" : false},
+			{"text":"Tabstrip", "correct" : false},
+			{"text":"Text Field", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following is NOT a valid property of the tabstrip?",
+		"options": [
+			{"text":"Tab Title", "correct" : true},
+			{"text":"Tab Name", "correct" : false},
+			{"text":"Sub Screen area", "correct" : false},
+			{"text":"Scroll Bar", "correct" : false},
+			{"text":"Tab Button", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which keyword addition may be specified for a field validation to occur whenever the content of the field is altered?",
+		"options": [
+			{"text":"Module - ON INPUT", "correct" : false},
+			{"text":"Module - ON CHAIN-INPUT", "correct" : false},
+			{"text":"Module - ON REQUEST", "correct" : true},
+			{"text":"Module - ON CHAIN-REQUEST", "correct" : true},
+			{"text":"Module - ON SWITCH switch_name.", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"While creating the pf-status in the menu painter a transaction may be directly used by giving which of the following option?",
+		"options": [
+			{"text":"Function code as TCODE with function type SPACE or “ ”", "correct" : false},
+			{"text":"Function code as TCODE with function type “S”", "correct" : false},
+			{"text":"Function code as TCODE with function type “E”", "correct" : false},
+			{"text":"Function code as TCODE with function type “T”", "correct" : true},
+			{"text":"Function code as TCODE with function type “P”", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The tab that might be visible at a time, i.e. the current tab when processing the screen is determined by:",
+		"options": [
+			{"text":"The name of the tabstrip and the tab. E.g. TABS-TABNAME property", "correct" : false},
+			{"text":"The name of the tabstrip and the tab function code. E.g. TABS-FCODE property", "correct" : false},
+			{"text":"The name of the tabstrip and the activetab. E.g. TABS-ACTIVETAB property", "correct" : true},
+			{"text":"The name of the tabstrip and the tab component. E.g. TABS-COMPONENT property", "correct" : false},
+			{"text":"The name of the tabstrip and the sub screen number. E.g. TABS-SUBSCRN property", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"External subscreens or subscreens called from another program is possible only if the called subscreen belongs to:",
+		"options": [
+			{"text":"Module pool program", "correct" : false},
+			{"text":"Executable program", "correct" : false},
+			{"text":"Include program", "correct" : false},
+			{"text":"Function Group", "correct" : true},
+			{"text":"Subroutine Pool", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The system field that stores the value of the active screen at program runtime is the:",
+		"options": [
+			{"text":"SY-SCRNO", "correct" : false},
+			{"text":"SY-DNYNO", "correct" : false},
+			{"text":"SY-DYNNR", "correct" : true},
+			{"text":"SY-NWSCR", "correct" : false},
+			{"text":"SY-SCREEN", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A group of input fields may be enabled for input on the occurrence of an Error message during validation by using:",
+		"options": [
+			{"text":"FIELD f_name MODULE module. In the PAI", "correct" : false},
+			{"text":"FIELD f_name MODULE module. In the PBO", "correct" : false},
+			{"text":"CHAIN. FIELD f _name MODULE module...ENDCHAIN", "correct" : true},
+			{"text":"MODULE module SET INPUT = 1.", "correct" : false},
+			{"text":"MODULE module SCREEN-GROUP = 1.", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following are package types?",
+		"options": [
+			{"text":"Application Component", "correct" : false},
+			{"text":"Development Package", "correct" : true},
+			{"text":"Local Package", "correct" : false},
+			{"text":"Main Package", "correct" : true},
+			{"text":"Structure Package", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"When is the transport of development objects for a development request triggered?",
+		"options": [
+			{"text":"When an object is saved", "correct" : false},
+			{"text":"When an object is activated", "correct" : false},
+			{"text":"When an object is released", "correct" : false},
+			{"text":"When a task is released", "correct" : false},
+			{"text":"When a request is released", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following statements is correct about the ABAP programming language?",
+		"options": [
+			{"text":"It enables multi-language applications", "correct" : true},
+			{"text":"It uses Native SQL access", "correct" : false},
+			{"text":"It uses Open SQL access", "correct" : true},
+			{"text":"It is platform-dependent", "correct" : true},
+			{"text":"It is typed", "correct" : false}
 		]
 	}
 ]
