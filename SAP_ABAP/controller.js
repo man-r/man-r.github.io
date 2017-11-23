@@ -54,12 +54,9 @@ $(document).ready(function () {
 	function displayQuestion(){
 		removeAllChildren(questionText);
 		
-		var d_question = quizlistvarsion[questionNumber].question;
-		questionText.appendChild(document.createTextNode(d_question));
-		document.getElementById(htmlstage).appendChild(questionText);
-
 		var d_options = shuffle(quizlistvarsion[questionNumber].options);
 		var correctAns = new Array();
+		var correctAnsCount = 0;
 		for (var i = 0; i < d_options.length; i++) {
 			var option = document.createElement('div');
 			option.className = "option";
@@ -69,10 +66,14 @@ $(document).ready(function () {
 			document.getElementById(htmlstage).appendChild(option);
 
 			if (d_options[i].correct) {
+				correctAnsCount++;
 				correctAns.push(d_options[i].text);
 			}
 		}
-
+		var d_question = quizlistvarsion[questionNumber].question;
+		questionText.appendChild(document.createTextNode(d_question));
+		document.getElementById(htmlstage).appendChild(questionText + " (" + correctAnsCount + " correct)");
+		
 		function optionClicked(event) {
 			
 			if (event.target.className == 'option') {
