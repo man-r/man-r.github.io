@@ -70,9 +70,9 @@ $(document).ready(function () {
 				correctAns.push(d_options[i].text);
 			}
 		}
-		var d_question = quizlistvarsion[questionNumber].question;
+		var d_question = quizlistvarsion[questionNumber].question + " (" + correctAnsCount + " correct)";
 		questionText.appendChild(document.createTextNode(d_question));
-		document.getElementById(htmlstage).appendChild(questionText + " (" + correctAnsCount + " correct)");
+		document.getElementById(htmlstage).appendChild(questionText);
 		
 		function optionClicked(event) {
 			
