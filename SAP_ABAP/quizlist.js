@@ -705,7 +705,7 @@ var quizlist = [
 	},
 	{
 		"section": "ABAP",
-		"question":"What does the co􀅵􀅵a􀅶d ⁄ O do whe􀅶 you use it in the command box?",
+		"question":"What does the command ⁄ O do when you use it in the command box?",
 		"options": [
 			{"text":"It cancels the current transaction", "correct" : false},
 			{"text":"It closes the window you are currently using", "correct" : false},
@@ -2368,8 +2368,8 @@ var quizlist = [
 		"question":"While creating a transparent table in the ABAP Dictionary which of the following may be used to provide the characteristics of a field in the table?",
 		"options": [
 			{"text":"The table field can refer a Domain for its characteristics", "correct" : false},
-			{"text":"The table field can refer a Data Element for its characteristics", "correct" : false},
-			{"text":"The table field can refer a Predefined Type for its characteristics", "correct" : false},
+			{"text":"The table field can refer a Data Element for its characteristics", "correct" : true},
+			{"text":"The table field can refer a Predefined Type for its characteristics", "correct" : true},
 			{"text":"The table field can refer a Structure for its characteristics", "correct" : false},
 			{"text":"The table field can refer a Table Type for its characteristics", "correct" : false}
 		]
