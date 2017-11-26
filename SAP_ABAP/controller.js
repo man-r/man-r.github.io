@@ -37,7 +37,7 @@ $(document).ready(function () {
 	correct.appendChild(document.createTextNode('CORRECT'));
 	wrong.appendChild(document.createTextNode('WRONG'));
 
-	var quizlistvarsion = suarray(shuffle(quizlist), 20);
+	var quizlistvarsion = suarray(shuffle(quizlist), 10);
 	for (i=0;i<quizlistvarsion.length;i++) {
 		questionBank[i]=new Array;
 		questionBank[i][0]=quizlistvarsion[i].question;
