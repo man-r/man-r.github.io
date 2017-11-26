@@ -117,6 +117,18 @@ $(document).ready(function () {
 		        			}
 		        		}
 		    		}
+				i = 0;
+			 	j = 0;
+			 	x = document.getElementsByClassName('selectedoption');
+		 		for (i = 0; i < x.length; i++) {
+			 		j = 0;
+					x[i].className ="wrongoption";
+		        		for (j = 0; j < correctAns.length; j++) {
+		        			if (correctAns[j] == x[i].innerHTML) {
+		        				x[i].className ="selectedoption";
+		        			}
+		        		}
+		    		}
 					setTimeout(function(){changeQuestion()},2000);
 	    		}
 	    		
