@@ -3564,7 +3564,7 @@ var quizlist = [
 	},
 	{
 		"section": "ABAP",
-		"question":"During the programming phase, you decide to make change to the characteristics of a Domain that you or your team member had earlier create			{"text":"Which of the functionalities mentioned here will provide you with the scope/usage of that domain?",
+		"question":"During the programming phase, you decide to make change to the characteristics of a Domain that you or your team member had earlier created. Which of the functionalities mentioned here will provide you with the scope/usage of that domain?",
 		"options": [
 			{"text":"Repository Information System", "correct" : false},
 			{"text":"Application Hierarchy", "correct" : false},
