@@ -3055,5 +3055,555 @@ var quizlist = [
 			{"text":"It is platform-dependent", "correct" : true},
 			{"text":"It is typed", "correct" : false}
 		]
+	},
+		{
+		"section": "ABAP",
+		"question":"Which of the following are TRUE characteristics of a type 1 program?",
+		"options": [
+			{"text":"May be executed only by having a transaction code", "correct" : false},
+			{"text":"May generate the output as a list screen", "correct" : true},
+			{"text":"May generate the output as a dialog screen", "correct" : true},
+			{"text":"May not be used in a background job if it contains a selection screen", "correct" : false},
+			{"text":"May execute other type 1 programs within its logic/runtime", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A program code that may not be executed independently but becomes part of the APG (Additional Program Group) of the internal session of a main program is:",
+		"options": [
+			{"text":"Logic of a Subroutine", "correct" : false},
+			{"text":"Logic of a Function Module", "correct" : true},
+			{"text":"Logic of a Local Class", "correct" : false},
+			{"text":"Logic of a Global Class", "correct" : true},
+			{"text":"Logic of a Module", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following characteristics about a module pool program is TRUE in ABAP development?",
+		"options": [
+			{"text":"Begins with a Selection screen when the TCODE is used in the command box", "correct" : false},
+			{"text":"Uses the naming convention SAPM* while creating the program", "correct" : true},
+			{"text":"Uses includes to structure the program logic, namely: TOP, O01 and I01", "correct" : true},
+			{"text":"Uses function modules to structure the program logic", "correct" : false},
+			{"text":"Uses screen events to structure the program logic", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"ABAP transaction screens designed with the Screen Painter comprise of attributes for each UI element. Which statement in the list below is NOT TRUE for an input/output element?",
+		"options": [
+			{"text":"Provides the users with value help that may be derived using POV event", "correct" : false},
+			{"text":"May be allowed to react on user input by providing a function code to it", "correct" : true},
+			{"text":"Input may be allowed, possible or required by the user at runtime", "correct" : false},
+			{"text":"Provides validation which may be enabled or disabled during design or runtime", "correct" : false},
+			{"text":"May provide a memory location to store input for later use within the user session", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"For a module pool program containing modules under PBO and PAI, which of the following statements hold TRUE?",
+		"options": [
+			{"text":"A module may call or execute another module", "correct" : false},
+			{"text":"A module may be reused in another screen", "correct" : true},
+			{"text":"A module may be reused in another program", "correct" : false},
+			{"text":"A module may be called within an IF...ENDIF block in the flow logic", "correct" : false},
+			{"text":"A module with validation logic must be specified in the PAI event", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"From the list of statements with regards to the automatic validation for a screen input element, mark the statements NOT TRUE?",
+		"options": [
+			{"text":"Error message will be triggered if a Date field input is ’19991412’", "correct" : false},
+			{"text":"Error message will be triggered if a Numeric field input is ‘987654’", "correct" : true},
+			{"text":"Error message will be triggered if a character field input is ‘abc123’ - containing numbers", "correct" : true},
+			{"text":"Error message is triggered if a field is enabled with the required property and the user does not provide a value to it", "correct" : false},
+			{"text":"Error message will be triggered for a field if linked with a check table and the input value does not correspond to it", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The design process of a dialog screen involves maintaining the element list for the screen. Therefore, mark TRUE for the given statements below:",
+		"options": [
+			{"text":"It transfers all of the UI element properties from screen painter to the SCREEN internal table", "correct" : false},
+			{"text":"It transfers only a few predefined UI element properties to the SCREEN internal table", "correct" : true},
+			{"text":"It contains one UI element as default for the user command", "correct" : true},
+			{"text":"UI elements grouped logically can be modified dynamically using any of the four groups maintained as it’s property", "correct" : true},
+			{"text":"Properties of application tool bar buttons of the GUI status also makes up the element list", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The user executes a transaction, enters values for input fields and then clicks a button for processing. What is TRUE about the data being transferred from the screen to the program?",
+		"options": [
+			{"text":"Data is transferred using identical names", "correct" : true},
+			{"text":"Data is transferred at the end of the Process Before Output event", "correct" : false},
+			{"text":"Data is transferred after a delay to the program if FIELD keyword is used", "correct" : true},
+			{"text":"Data is transferred at first to the program if FIELD keyword is used", "correct" : false},
+			{"text":"Data is transferred: (i.e. Name of the push button ) to OK_CODE when user clicks the button", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"For a user action on the SAP GUI some of the UI elements are to be hidden, say for example clicking on a checkbox. How can this be achieved through programming?",
+		"options": [
+			{"text":"Use graphical screen painter, check invisible property, activate and run the program", "correct" : false},
+			{"text":"Use SCREEN internal table to change the property of UI element in the PAI module", "correct" : false},
+			{"text":"Use SCREEN internal table to change the property of UI element in the PBO module", "correct" : true},
+			{"text":"Modify property to SCREEN-ACTIVE = 0 of the UI element of the SCREEN table", "correct" : true},
+			{"text":"Modify property to SCREEN-ACTIVE = 1 of the UI element of the SCREEN table", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A transaction consists of two screens 100 and 200. If the user has to navigate from screen 100 to 200 while working, then which of the following commands may be used?",
+		"options": [
+			{"text":"LEAVE TO SCREEN 200. If the control is to be transferred immediately", "correct" : true},
+			{"text":"SET SCREEN 200. If the control has further processing to complete before navigation", "correct" : true},
+			{"text":"SET SCREEN 200. LEAVE SCREEN. If the control has further processing to complete before navigation", "correct" : false},
+			{"text":"CALL SCREEN 200. If the control has to come back to the point of call and complete the remaining code", "correct" : true},
+			{"text":"Use CALL SCREEN 200 STARTING AT 5 5. If the screen need to be generated as a subscreen", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"For the SAP GUI status, mark the menu functions that are part of the SAP standard.",
+		"options": [
+			{"text":"Program", "correct" : false},
+			{"text":"Extras", "correct" : false},
+			{"text":"Environment", "correct" : false},
+			{"text":"System", "correct" : true},
+			{"text":"Help", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"While creating the pf-status in the menu painter, which of these instructions are to be followed?",
+		"options": [
+			{"text":"Function type E must only be used within AT EXIT-COMMAND", "correct" : true},
+			{"text":"The reserved function keys must not be used for local menu functions", "correct" : true},
+			{"text":"Coding must be provided if the standard tool bar functions: print, page up and page down is used", "correct" : false},
+			{"text":"Only the menu bar and application tool bar is to be designed if the screen is of type modal dialog box.", "correct" : false},
+			{"text":"Use ‘display standards’ to use SAP specific menu descriptions for your GUI status", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"FIELD LS_STR-CARRID MODULE CHECK_CARRID. A dialog screen requires the input field to be validated (syntax as above). Mark the statements that are TRUE:",
+		"options": [
+			{"text":"an error message when triggered sets the cursor position on the LS_STR-CARRID field and higlighting the field in red while disabling all the other screen elements", "correct" : true},
+			{"text":"an error message when triggered sets the cursor position on the LS_STR-CARRID field and highlighting in red while enabling all the other screen input elements", "correct" : false},
+			{"text":"FIELD: LS_STR-CARRID, LS_STR-CONNID, LS_STR-FLDATE. The colon notation can be used to group a number of fields so that all of them can be enabled for input if an error is triggered", "correct" : false},
+			{"text":"data is transported from screen to program for all the data objects at the start of the PAI, whereas the LS_STR-CARRID field value will be delayed", "correct" : true},
+			{"text":"data is transported from screen to program for all the LS_STR-CARRID field at the start of the PAI, whereas the other data objects value will be delayed", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The EXIT and CANCEL button is usually coded within a special module in order to overcome any screen validations. Select the correct module.",
+		"options": [
+			{"text":"MODULE exit_logic SWITCH exit_switch00.", "correct" : false},
+			{"text":"MODULE exit_logic AT EXIT-COMMAND.", "correct" : true},
+			{"text":"MODULE user_command.", "correct" : false},
+			{"text":"MODULE user_command ON EXIT.", "correct" : false},
+			{"text":"MODULE user_command ON LEAVE-PROGRAM.", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A dialog screen requires the input field to be validated (syntax as below). Mark the statements that are TRUE: CHAIN. FIELD LS_STR-CARRID MODULE CHECK_CARRID ON REQUEST. FIELD LS_STR-CONNID MODULE CHECK_CONNID ON INPUT. MODULE CHECK_INPUT1 ON CHAIN-INPUT. ENDCHAIN.",
+		"options": [
+			{"text":"if an error message is triggered in CHECK_CONNID and the user then resolves the error, the processing will then start from the beginning of the CHAIN again", "correct" : false},
+			{"text":"ON REQUEST will only process the module if the field LS_STR-CARRID was changed from its initial value to a new value", "correct" : false},
+			{"text":"ON INPUT will only process the module if the field LS_STR-CONNID was changed from its initial value to a new value", "correct" : true},
+			{"text":"ON CHAIN-INPUT will process the module if input is provided to both the fields LS_STR-CARRID and LS_STR-CONNID.", "correct" : false},
+			{"text":"ON CHAIN-INPUT will process the module if input is provided to any of the fields LS_STR-CARRID and LS_STR-CONNID.", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Choose the valid statements for SAP GUI input elements; Checkbox and Radio button.",
+		"options": [
+			{"text":"They are handled as Character fields of length 1 in the program", "correct" : true},
+			{"text":"They use values 0 or 1 indicate its selection in the program", "correct" : false},
+			{"text":"Only one radio button within a radiobutton group may be set as default “selected” in the program", "correct" : true},
+			{"text":"Radio button unlike checkbox must be grouped using SCREEN-GROUP property", "correct" : false},
+			{"text":"Radio button and checkbox may be used to trigger the PAI event", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A dialog screen 500 uses a sub-screen 550 to display certain information. Mark the statements that are TRUE for the screen 550.",
+		"options": [
+			{"text":"Screen 550 cannot have a menu bar or the status bar", "correct" : true},
+			{"text":"Screen 550 cannot have a title bar", "correct" : true},
+			{"text":"Screen 550 cannot contain any modules with the addition AT EXIT-COMMAND.", "correct" : true},
+			{"text":"Screen 550 can call another screen using CALL SCREEN 600.", "correct" : false},
+			{"text":"Screen 550 can have processing logic for buttons with OK_CODE specified in the element list", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"CALL SUBSCREEN SUB_AREA INCLUDING SY-CPROG ‘0550’. A dialog screen 500 uses a sub-screen 550 to display certain information. Mark the statement that is NOT TRUE for the screen 550.",
+		"options": [
+			{"text":"CALL SUBSCREEN must not be called within LOOP...ENDLOOP.", "correct" : false},
+			{"text":"CALL SUBSCREEN may be called within CHAIN...ENDCHAIN to validate its fields.", "correct" : true},
+			{"text":"CALL SUBSCREEN can call the screen 550 only with SY-CPROG as the program name", "correct" : true},
+			{"text":"CALL SUBSCREEN can call the screen 550, which again could call another SUBSCREEN", "correct" : false},
+			{"text":"CALL SUBSCREEN must be specified in both PBO and PAI events", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Select the syntax that is used to refer a tab-strip in the program code.",
+		"options": [
+			{"text":"DATA: tabs_name TYPE TABSTRIP.", "correct" : false},
+			{"text":"CONSTANTS: tabs_name TYPE TABSTRIP.", "correct" : false},
+			{"text":"CONTROLS: tabs_name TYPE TABSTRIP.", "correct" : true},
+			{"text":"CONTROLS: tabs_name TYPE CXTAB_TABSTRIP.", "correct" : false},
+			{"text":"PARAMETERS: tabs_name TYPE TABSTRIP.", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"When a tab-strip is being designed in the Graphical Screen Painter, which of these characteristics is utilized?",
+		"options": [
+			{"text":"For each tab, drag and drop the tab-specific UI elements", "correct" : false},
+			{"text":"Can add an unlimited number of tabs as the SAP GUI renders a scroll bar automatically for the tab-strip", "correct" : true},
+			{"text":"Provide each tab (must) with unique area if tab function type is “ ” (Normal)", "correct" : false},
+			{"text":"Provide each tab (may) with single shared area if tab function type is “ ” (Normal)", "correct" : true},
+			{"text":"Provide each tab with function type P if PAI is not to be triggered on tab scroll", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"An input field in the Graphical Screen Painter if derived from the dictionary may have which of the following characteristics?",
+		"options": [
+			{"text":"Derives the datatype and length property from the dictionary", "correct" : true},
+			{"text":"Derives the obligatory property if it is a key field of a table", "correct" : false},
+			{"text":"Derives the foreign key check if the field has a link with a check table", "correct" : true},
+			{"text":"Derives the description or the text label for the input field", "correct" : true},
+			{"text":"Derives PARAMETER ID automatically flagged with SPA/GPA", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which system field may be used to get the name of the module pool program during the runtime?",
+		"options": [
+			{"text":"SY-PROGM", "correct" : false},
+			{"text":"SY-CURPM", "correct" : false},
+			{"text":"SY-REPRT", "correct" : false},
+			{"text":"SY-CPROG", "correct" : true},
+			{"text":"SY-REPID", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following statements may be true for the logic given in the modules of PBO or the PAI of a dialog screen?",
+		"options": [
+			{"text":"A subroutine may be called inside a module", "correct" : true},
+			{"text":"A subroutine may be defined inside a module", "correct" : false},
+			{"text":"A function module may be called inside a module", "correct" : true},
+			{"text":"A module may be called inside a module", "correct" : false},
+			{"text":"A class method may be called inside a module", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The navigation button “Cancel” may be coded with which of the following logic in the dialog program?",
+		"options": [
+			{"text":"CALL SCREEN 100. Where 100 is the initial screen of the transaction", "correct" : false},
+			{"text":"ROLLBACK WORK. CALL TRANSACTION ‘tcode’. To re-initialize the transaction", "correct" : false},
+			{"text":"COMMIT WORK. CALL TRANSACTION ‘tcode’. To re-initialize the transaction", "correct" : false},
+			{"text":"ROLLBACK WORK. LEAVE TO TRANSACTION ‘tcode’. To re-initialize the transaction", "correct" : true},
+			{"text":"COMMIT WORK. LEAVE TO TRANSACTION ‘tcode’. To re-initialize the transaction", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A table defined in the ABAP dictionary was altered with one of its field length changed from 60 characters to 30 characters. Choose the ways in which the underlying database structure of this table may be adjusted?",
+		"options": [
+			{"text":"Activate the domain where the length was changed, this will adjust the database structure", "correct" : false},
+			{"text":"Activate the table in the dictionary, this will adjust the database structure", "correct" : false},
+			{"text":"First delete the table in the database, then activate the table definition in the dictionary", "correct" : true},
+			{"text":"Use ALTER TABLE to change the definition (DB Catalog) of the table in the database", "correct" : true},
+			{"text":"Convert the table using the conversion process", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following is TRUE about the conversion process for a database table structure?",
+		"options": [
+			{"text":"Creates a new empty table and deletes the old database table containing any data", "correct" : false},
+			{"text":"Creates a new table QCM8 based on the definition (altered) in the ABAP dictionary", "correct" : true},
+			{"text":"Renames the old database table TAB as QCMTAB table", "correct" : true},
+			{"text":"Indexes of the old table are saved/retained throughout the conversion process", "correct" : false},
+			{"text":"Copies data from QCM table into QCM8 table using MOVE-CORRESPONDING", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A table defined in the ABAP dictionary was altered with one of its field length changed from 60 characters to 30 characters. The developer tries to convert the database table using the Database Utility tool in SAP but the process terminates. Which of the following could be the reason for termination?",
+		"options": [
+			{"text":"Termination because the length of the field was decreased/increased", "correct" : false},
+			{"text":"Termination because the number of key fields in the table was reduced", "correct" : false},
+			{"text":"Termination because of insufficient table space in the database", "correct" : true},
+			{"text":"Termination because of a change in the field datatype that is not compatible", "correct" : true},
+			{"text":"Termination because the CLIENT field was removed from the table definition", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following will characterize an index of the database table?",
+		"options": [
+			{"text":"Index makes the access time quicker when searching a table for data", "correct" : true},
+			{"text":"Index is a copy of the entire table sorted based on the index fields (key/non-key)", "correct" : false},
+			{"text":"Index uses binary search to locate the record thereby making the access faster", "correct" : true},
+			{"text":"Index is used/selected in the database based on the SELECT criteria of the program", "correct" : true},
+			{"text":"Index can only be created by the developer if there is a requirement for it", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"What is TRUE for primary and secondary indexes of a database table?",
+		"options": [
+			{"text":"Primary index contains key fields of table and a pointer to the table’s non-key fields", "correct" : true},
+			{"text":"Secondary index is automatically created by the system upon activating the table", "correct" : false},
+			{"text":"The database interface chooses the suitable index from the database", "correct" : false},
+			{"text":"If the index fields uniquely identify each record in the table, it’s a Unique Index", "correct" : true},
+			{"text":"Index will always result in a gain in performance for every database system", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following must be considered as a design and use criteria for indexes?",
+		"options": [
+			{"text":"Design the index keeping in mind the data to be ultimately selected with the query", "correct" : true},
+			{"text":"During selection, an index is useful up to all of its fields even if the query contains fields not in the same order", "correct" : false},
+			{"text":"Creating too many indexes might result in performance drawback during access to the database table", "correct" : true},
+			{"text":"Tables with frequent entries must have more indexes", "correct" : false},
+			{"text":"Indexes must contain few common fields between them as possible,(be disjunctive)", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A table field in the ABAP dictionary gets its technical attributes from a domain. Which of the following are properties that can be maintained for it?",
+		"options": [
+			{"text":"If only certain input values are valid for the domain, you can enter them in the value range tab as fixed values", "correct" : true},
+			{"text":"If the value table is defined in the value range, then the domain establishes a foreign key link with the check table", "correct" : false},
+			{"text":"Check “lowercase” indicator if you would want to convert upper case alphabets to lower case", "correct" : false},
+			{"text":"DEC, FLTP, QUAN and CURR when used as datatype must have the “sign”indicator checked", "correct" : true},
+			{"text":"Contents of a screen field may be converted from display format to SAP internal format and vice versa", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The domain level entry that proposes the check table when you try to define a foreign key for the table field is called as the:",
+		"options": [
+			{"text":"Main table", "correct" : false},
+			{"text":"Master table", "correct" : false},
+			{"text":"Check table", "correct" : false},
+			{"text":"Foreign key table", "correct" : false},
+			{"text":"Value table", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A program description provides a self-explanatory meaning to the program during run time. Which of the options given maybe used to create this text?",
+		"options": [
+			{"text":"Use Selection texts", "correct" : false},
+			{"text":"Use List Headings", "correct" : false},
+			{"text":"Use SET TITLE-BAR ‘XXX’.", "correct" : true},
+			{"text":"Use Text Symbols", "correct" : false},
+			{"text":"Use SET PF-STATUS ‘XXX’.", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Select the options that are TRUE when CHAIN...ENDCHAIN is used in a dialog?",
+		"options": [
+			{"text":"Fields within can use a common module for validation", "correct" : true},
+			{"text":"Fields within will be required property as default", "correct" : false},
+			{"text":"Fields within can be enabled/disabled dynamically at runtime", "correct" : false},
+			{"text":"Fields within be highlighted if error message is triggered", "correct" : true},
+			{"text":"Fields within are optional fields for input", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A dialog screen if generates a warning message, the user may perform which of the following activities?",
+		"options": [
+			{"text":"Change the input values and try again", "correct" : true},
+			{"text":"Click on the exit button and re-run the program", "correct" : false},
+			{"text":"Click on the back button and re-process the screen again", "correct" : false},
+			{"text":"Press Enter Key and continue processing the screen", "correct" : true},
+			{"text":"Click on Cancel and refresh all input fields", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which one from the given list is an UI element that may be defined on a screen to hold another screen at runtime?",
+		"options": [
+			{"text":"Box UI element", "correct" : false},
+			{"text":"Tabstrip control UI element", "correct" : false},
+			{"text":"Subscreen area UI element", "correct" : true},
+			{"text":"Group UI element", "correct" : false},
+			{"text":"Table control UI element", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"An SAP GUI requires certain functions available only from the menu, where the user can traverse the menu and select the function. How will you create the object?",
+		"options": [
+			{"text":"Create a pf-status for normal-screen only maintain the menu bar functions", "correct" : false},
+			{"text":"Create a pf-status for a dialog-screen and maintain the required functions", "correct" : false},
+			{"text":"Create a pf-status for a selection screen and maintain the required functions", "correct" : false},
+			{"text":"Create s pf-status for context menu and maintain the required functions", "correct" : true},
+			{"text":"Use command SET PF-STATUS ‘XXX’ EXCLUDING LT_FCODE. Where lt_fcode is the list of required functions", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following is NOT possible in a list output?",
+		"options": [
+			{"text":"Use Colour", "correct" : false},
+			{"text":"Use Checkbox", "correct" : false},
+			{"text":"Use Radio-button", "correct" : true},
+			{"text":"Use Icons", "correct" : false},
+			{"text":"Use horizontal and vertical lines", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A tab-strip control when being designed in the Graphical Screen Painter tool does NOT have which of the element mentioned below?",
+		"options": [
+			{"text":"Scroll bar", "correct" : false},
+			{"text":"Tab title", "correct" : true},
+			{"text":"Function code", "correct" : false},
+			{"text":"Sub-screen", "correct" : false},
+			{"text":"Function type", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which is the correct order by which the system searches for a suitable search help when the user presses F4 button on an input field?",
+		"options": [
+			{"text":"Table field ->Screen -> Data Element -> Check table -> Fixed values -> D/T type", "correct" : false},
+			{"text":"D/T type -> Data Element -> Fixed values -> Check table -> Table field -> Screen", "correct" : false},
+			{"text":"Screen -> Table field -> Check Table -> Data Element -> D/T type -> Fixed values", "correct" : false},
+			{"text":"Screen -> Table field -> Check Table -> Data Element -> Fixed values -> D/T type", "correct" : true},
+			{"text":"Screen -> Table field -> Data Element -> Check Table -> D/T type -> Fixed values", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"On a dialog screen, a number of input UI elements may be hidden at runtime by using dynamic modifications of screen. Which of these statements will enable the activity?",
+		"options": [
+			{"text":"Use SCREEN-NAME property to identify the UI element", "correct" : false},
+			{"text":"Use SCREEN-GROUP property to identify the UI element", "correct" : true},
+			{"text":"Use MODIF-ID property to identify the UI element", "correct" : false},
+			{"text":"Use ACTIVE property and set it to a value 0", "correct" : true},
+			{"text":"Use INVISIBLE property and set it to a value 1", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A transparent table field may be defined using which of the following options?",
+		"options": [
+			{"text":"Domain", "correct" : false},
+			{"text":"Data Element", "correct" : true},
+			{"text":"Structure Name", "correct" : false},
+			{"text":"Predefined Type", "correct" : true},
+			{"text":"Table type Name", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Processing of screen input values happen when the user clicks on a button or a function. Which is the name of the system field associated with it?",
+		"options": [
+			{"text":"SY-FTCODE", "correct" : false},
+			{"text":"SY-OKCODE", "correct" : false},
+			{"text":"SY-UCOMM", "correct" : true},
+			{"text":"SY-BUTON", "correct" : false},
+			{"text":"SY-FUNCN", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A set of lines/code in the ABAP program that gets processed when the program reaches a status at run time is referred to as:",
+		"options": [
+			{"text":"Function Module", "correct" : false},
+			{"text":"Subroutine", "correct" : false},
+			{"text":"Include", "correct" : false},
+			{"text":"Event", "correct" : true},
+			{"text":"Module", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A structure being a global definition in the ABAP dictionary, which of the following is TRUE for a flat structure?",
+		"options": [
+			{"text":"Flat structure components refer to data element", "correct" : true},
+			{"text":"Flat structure components refer to another structure", "correct" : false},
+			{"text":"Flat structure components must not be flagged as keys", "correct" : false},
+			{"text":"Flat structure components may be linked to a check table", "correct" : true},
+			{"text":"Flat structure components may be linked to a search help", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following are correct with regards to the buffering concept?",
+		"options": [
+			{"text":"Buffering avoids time-consuming process of accessing the database", "correct" : true},
+			{"text":"Buffering space is limited and might cause an overflow if excess data is loaded", "correct" : false},
+			{"text":"Buffering is used always for the first access to the data from the program", "correct" : false},
+			{"text":"Buffering can be used only on transparent tables and views", "correct" : true},
+			{"text":"Buffering must not be used if the application needs up-to-date information", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"During the programming phase, you decide to make change to the characteristics of a Domain that you or your team member had earlier create			{"text":"Which of the functionalities mentioned here will provide you with the scope/usage of that domain?",
+		"options": [
+			{"text":"Repository Information System", "correct" : false},
+			{"text":"Application Hierarchy", "correct" : false},
+			{"text":"Where used list", "correct" : true},
+			{"text":"Package Hierarchy", "correct" : false},
+			{"text":"ABAP Dictionary", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The TABLES keyword when used in a program offers which of the following features? TABLES: ZTAB_XY01",
+		"options": [
+			{"text":"TABLES, generates an internal table with the name of the database table", "correct" : false},
+			{"text":"TABLES, generates a structure with the name of the database table", "correct" : true},
+			{"text":"TABLES, generates a cursor for the database table to fetch records later", "correct" : false},
+			{"text":"TABLES, does not require a target when running a SELECT query on the same table.", "correct" : true},
+			{"text":"TABLES, does not require a source when running an INSERT query on the same table", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Your project development requires a view designed for the purpose of accessing data from the database. Which of the following is/are benefits of using a view in the program?",
+		"options": [
+			{"text":"A view will always improve the performance of access to table records", "correct" : false},
+			{"text":"A view might improve the structure of the SELECT access to the table", "correct" : true},
+			{"text":"A view enables access to data that is distributed on several tables", "correct" : true},
+			{"text":"A view enables changes to data that is distributed on several tables", "correct" : true},
+			{"text":"A view is a replacement for select statements using inner and outer joins with more than 3 tables", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"All the fields of a database table can be included in the “view fields” when designing a view by using which of the following character?",
+		"options": [
+			{"text":"Use “+”", "correct" : false},
+			{"text":"Use “*”", "correct" : true},
+			{"text":"Use “%”", "correct" : false},
+			{"text":"Use “-”", "correct" : false},
+			{"text":"Use “_”", "correct" : false}
+		]
 	}
 ]
