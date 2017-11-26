@@ -70,7 +70,7 @@ $(document).ready(function () {
 				correctAns.push(d_options[i].text);
 			}
 		}
-		var d_question = questionNumber + ". " + quizlistvarsion[questionNumber].question + " (" + correctAnsCount + " correct)";
+		var d_question = (1 + questionNumber) + ". " + quizlistvarsion[questionNumber].question + " (" + correctAnsCount + " correct)";
 		questionText.appendChild(document.createTextNode(d_question));
 		document.getElementById(htmlstage).insertBefore(questionText, document.getElementById(htmlstage).childNodes[0]);
 		
