@@ -78,17 +78,23 @@ color:#FC0;
 	padding-left:10px;
 	cursor:pointer;
 	background-color:#3399FF;
-	border:#7CFC00 solid 2px;
-	color:#7CFC00;
+	border:#008000 solid 2px;
+	color:#008000
 }
 
 		
-
-
-
-
-
-
+.wrongoption {
+	width:400px;
+	height:auto;
+	margin:15px;
+	font-size:18px;
+	padding:2px;
+	padding-left:10px;
+	cursor:pointer;
+	background-color:#3399FF;
+	border:#FF0000 solid 2px;
+	color:#FF0000;
+}
 
  
 
