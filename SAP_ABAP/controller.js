@@ -125,8 +125,7 @@ $(document).ready(function () {
 					x[i].className ="wrongoption";
 		        		for (j = 0; j < correctAns.length; j++) {
 		        			if (correctAns[j] == x[i].innerHTML) {
-		        				x[i].className ="selectedoption";
-							i++;
+		        				x[i].className ="correctoption";
 		        			}
 		        		}
 		    		}
