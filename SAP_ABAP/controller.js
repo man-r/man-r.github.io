@@ -200,7 +200,7 @@ $(document).ready(function () {
 		
 	function displayFinalSlide(){
 			
-		$(stage).append('<div class="questionText">You have finished the quiz! (refresh to get a random 20 questions)<br><br>Total questions: '+numberOfQuestions+'<br>Correct answers: '+score+'</div>');
+		$(stage).append('<div class="questionText">You have finished the quiz! (refresh to get a random 10 questions)<br><br>Total questions: '+numberOfQuestions+'<br>Correct answers: '+score+'</div>');
 		//setTimeout(function(){
 		//	location.reload();
 		//},5000);
