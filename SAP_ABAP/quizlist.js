@@ -1896,8 +1896,8 @@ var quizlist = [
 		"options": [
 			{"text":"Submit program_name. Is synchronous and a new start.", "correct" : true},
 			{"text":"Submit program_name. Is synchronous and insert.", "correct" : false},
-			{"text":"􀍚Su􀄏􀅵it􀍛 􀄐a􀅶􀅶ot 􀄏e used if the 􀄐alled progra􀅵 has a􀅶 user i􀅶terfa􀄐e", "correct" : false},
-			{"text":"􀍚Su􀄏􀅵it a􀅶d Retur􀅶..􀍛the 􀄏a􀄐k 􀄏utto􀅶 􀄏ri􀅶gs the 􀄐o􀅶trol to the 􀄐alli􀅶g progra􀅵 immediately after the call.", "correct" : true},
+			{"text":"‘Submit’ cannot be used if the called program has an user interface", "correct" : false},
+			{"text":"‘Submit and Return..’the back button brings the control to the calling program immediately after the call.", "correct" : true},
 			{"text":"Submit program_name. Is Asynchronous and a new start.", "correct" : false}
 		]
 	},
@@ -1905,11 +1905,11 @@ var quizlist = [
 		"section": "ABAP",
 		"question":"Mark the statements that are true:",
 		"options": [
-			{"text":"SUBMIT pgm AND RETURN. or CALL TRANSACTION tcode. have the same effect on the ABAP Me􀅵ory 􀇁he􀅶 the 􀍚Ba􀄐k􀍛 􀄏utto􀅶 is used.", "correct" : true},
-			{"text":"SUBMIT pgm. or CALL TRANSACTION tcode. Both have the same effect on the ABAP Me􀅵ory 􀇁he􀅶 the 􀍚Ba􀄐k􀍛 􀄏utto􀅶 is used.", "correct" : false},
-			{"text":"SUBMIT pgm. or LEAVE TO TRANSACTION tcode. Both will exit the program memory sta􀄐k 􀇁he􀅶 the 􀍚Ba􀄐k􀍛 􀄏utto􀅶 is used.", "correct" : true},
-			{"text":"SUBMIT pgm. When used within an existing multilevel memory stack will delete memory allo􀄐atio􀅶 of just o􀅶e progra􀅵 if the 􀍚Ba􀄐k􀍛 􀄏utto􀅶 is pressed.", "correct" : true},
-			{"text":"SUBMIT pgm. When used within an existing multilevel memory stack will delete 􀅵e􀅵ory allo􀄐atio􀅶 of all the progra􀅵s if the 􀍚Ba􀄐k􀍛 􀄏utto􀅶 is pressed.", "correct" : false}
+			{"text":"SUBMIT pgm AND RETURN. or CALL TRANSACTION tcode. have the same effect on the ABAP Memory when the ‘Back’ button is used. ", "correct" : true},
+			{"text":"SUBMIT pgm. or CALL TRANSACTION tcode. Both have the same effect on the ABAP Memory when the ‘Back’ button is used.", "correct" : false},
+			{"text":"SUBMIT pgm. or LEAVE TO TRANSACTION tcode. Both will exit the program memory stack (all internal sessions) when the ‘Back’ button is used.", "correct" : true},
+			{"text":"SUBMIT pgm. When used within an existing multilevel memory stack will delete memory allocation of just one program if the ‘Back’ button is pressed.", "correct" : true},
+			{"text":"SUBMIT pgm. When used within an existing multilevel memory stack will delete memory allocation of all the programs if the ‘Back’ button is pressed.", "correct" : false}
 		]
 	},
 	{
@@ -4044,6 +4044,666 @@ var quizlist = [
 			{"text":"At the regular end of the subroutine, the value changed in the copy is written back to the original.", "correct" : true},
 			{"text":"Avoids time-consuming creation of copies for large internal tables.", "correct" : false},
 			{"text":"A STOP statement or a type E user message will suppress the writing back of the value to the original.", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A central maintenance of shared components and services which may be derived by other classes is referred to as which of the following?",
+		"options": [
+			{"text":"Association", "correct" : false},
+			{"text":"Composition", "correct" : false},
+			{"text":"Aggregation", "correct" : false},
+			{"text":"Specialization", "correct" : true},
+			{"text":"Generalization", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following are features of inheritance in ABAP Objects?",
+		"options": [
+			{"text":"Components are maintained in the superclass", "correct" : true},
+			{"text":"Components are maintained in the subclass", "correct" : false},
+			{"text":"Subclass offers programming by difference", "correct" : true},
+			{"text":"Subclass may avoid redundant implementations", "correct" : true},
+			{"text":"Super class components offer a Black box usability", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following is the keyword defined to specify inheritance?",
+		"options": [
+			{"text":"Use INHERITING FROM keyword in superclass definition block", "correct" : false},
+			{"text":"Use INHERITING TO keyword in the superclass definition", "correct" : false},
+			{"text":"Use INHERITING FROM keyword in subclass definition block", "correct" : true},
+			{"text":"Use CHILD CLASS subclass_name in the super class definition", "correct" : false},
+			{"text":"Use CHILD CLASS OF superclass_name in the subclass definition", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of these components are NOT inherited into the subclass?",
+		"options": [
+			{"text":"Instance Data Attributes", "correct" : false},
+			{"text":"Class-Data Attributes", "correct" : true},
+			{"text":"Class-Events", "correct" : true},
+			{"text":"Constants", "correct" : true},
+			{"text":"Instance Methods", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The super class method logic may be extended in the subclass with which of the following addition?",
+		"options": [
+			{"text":"METHODS: meth_name ABSTRACT.", "correct" : false},
+			{"text":"CLASS-METHODS: meth_name ABSTRACT.", "correct" : false},
+			{"text":"METHODS: meth_name REDEFINITION.", "correct" : true},
+			{"text":"CLASS-METHODS: meth_name REDEFINITION.", "correct" : false},
+			{"text":"METHODS: meth_name OVERWRITE.", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which method keyword addition from the given list be used if the method may not be redefined in the subclass?",
+		"options": [
+			{"text":"METHODS: meth_name CREATE PUBLIC.", "correct" : false},
+			{"text":"METHODS: meth_name ABSTRACT.", "correct" : false},
+			{"text":"METHODS: meth_name FINAL.", "correct" : true},
+			{"text":"METHODS: meth_name CREATE PRIVATE.", "correct" : false},
+			{"text":"METHODS: meth_name CREATE PROTECTED.", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which method call is used to extend the logic of a method during redefinition?",
+		"options": [
+			{"text":"Me->method( )", "correct" : false},
+			{"text":"This->method( )", "correct" : false},
+			{"text":"Self->method( )", "correct" : false},
+			{"text":"Super->method( )", "correct" : true},
+			{"text":"Sub->method( )", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"An object created on a subclass if appended to an internal table declared on the superclass, will have which of the following characteristics?",
+		"options": [
+			{"text":"The assignment/append is not possible as the two classes are in-compatible", "correct" : false},
+			{"text":"The assignment will lead to Specialization", "correct" : false},
+			{"text":"The assignment will lead to Generalization", "correct" : true},
+			{"text":"The internal table reference may access all components from the object", "correct" : false},
+			{"text":"The internal table reference has performed an Up Cast on the object", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Select the operator used for applying a Narrowing cast?",
+		"options": [
+			{"text":"->", "correct" : false},
+			{"text":"->*", "correct" : false},
+			{"text":"=>", "correct" : false},
+			{"text":"?=", "correct" : true},
+			{"text":"?>", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Name the exception that is a possibility when performing a Down Cast?",
+		"options": [
+			{"text":"DATA_TYPE_ERROR", "correct" : false},
+			{"text":"COMPUTE_CAST_ERROR", "correct" : false},
+			{"text":"MOVE_CAST_ERROR", "correct" : true},
+			{"text":"REF_OVERFLOW_ERROR", "correct" : false},
+			{"text":"REF_TYPE_ERROR", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The art of processing a method with one name but with different implementation logic is termed as:",
+		"options": [
+			{"text":"Generalization", "correct" : false},
+			{"text":"Specialization", "correct" : false},
+			{"text":"Polymorphism", "correct" : true},
+			{"text":"Association", "correct" : false},
+			{"text":"Aggregation", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Interface components have which of the following visibility functions?",
+		"options": [
+			{"text":"PUBLIC SECTION", "correct" : true},
+			{"text":"PROTECTED SECTION", "correct" : false},
+			{"text":"PRIVATE SECTION", "correct" : false},
+			{"text":"CREATE PUBLIC", "correct" : false},
+			{"text":"CREATE PRIVATE", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A class LCL_PERSON has two methods GET_CONTACT_INFO [instance, public] and GET_EMPLOYMENT_INFO [instance, private]. Which of the following method calls may be used in the program?",
+		"options": [
+			{"text":"CALL METHOD ref->GET_EMPLOYMENT_INFO.", "correct" : false},
+			{"text":"CALL METHOD ref->GET_CONTACT_INFO.", "correct" : false},
+			{"text":"CALL METHOD ref=>GET_CONTACT_INFO.", "correct" : false},
+			{"text":"ref->GET_CONTACT_INFO( ).", "correct" : true},
+			{"text":"LCL_PERSON=>GET_CONTACT_INFO( ).", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A class LCL_PERSON has two methods GET_CONTACT_INFO [instance, public] and GET_COMPANY_INFO [static, public]. Which of the following method calls may be used in the program?",
+		"options": [
+			{"text":"ref->GET_CONTACT_INFO( ).", "correct" : true},
+			{"text":"ref->GET_COMPANY_INFO( ).", "correct" : true},
+			{"text":"LCL_PERSON=>GET_CONTACT_INFO( ).", "correct" : false},
+			{"text":"LCL_PERSON=>GET_COMPANY_INFO( ).", "correct" : true},
+			{"text":"ref=>GET_COMPANY_INFO( ).", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"LCL_ORDER is a class associated with another class LCL_ITEM with cardinality 1..*. The class LCL_ITEM is associated with LCL_ORDER with a cardinality 1..1. What are the characteristics of this association?",
+		"options": [
+			{"text":"an instance of LCL_ORDER contains an existent dependent composition of zero or more instances of LCL_ITEM", "correct" : false},
+			{"text":"each instance of the class LCL_ITEM when created must be aggregated into an internal table of LCL_ORDER and must not have any additional references variables on its own.", "correct" : true},
+			{"text":"each instance of the class LCL_ITEM when created must be aggregated into an internal table of LCL_ORDER and must have additional references variables on its own.", "correct" : false},
+			{"text":"clearing the reference of an instance of LCL_ORDER must also be followed with clearing the associated instances of LCL_ITEMS", "correct" : false},
+			{"text":"clearing the reference of an instance of LCL_ORDER will also clear the associates instances of LCL_ITEM", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A class LCL_TRUCK has private instance attributes [lv_color, lv_make, lv_modelno], private static attribute [lv_count], a public instance method [get_attributes] and a public static method [get_no_of_trucks]. Which of the following statements are correct about the design?",
+		"options": [
+			{"text":"the method get_attributes can use attributes lv_color, lv_make and lv_model", "correct" : true},
+			{"text":"the method get_no_of_trucks can use attributes lv_color, lv_make and lv_model", "correct" : false},
+			{"text":"the method get_attributes can use attributes lv_count", "correct" : true},
+			{"text":"the method get_attributes can call the other method get_no_of_trucks", "correct" : true},
+			{"text":"the method get_no_of_trucks can call the other method get_attributes", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A class definition LCL_PLANE requires that an attribute lv_carrid be accessible from the program without have the program do any changes to it. How will you define this attribute?",
+		"options": [
+			{"text":"DATA: lv_carrid TYPE SPFLI-CARRID.", "correct" : false},
+			{"text":"TYPES: lv_carrid TYPE SPFLI-CARRID.", "correct" : false},
+			{"text":"CONSTANTS: lv_carrid TYPE SPFLI-CARRID READ-ONLY.", "correct" : false},
+			{"text":"DATA: lv_carrid TYPE SPFLI-CARRID READ-ONLY.", "correct" : true},
+			{"text":"DATA: lv_carrid LIKE SPFLI-CARRID READ-ONLY.", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A class definition LCL_PLANE has a public instance attribute lv_carrid defined as READ-ONLY. Which of the following is correct for this attribute?",
+		"options": [
+			{"text":"a program can change the value of lv_carrid", "correct" : false},
+			{"text":"a subclass method can change the value of lv_carrid", "correct" : true},
+			{"text":"a class private method cannot change the value of lv_carrid", "correct" : false},
+			{"text":"an interface method cannot change the value of lv_carrid", "correct" : false},
+			{"text":"a friend class of LCL_PLANE can change the value of lv_carrid", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The parameter that is not part of the signature of a method definition is:",
+		"options": [
+			{"text":"IMPORTING", "correct" : false},
+			{"text":"EXCEPTIONS", "correct" : false},
+			{"text":"RECEIVING", "correct" : false},
+			{"text":"RETURNING", "correct" : false},
+			{"text":"TABLES", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A method GET_DETAILS of super class LCL_VEHICLE is redefined in a subclass LCL_BUS. An instance is created for LCL_BUS in the program using reference variable ref_bus. Which of the following can be used to execute the logic of the method in LCL_VEHICLE while working on the instance of ref_bus?",
+		"options": [
+			{"text":"CALL METHOD ref_bus->GET_DETAILS( ).", "correct" : false},
+			{"text":"CALL METHOD me->GET_DETAILS( ).", "correct" : false},
+			{"text":"CALL METHOD this->GET_DETAILS( ).", "correct" : false},
+			{"text":"CALL METHOD super->GET_DETAILS( ).", "correct" : true},
+			{"text":"CALL METHOD ref_vech->GET_DETAILS( ).", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Polymorphism may be achieved using which concept in ABAP Objects?",
+		"options": [
+			{"text":"Classes and Objects", "correct" : false},
+			{"text":"Events", "correct" : false},
+			{"text":"Inheritance", "correct" : true},
+			{"text":"Interfaces", "correct" : true},
+			{"text":"Encapsulation", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Interface intf_1 belongs within another interface intf_2. What would be the term that exactly defines intf_2?",
+		"options": [
+			{"text":"Super Interface", "correct" : false},
+			{"text":"Superior Interface", "correct" : false},
+			{"text":"Component Interface", "correct" : false},
+			{"text":"Compound Interface", "correct" : true},
+			{"text":"Sub Interface", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The ability to have multiple-inheritance may be indirectly achieved in ABAP objects using?",
+		"options": [
+			{"text":"Inheritance", "correct" : false},
+			{"text":"Events", "correct" : false},
+			{"text":"Interfaces", "correct" : true},
+			{"text":"Redefinition", "correct" : false},
+			{"text":"Friends", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"An interface IF_DISP contains static method GET_LIST. Which of the following is a valid call to the methods if the interface has been implemented in a class lcl_VEHICLE?",
+		"options": [
+			{"text":"LCL_VEHICLE->GET_LIST( ).", "correct" : false},
+			{"text":"LCL_VEHICLE=>GET_LIST( ).", "correct" : false},
+			{"text":"LCL_VEHICLE=>IF_DISP~GET_LIST( ).", "correct" : true},
+			{"text":"LCL_VEHICLE=>A1( ). If A1 is defined as an alias for the method in the interface definition.", "correct" : false},
+			{"text":"LCL_VEHICLE=>A1( ). If A1 is defined as an alias for the method in the class definition", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of these are characteristics of the sender of an event?",
+		"options": [
+			{"text":"Call the event handler method", "correct" : false},
+			{"text":"Raise the event", "correct" : true},
+			{"text":"Register the handler method", "correct" : false},
+			{"text":"Define the event", "correct" : true},
+			{"text":"Provide logic for the handler method", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which activity controls whether an event when raised will be processed by the handler objects?",
+		"options": [
+			{"text":"Create event", "correct" : false},
+			{"text":"Trigger event", "correct" : false},
+			{"text":"Set the handler object", "correct" : false},
+			{"text":"Set the handler method", "correct" : true},
+			{"text":"Set the handler class", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Name the default parameter that is generated as part of the event trigger?",
+		"options": [
+			{"text":"Receiver", "correct" : false},
+			{"text":"Importer", "correct" : false},
+			{"text":"Exporter", "correct" : false},
+			{"text":"Sender", "correct" : true},
+			{"text":"Instance Creator", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"When the function “import local class” is used from the class builder, which of the following activities does it perform?",
+		"options": [
+			{"text":"Converts local class into a global class", "correct" : false},
+			{"text":"Converts global class into a local class", "correct" : false},
+			{"text":"Copies local class into a global class", "correct" : true},
+			{"text":"Copies a global class into a local class", "correct" : false},
+			{"text":"Transfers global class into a local class", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following would you have to do if you were to use the double click event in an ALV report?",
+		"options": [
+			{"text":"In se24, create an exception class", "correct" : false},
+			{"text":"In se24, create an event handler class", "correct" : false},
+			{"text":"In the program, create an event handler class", "correct" : true},
+			{"text":"In the program, create an event handler method", "correct" : false},
+			{"text":"Implement and register an event handler method", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"What is the name of the method used to display the ALV grid?",
+		"options": [
+			{"text":"SET_TABLE_FOR_NEW_DISPLAY", "correct" : false},
+			{"text":"CALL_TABLE_FOR_NEW_DISPLAY", "correct" : false},
+			{"text":"SET_TABLE_FOR_FIRST_DISPLAY", "correct" : true},
+			{"text":"PUT_TABLE_FOR_FIRST_DISPLAY", "correct" : false},
+			{"text":"EXPORT_TABLE_FOR_NEW_DISPLAY", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A class that may not have even a single object created for is called the:",
+		"options": [
+			{"text":"Main class", "correct" : false},
+			{"text":"Single Class", "correct" : false},
+			{"text":"Singleton", "correct" : false},
+			{"text":"Abstract", "correct" : true},
+			{"text":"Super Class", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Having only one object for a class within the program runtime may be achieved by which of the following?",
+		"options": [
+			{"text":"Functional method", "correct" : false},
+			{"text":"Constructor method", "correct" : false},
+			{"text":"Class Constructor method", "correct" : true},
+			{"text":"Factory Method", "correct" : true},
+			{"text":"Aggregation Method", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Controlling data transport in a subroutine, function module or a method you can avoid timeconsuming creation of copies for large internal tables using:",
+		"options": [
+			{"text":"Call by value", "correct" : false},
+			{"text":"Call by query", "correct" : false},
+			{"text":"Call by value and result", "correct" : false},
+			{"text":"Call by buffer", "correct" : false},
+			{"text":"Call by reference", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"FORM CALC_PERCENTAGE USING VALUE(pv_act) TYPE ANY. cv_pc = pv_act * 100 / 50. ENDFORM. For the subroutine defined above, mark the statements NOT true:",
+		"options": [
+			{"text":"the pv_act formal parameter holds a copy of the value from the actual parameter in the program", "correct" : false},
+			{"text":"the pv_act formal parameter has a reference to the value of the actual parameter in the program", "correct" : true},
+			{"text":"If the formal parameter was not given TYPE ANY, it will then by default assume TYPE character", "correct" : true},
+			{"text":"At runtime, the type of the actual parameter is determined and assigned to the formal parameter (type inheritance) when the subroutine is called.", "correct" : false},
+			{"text":"when the statements in the subroutine are not suited to the inherited type, a conversion rule is applied", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of these rules will you have to consider when designing the formal parameters of the subroutine?",
+		"options": [
+			{"text":"Use generic typing when the type of the actual parameter can vary at runtime.", "correct" : true},
+			{"text":"Use concrete typing when the type of the actual parameter is not known when the program is created.", "correct" : false},
+			{"text":"A violation of the type consistency between formal and actual parameters is detected in the syntax check when TYPE ANY is used.", "correct" : false},
+			{"text":"You achieve complete typing with these types (that is, including the field length) by defining and specifying locally defined types.", "correct" : true},
+			{"text":"Structures and Internal tables must always be typed in order for their components to be accessed within the subroutine.", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The program TOP include has two variables declared lv_carrid, lv_connid. A subroutine in the program DISPLAY_DATA has variables lf_carrid and lv_connid. Which of the following is true for the use of these declarations?",
+		"options": [
+			{"text":"lv_carrid in the TOP include is visible in the entire main program, as well as in the subroutine DISPLAY_DATA.", "correct" : true},
+			{"text":"lv_connid in the TOP include is visible in the entire main program, as well as in the subroutine DISPLAY_DATA.", "correct" : false},
+			{"text":"Memory space for formal parameters and local data objects lf_carrid and lv_connid is allocated when the subroutine is called and is released again after execution.", "correct" : true},
+			{"text":"The variable lv_connid of the TOP include will not be accessible within the subroutine beacause of the shadow rule", "correct" : true},
+			{"text":"The variable lv_connid of the TOP include may be accessed within the subroutine using static->lv_connid", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"What are the main purposes of using function modules?",
+		"options": [
+			{"text":"Performance", "correct" : false},
+			{"text":"Reusability", "correct" : true},
+			{"text":"Encapsulation", "correct" : true},
+			{"text":"Multiple Instantiation", "correct" : false},
+			{"text":"Screen Enhancement", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of these entities are components within a function group?",
+		"options": [
+			{"text":"Local Classes", "correct" : false},
+			{"text":"Screens", "correct" : true},
+			{"text":"Selection Screens", "correct" : false},
+			{"text":"Data Objects", "correct" : true},
+			{"text":"Subroutines", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of these are not components of a function module?",
+		"options": [
+			{"text":"Local Types", "correct" : false},
+			{"text":"Local Data Objects", "correct" : false},
+			{"text":"Subroutine Definition", "correct" : true},
+			{"text":"Events", "correct" : true},
+			{"text":"Interface parameters", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A program zREPORT uses two function groups ZN_GROUP1 [with modules Z_FM1 and Z_FM2] and YN_GROUP1 [with modules Y_FM1 and Y_FM2]. Which of the following is NOT TRUE while using these function modules?",
+		"options": [
+			{"text":"The program will have 2 APG memory blocks within its working memory [internal session] for each function group", "correct" : false},
+			{"text":"The program will have 1 APG memory block within its working memory [internal session] for both function groups", "correct" : true},
+			{"text":"If function module Y_FM1 calls the function module Z_FM1 then an additional APG memory for the group ZN_GROUP1 will be generated in the working memory", "correct" : true},
+			{"text":"The program can directly access data from the APG memory using MOVE, MOVE-CORRESPONDING or the ‘=’ operator", "correct" : true},
+			{"text":"The program main screen can dynamically embed one or more screens from the APG memory of one the function groups", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following is the parent class for all class based exceptions in ABAP?",
+		"options": [
+			{"text":"CX_ROOT", "correct" : true},
+			{"text":"CX_ROOT_CHECK", "correct" : false},
+			{"text":"CX_STATIC_CHECK", "correct" : false},
+			{"text":"CX_DYNAMIC_CHECK", "correct" : false},
+			{"text":"CX_NO_CHECK", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":" program while execution goes into a runtime error and the short dump message states that ƒ?othe program raised an exception EXP01 but was not caught or handled in the programƒ??. So which class will support the above mentioned exception?",
+		"options": [
+			{"text":"CX_ROOT", "correct" : false},
+			{"text":"CX_ROOT_CHECK", "correct" : false},
+			{"text":"CX_STATIC_CHECK", "correct" : true},
+			{"text":"CX_DYNAMIC_CHECK", "correct" : true},
+			{"text":"CX_NO_CHECK", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":" program while execution goes into a runtime error and the short dump message states that ƒ?othe exception EXP01 was triggered because the operation performed resulted in type conversion between in-compatible data objects and was not caught or handled in the programƒ??. So which class will support the above mentioned exception?",
+		"options": [
+			{"text":"CX_ROOT", "correct" : false},
+			{"text":"CX_ROOT_CHECK", "correct" : false},
+			{"text":"CX_STATIC_CHECK", "correct" : false},
+			{"text":"CX_DYNAMIC_CHECK", "correct" : true},
+			{"text":"CX_NO_CHECK", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the statements are correct when using class based exception handling in a program?",
+		"options": [
+			{"text":"The code which could cause an error must be placed before TRY...ENDTRY.", "correct" : false},
+			{"text":"The code which could cause an error must be placed after TRY...ENDTRY.", "correct" : false},
+			{"text":"The code which could cause an error must be placed within TRY...ENDTRY.", "correct" : true},
+			{"text":"The code which could cause an error must be placed within CATCH...ENDCATCH.", "correct" : false},
+			{"text":"The code which could cause an error must be placed within IF SY-SUBRC EQ 0. ...ENDIF", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Mark the program scenarios where Shared objects may be used?",
+		"options": [
+			{"text":"Where program data is frequently written to the database", "correct" : false},
+			{"text":"Where a user program frequently publishes data", "correct" : true},
+			{"text":"Where a user program reads data at a point written into by another user", "correct" : true},
+			{"text":"Where program performance (to access database) has to be improved", "correct" : false},
+			{"text":"Where program data is not placed into database but only processed within program", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"When using a Shared object, which of the following has a possibility of occurrence and must be avoided?",
+		"options": [
+			{"text":"Memory access becomes slow", "correct" : false},
+			{"text":"Memory data is over-written", "correct" : false},
+			{"text":"Memory space is not sufficient", "correct" : true},
+			{"text":"Memory is not locked", "correct" : false},
+			{"text":"Memory has multiple versions", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The class/object that holds the actual data within the shared objects memory is the:",
+		"options": [
+			{"text":"Area class", "correct" : false},
+			{"text":"Root class", "correct" : true},
+			{"text":"Catalogue class", "correct" : true},
+			{"text":"Exception class", "correct" : false},
+			{"text":"Local Class", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which entity is created in order to share cross-program data?",
+		"options": [
+			{"text":"Shared Area", "correct" : true},
+			{"text":"Shared Memory", "correct" : false},
+			{"text":"SAP Memory", "correct" : false},
+			{"text":"ABAP Memory", "correct" : false},
+			{"text":"Internal Memory", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which method may be used when a user transfers data into the Shared objects memory?",
+		"options": [
+			{"text":"ATTACH_FOR_READ", "correct" : false},
+			{"text":"ATTACH_FOR_WRITE", "correct" : true},
+			{"text":"ATTACH_FOR_TRANSFER", "correct" : false},
+			{"text":"ATACH_FOR _PUT", "correct" : false},
+			{"text":"ATTACH_FOR_COMMIT", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of these are possible versions in the shared objects memory at a time when one user was reading data from the memory, another user sets lock to write data into the memory?",
+		"options": [
+			{"text":"Outdated version", "correct" : false},
+			{"text":"Active version", "correct" : true},
+			{"text":"Set up version", "correct" : false},
+			{"text":"Expired version", "correct" : true},
+			{"text":"In-active version", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following are generic data types",
+		"options": [
+			{"text":"TYPE any", "correct" : true},
+			{"text":"TYPE any datatype", "correct" : false},
+			{"text":"TYPE any table", "correct" : true},
+			{"text":"TYPE data", "correct" : true},
+			{"text":"LIKE simple", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"How would you determine if a field-symbol in a program has access to a data object or not?",
+		"options": [
+			{"text":"IS INITIAL", "correct" : false},
+			{"text":"IS NOT INITIAL", "correct" : false},
+			{"text":"IS ASSIGNED", "correct" : true},
+			{"text":"IS BOUND", "correct" : false},
+			{"text":"IS CLEARED", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following are features of exception handling for a function module?",
+		"options": [
+			{"text":"Function modules can use class based exception handling", "correct" : true},
+			{"text":"An exception cancels the processing of the function module and returns the system to the calling program.", "correct" : true},
+			{"text":"If no exception is raised by the function module, the sy-subrc of the calling program is set to one.", "correct" : false},
+			{"text":"All unmentioned exceptions within a function module will be processed under the formal exception OTHERS", "correct" : true},
+			{"text":"If a raised exception is not caught, a standard system message is displayed to the user", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Example of a development object that can be remotely called:",
+		"options": [
+			{"text":"Class Method", "correct" : false},
+			{"text":"Subroutine", "correct" : false},
+			{"text":"Update Module", "correct" : false},
+			{"text":"BAPI", "correct" : true},
+			{"text":"BOR", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"What are the uses of modularization?",
+		"options": [
+			{"text":"To improve performance", "correct" : false},
+			{"text":"To provide a better overview of program layout", "correct" : true},
+			{"text":"To encapsulate a function that is required many times within a program for multiple use", "correct" : true},
+			{"text":"To implement the central maintainability of a function within a program", "correct" : true},
+			{"text":"To make a function restricted to the program", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The assignment of actual parameters to formal parameters when calling a subroutine is called:",
+		"options": [
+			{"text":"interface assignment", "correct" : false},
+			{"text":"parameter passing", "correct" : true},
+			{"text":"interface call", "correct" : false},
+			{"text":"subroutine call", "correct" : false},
+			{"text":"Signature call", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"After defining the corresponding IMPORTING and EXPORTING parameters, you can implement the function module in the:",
+		"options": [
+			{"text":"Standard", "correct" : false},
+			{"text":"Exceptions", "correct" : false},
+			{"text":"Source Code", "correct" : true},
+			{"text":"Attributes", "correct" : false},
+			{"text":"Test Environment", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following can be used as a visibility option for an attribute?",
+		"options": [
+			{"text":"Public", "correct" : true},
+			{"text":"Private", "correct" : true},
+			{"text":"Static", "correct" : false},
+			{"text":"Instance", "correct" : false},
+			{"text":"Read Only", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of these methods can be called without creating an instance of the class?",
+		"options": [
+			{"text":"Instance Method", "correct" : false},
+			{"text":"Public Method", "correct" : false},
+			{"text":"Redefined Method", "correct" : false},
+			{"text":"Static Method", "correct" : true},
+			{"text":"Class Method", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following special tools maintains classes that may be used across programs?",
+		"options": [
+			{"text":"Object Builder", "correct" : false},
+			{"text":"Class Builder", "correct" : true},
+			{"text":"Method Builder", "correct" : false},
+			{"text":"Business Object Repository", "correct" : false},
+			{"text":"Function Bulider", "correct" : false}
 		]
 	}
 
