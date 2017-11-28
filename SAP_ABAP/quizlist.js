@@ -100,7 +100,7 @@ var quizlist = [
 	},	
 	{
 		"section": "ABAP",
-		"question":"10. What do you mean by a dual stack in the SAP Netweaver AS?",
+		"question":"What do you mean by a dual stack in the SAP Netweaver AS?",
 		"options": [
 			{"text":"ABAP AS", "correct" : false},
 			{"text":"ABAP AS + Java AS", "correct" : true},
@@ -1865,7 +1865,7 @@ var quizlist = [
 			{"text":"INPUT = 1.", "correct" : false},
 			{"text":"OUTPUT = 0.", "correct" : false},
 			{"text":"OUTPUT = 1.", "correct" : true},
-			{"text":"INPUT = 􀍚X􀍛.", "correct" : false}
+			{"text":"INPUT = 'X'.", "correct" : false}
 		]
 	},
 	{
@@ -3825,5 +3825,226 @@ var quizlist = [
 			{"text":"it easier to find the source of an error", "correct" : true},
 			{"text":"you divide the overall task of the program into sub-functions", "correct" : true}
 		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following is NOT a component of a Class definition?",
+		"options": [
+			{"text":"Types", "correct" : false},
+			{"text":"Constants", "correct" : false},
+			{"text":"Parameters", "correct" : true},
+			{"text":"Attributes", "correct" : false},
+			{"text":"Aliases", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following data objects within a class exist only once?",
+		"options": [
+			{"text":"Instance Attributes", "correct" : false},
+			{"text":"Type Definitions", "correct" : true},
+			{"text":"Constants", "correct" : true},
+			{"text":"Events", "correct" : false},
+			{"text":"Static Attributes", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following components may be accessed with the “->” operator?",
+		"options": [
+			{"text":"DATA attributes", "correct" : true},
+			{"text":"CLASS-METHODS", "correct" : false},
+			{"text":"TYPES", "correct" : false},
+			{"text":"EVENTS", "correct" : false},
+			{"text":"METHODS", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A component that may be accessed only from the Implementation logic of the class itself is:",
+		"options": [
+			{"text":"Public Component", "correct" : false},
+			{"text":"Protected Component", "correct" : false},
+			{"text":"Private Component", "correct" : true},
+			{"text":"Shared Component", "correct" : false},
+			{"text":"Encapsulated Component", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"An attribute you defined needs to be accessed by your program, but you would not want the program to make any changes to its value. How would you define this attribute?",
+		"options": [
+			{"text":"Define it as a Constant", "correct" : false},
+			{"text":"Define it as a protected attribute", "correct" : false},
+			{"text":"Define it as a private attribute", "correct" : false},
+			{"text":"Define it as a read-only attribute", "correct" : true},
+			{"text":"Define it as a static attribute", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following addition is NOT part of a method signature?",
+		"options": [
+			{"text":"IMPORTING", "correct" : false},
+			{"text":"CHANGING", "correct" : false},
+			{"text":"USING", "correct" : true},
+			{"text":"EXPORTING", "correct" : false},
+			{"text":"RAISING", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which keyword addition in a local method definition is used to handle exceptions using the class based concept?",
+		"options": [
+			{"text":"EXPORTING", "correct" : false},
+			{"text":"RETURNING", "correct" : false},
+			{"text":"EXCEPTIONS", "correct" : false},
+			{"text":"RAISING", "correct" : true},
+			{"text":"RECEIVING", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the parameters in the signature of the method can contain a default value?",
+		"options": [
+			{"text":"EXPORTING A1 TYPE I VALUE 100", "correct" : false},
+			{"text":"IMPORTING A1 TYPE I VALUE 100", "correct" : true},
+			{"text":"CHANGING A1 TYPE I VALUE 100", "correct" : true},
+			{"text":"RETURNING A1 TYPE 1 VALUE 100", "correct" : false},
+			{"text":"USING A1 TYPE I VALUE 100", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"An object if cannot be accessed in the program is removed from the program. How does the system do it?",
+		"options": [
+			{"text":"User gives the command DELETE ref. Where ref is the object reference.", "correct" : false},
+			{"text":"User gives the command CLEAR ref. Where ref is the object reference.", "correct" : false},
+			{"text":"User gives the command FREE ref. Where ref is the object reference.", "correct" : false},
+			{"text":"System runs the destructor to release the object", "correct" : false},
+			{"text":"System runs the garbage collector to release the object", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of these are characteristics of a functional method?",
+		"options": [
+			{"text":"Has Importing and Exceptions in the signature[definition]", "correct" : true},
+			{"text":"Has Exporting and Exceptions in the signature [definition]", "correct" : false},
+			{"text":"Has at least one parameter as Returning [definition]", "correct" : false},
+			{"text":"Passing of the returning parameter is through PASS-BY-VALUE", "correct" : true},
+			{"text":"The method call may be chained for a functional method", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A constructor may have which of the following parameters in the signature?",
+		"options": [
+			{"text":"IMPORTING", "correct" : true},
+			{"text":"EXPORTING", "correct" : false},
+			{"text":"RETURNING", "correct" : false},
+			{"text":"CHANGING", "correct" : false},
+			{"text":"EXCEPTIONS", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A special method that cannot have a signature is the:",
+		"options": [
+			{"text":"Functional method", "correct" : false},
+			{"text":"Constructor method", "correct" : false},
+			{"text":"Class Constructor method", "correct" : true},
+			{"text":"Association method", "correct" : false},
+			{"text":"Redefined method", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A class LCL_TRUCK is associated with another class LCL_RENTAL represented by a cardinality 1..1. What would be the association between these two classes described as?",
+		"options": [
+			{"text":"Just a normal association between any two classes", "correct" : false},
+			{"text":"LCL_TRUCK is a composition within LCL_RENTAL", "correct" : false},
+			{"text":"LCL_RENTAL is a composition within LCL_TRUCK", "correct" : false},
+			{"text":"LCL_TRUCK is an aggregation within LCL_RENTAL", "correct" : true},
+			{"text":"LCL_RENTAL is an aggregation within LCL_TRUCK", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A class LCL_ITEMS is associated with another class LCL_ORDER represented by a cardinality 1..*. What would be the association between these two classes described as?",
+		"options": [
+			{"text":"A multiple association exists between these two classes", "correct" : false},
+			{"text":"A recursive association exists between these two classes", "correct" : false},
+			{"text":"A composition association exists between these two classes", "correct" : true},
+			{"text":"An aggregation association exists between these two classes", "correct" : false},
+			{"text":"A Generalization/Specialization association exists between these two classes", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A class LCL_CUSTOMER is associated with a class LCL_RENTAL [cardinality 0..*] which also is associated with a class LCL_VEHICLE [cardinality 1..*]. The instance of the LCL_CUSTOMER needs data from one of the several instances of LCL_VEHICLE. Which of these techniques given below would be the suitable choice?",
+		"options": [
+			{"text":"Design an interface method, use this in LCL_VEHICLE and the customer instance can call the interface method to get the required data", "correct" : false},
+			{"text":"Design a public method in class LCL_VEHICLE, access this method via the instance of the rental class LCL_RENTAL from the customer instance", "correct" : true},
+			{"text":"Design an event in the LCL_CUSTOMER, raise the event and use an event handler method in the class LCL_VEHICLE to fetch the required data", "correct" : false},
+			{"text":"Design an event in the LCL_VEHICLE, raise the event and use an event handler method in the class LCL_CUSTOMER to fetch the required data", "correct" : false},
+			{"text":"Design an interface method, use this in LCL_RENTAL having its implementation call a public method of LCL_VEHICLE, the customer instance can use the interface method to access the required data", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"After a project employee completes the required development task, he or she should do the following:",
+		"options": [
+			{"text":"Transfer the task to the Production System", "correct" : false},
+			{"text":"Release the task within the Change request", "correct" : true},
+			{"text":"Release the Change Request within the Project", "correct" : false},
+			{"text":"Unlock and export the task to the Transport Directory", "correct" : false},
+			{"text":"Export the Project Request", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"WRITE: /10 ‘Invoice Number’.Which of the following options may be used as an alternative to the literal in the write statement?",
+		"options": [
+			{"text":"Constants", "correct" : false},
+			{"text":"Text field", "correct" : false},
+			{"text":"Selection text", "correct" : false},
+			{"text":"Text symbol", "correct" : true},
+			{"text":"Text table", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Select the modularization techniques that can be used in multiple programs:",
+		"options": [
+			{"text":"Function Module", "correct" : true},
+			{"text":"Class definition", "correct" : true},
+			{"text":"Subroutine", "correct" : false},
+			{"text":"Event", "correct" : false},
+			{"text":"Interface", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following parameters may be used for a subroutine for controlling data transport?",
+		"options": [
+			{"text":"Pass data to the subroutine with importing parameters.", "correct" : false},
+			{"text":"Return data from the subroutine to the caller with exporting parameters.", "correct" : false},
+			{"text":"Pass data to the subroutine with specialized using parameters", "correct" : true},
+			{"text":"Pass data to the subroutine and return the data after it has been changed with changing parameters", "correct" : true},
+			{"text":"Pass data from the subroutine to inform any errors in processing with exceptions", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"What are the uses of passing data to the subroutine as “call-by-value-and-result”?",
+		"options": [
+			{"text":"The system creates a copy of the variable value, protects the original.", "correct" : true},
+			{"text":"The system assigns the actual parameter directly to the formal parameter.", "correct" : false},
+			{"text":"At the regular end of the subroutine, the value changed in the copy is written back to the original.", "correct" : true},
+			{"text":"Avoids time-consuming creation of copies for large internal tables.", "correct" : false},
+			{"text":"A STOP statement or a type E user message will suppress the writing back of the value to the original.", "correct" : true}
+		]
 	}
+
 ]
