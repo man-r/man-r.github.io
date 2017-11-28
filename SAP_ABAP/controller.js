@@ -118,7 +118,7 @@ $(document).ready(function () {
 		        		}
 		    		}
 				
-					setTimeout(function(){changeQuestion()},2000);
+					setTimeout(function(){changeQuestion()},5000);
 	    		}
 	    		
 		 	}
