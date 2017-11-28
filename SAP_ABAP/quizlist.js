@@ -1458,7 +1458,7 @@ var quizlist = [
 			{"text":"The formal parameter must use a TYPE table type definition", "correct" : true},
 			{"text":"The formal parameter must use a TYPE structure type definition", "correct" : false},
 			{"text":"Internal tables must be passed 'By Value'", "correct" : false},
-			{"text":"Internal ta􀄏les 􀅵ust 􀄏e passed 'By Refererence'", "correct" : true}
+			{"text":"Internal tables must be passed 'By Refererence'", "correct" : true}
 		]
 	},
 	{
