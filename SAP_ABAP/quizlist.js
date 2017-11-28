@@ -3605,5 +3605,225 @@ var quizlist = [
 			{"text":"Use “-”", "correct" : false},
 			{"text":"Use “_”", "correct" : false}
 		]
+	},
+	{
+		"section": "ABAP",
+		"question":"What are the characteristics of the procedural programming model?",
+		"options": [
+			{"text":"Data definitions and declarations is visible most of the time and can be accessed by various sub-functions in the program", "correct" : true},
+			{"text":"Data is always encapsulated or protected within the TOP include", "correct" : false},
+			{"text":"Program is highly structured and flexible, hence easy to extend", "correct" : false},
+			{"text":"Logic is encapsulated in function modules, subroutines and events", "correct" : false},
+			{"text":"Any number of additional program group memory may be generated for a specific function group", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"What are the common features between procedural and ABAP objects?",
+		"options": [
+			{"text":"Data encapsulation", "correct" : true},
+			{"text":"Additional Program Group", "correct" : true},
+			{"text":"High flexibility in program design", "correct" : false},
+			{"text":"Use of global data", "correct" : true},
+			{"text":"Ease of debugging", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following are concepts in ABAP Object oriented approach?",
+		"options": [
+			{"text":"Polymorphism", "correct" : true},
+			{"text":"Source code Modularization", "correct" : false},
+			{"text":"Inheritance", "correct" : true},
+			{"text":"Redefinition", "correct" : true},
+			{"text":"Reusable components", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"What is UML?",
+		"options": [
+			{"text":"Universal Modelling Language", "correct" : false},
+			{"text":"United Modelling Language", "correct" : false},
+			{"text":"Unified Modelling Language", "correct" : true},
+			{"text":"Uniform Modelling Language", "correct" : false},
+			{"text":"Unified Modelling Logic", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of these are UML diagrams used in SAP?",
+		"options": [
+			{"text":"Class diagrams", "correct" : true},
+			{"text":"Component diagrams", "correct" : true},
+			{"text":"Activity diagrams", "correct" : false},
+			{"text":"Behaviour diagrams", "correct" : true},
+			{"text":"Structure diagrams", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of these is mandatory when specifying a class in the UML class diagram?",
+		"options": [
+			{"text":"Attributes", "correct" : false},
+			{"text":"Methods", "correct" : false},
+			{"text":"Events", "correct" : false},
+			{"text":"Types", "correct" : false},
+			{"text":"Class Name", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The cardinality 1..* represents which of the following?",
+		"options": [
+			{"text":"At most one", "correct" : false},
+			{"text":"At least one", "correct" : true},
+			{"text":"Any number", "correct" : false},
+			{"text":"Only one", "correct" : false},
+			{"text":"None of the above", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A class that may be defined to hold the characteristics of the relationship between two classes is called as the:",
+		"options": [
+			{"text":"Super Class", "correct" : false},
+			{"text":"Sub Class", "correct" : false},
+			{"text":"Exception Class", "correct" : false},
+			{"text":"Association Class", "correct" : true},
+			{"text":"Test Class", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"When a set of identical objects become a whole-part of another object, the term used for the relationship the their respective classes is:",
+		"options": [
+			{"text":"Association", "correct" : false},
+			{"text":"Co-relation", "correct" : false},
+			{"text":"Modulation", "correct" : false},
+			{"text":"Aggregation", "correct" : true},
+			{"text":"Composition", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"When a set of identical objects exist only as part of another object, the term used for the relationship between the participating classes is:",
+		"options": [
+			{"text":"Association", "correct" : false},
+			{"text":"Co-relation", "correct" : false},
+			{"text":"Modulation", "correct" : false},
+			{"text":"Aggregation", "correct" : false},
+			{"text":"Composition", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Properties that differentiate a class from another class even if they look similar leads to:",
+		"options": [
+			{"text":"Association", "correct" : false},
+			{"text":"Generalization", "correct" : false},
+			{"text":"Specialization", "correct" : true},
+			{"text":"Aggregation", "correct" : false},
+			{"text":"Composition", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The process of handing over a request to another object until it gets serviced or processed finally at an end object is termed as:",
+		"options": [
+			{"text":"Request transfer", "correct" : false},
+			{"text":"Sequence transfer", "correct" : false},
+			{"text":"Relegation", "correct" : false},
+			{"text":"Delegation", "correct" : true},
+			{"text":"Workflow", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following correspond to the use of datatypes and data objects in an ABAP program?",
+		"options": [
+			{"text":"The type of a data object defines its technical properties.", "correct" : true},
+			{"text":"Use data objects to define interface parameters", "correct" : false},
+			{"text":"Use data types to define input/output fields", "correct" : true},
+			{"text":"Use data objects to define class attributes", "correct" : false},
+			{"text":"Use data types to define interface attributes", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which built-in-type in the ABAP program may be used to handle a large value range?",
+		"options": [
+			{"text":"Integer", "correct" : false},
+			{"text":"Packed", "correct" : false},
+			{"text":"DECFLOAT16", "correct" : false},
+			{"text":"DECFLOAT34", "correct" : false},
+			{"text":"Float", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A program could define a data object based on a built-in-type or a global type. What are the benefits of using a global type?",
+		"options": [
+			{"text":"Global data types can be used throughout the system, which increases the system’s consistency.", "correct" : true},
+			{"text":"Global data types should be defined if they are only needed in one program.", "correct" : false},
+			{"text":"GLobal data types should be defined if the semantic information does not matter", "correct" : false},
+			{"text":"Global data types can have a where-used list generated in the ABAP Dictionary.", "correct" : true},
+			{"text":"Global data types can contain semantic information that corresponds to the business descriptions", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following make up the program context when a program is executed in the application server?",
+		"options": [
+			{"text":"definitions made using the DATA keyword", "correct" : true},
+			{"text":"definitions made using the PARAMETERS keyword", "correct" : true},
+			{"text":"definitions made using the TYPES keyword", "correct" : false},
+			{"text":"definitions available within TYPE-GROUPS / TYPE-POOLS", "correct" : false},
+			{"text":"definitions within a subroutine made using DATA or STATICS keyword", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Mark the characteristics of a CASE...ENDCASE statement when used within a program.",
+		"options": [
+			{"text":"you can define any logical expressions as check conditions", "correct" : false},
+			{"text":"you can define any number of branches based on logical expressions", "correct" : false},
+			{"text":"you can clearly distinguish cases", "correct" : true},
+			{"text":"you can implement similarity checks between a field and different values", "correct" : true},
+			{"text":"if none of the specified conditions are fulfilled, the ELSE branch executes", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Negations can be used within IF...ENDIF statements using the operator:",
+		"options": [
+			{"text":"AND", "correct" : false},
+			{"text":"OR", "correct" : false},
+			{"text":"FOR", "correct" : false},
+			{"text":"NOT", "correct" : true},
+			{"text":"NOR", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following are required in the syntax of the Message statement?",
+		"options": [
+			{"text":"Message number", "correct" : true},
+			{"text":"Message type", "correct" : true},
+			{"text":"Message Place Holder", "correct" : false},
+			{"text":"Message behaviour", "correct" : false},
+			{"text":"Message class", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"While reading through the source code of a program created for your project you find that many program parts are frequently repeated. What are the reasons behind modularization of programs?",
+		"options": [
+			{"text":"you do not have to re-implement the entire source code on each occasion", "correct" : true},
+			{"text":"Makes the program code more opaque to other developers", "correct" : false},
+			{"text":"changes or corrections must be done at various points in the main program", "correct" : false},
+			{"text":"it easier to find the source of an error", "correct" : true},
+			{"text":"you divide the overall task of the program into sub-functions", "correct" : true}
+		]
 	}
 ]
