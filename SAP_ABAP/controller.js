@@ -9,7 +9,9 @@ $(document).ready(function () {
 	var questionLock=false;
 	var numberOfQuestions;
 	var score=0;
-
+	var totalQuizQ=20;
+	
+	
 	var questionText = document.createElement('div');
 	
 	var option1 = document.createElement('div');
@@ -37,7 +39,7 @@ $(document).ready(function () {
 	correct.appendChild(document.createTextNode('CORRECT'));
 	wrong.appendChild(document.createTextNode('WRONG'));
 
-	var quizlistvarsion = suarray(shuffle(quizlist), 10);
+	var quizlistvarsion = suarray(shuffle(quizlist), totalQuizQ);
 	for (i=0;i<quizlistvarsion.length;i++) {
 		questionBank[i]=new Array;
 		questionBank[i][0]=quizlistvarsion[i].question;
@@ -201,7 +203,7 @@ $(document).ready(function () {
 		
 	function displayFinalSlide(){
 			
-		$(stage).append('<div class="questionText">You have finished the quiz! (refresh to get a random 10 questions)<br><br>Total questions: '+numberOfQuestions+'<br>Correct answers: '+score+'</div>');
+		$(stage).append('<div class="questionText">You have finished the quiz! (refresh to get a random ' + totalQuizQ + ' questions)<br><br>Total questions: '+numberOfQuestions+'<br>Correct answers: '+score+'</div>');
 		//setTimeout(function(){
 		//	location.reload();
 		//},5000);
