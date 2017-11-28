@@ -109,18 +109,31 @@ $(document).ready(function () {
 	    		else {
 	    			document.getElementById(htmlstage).appendChild(wrong);
 	    			i = 0;
+			 	j = 0;
+			 	x = document.getElementsByClassName('option');
+		 		for (i = 0; i < x.length; i++) {
 			 		j = 0;
-			 		x = document.getElementsByClassName('option');
-		 			for (i = 0; i < x.length; i++) {
-			 			j = 0;
+					x[i].style.borderColor="#FF0000"
 		        		for (j = 0; j < correctAns.length; j++) {
 		        			if (correctAns[j] == x[i].innerHTML) {
-		        				x[i].className ="correctoption";
+		        				x[i].style.borderColor="#008000";
 		        			}
 		        		}
 		    		}
 				
-					setTimeout(function(){changeQuestion()},5000);
+				i = 0;
+			 	j = 0;
+			 	x = document.getElementsByClassName('selectedoption');
+		 		for (i = 0; i < x.length; i++) {
+			 		j = 0;
+					x[i].style.borderColor="#FF0000"
+		        		for (j = 0; j < correctAns.length; j++) {
+		        			if (correctAns[j] == x[i].innerHTML) {
+		        				x[i].style.borderColor="#008000";
+		        			}
+		        		}
+		    		}
+				setTimeout(function(){changeQuestion()},5000);
 	    		}
 	    		
 		 	}
