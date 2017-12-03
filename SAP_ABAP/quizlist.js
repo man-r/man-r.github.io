@@ -4952,9 +4952,9 @@ var quizlist = [
 		"section": "ABAP",
 		"question":"Which of the following may be used in an elementary search help as a selection method?",
 		"options": [
-			{"text":"Database View", "correct" : false},
-			{"text":"Projection View", "correct" : false},
-			{"text":"Help View", "correct" : false},
+			{"text":"Database View", "correct" : true},
+			{"text":"Projection View", "correct" : true},
+			{"text":"Help View", "correct" : true},
 			{"text":"Maintenance View", "correct" : false},
 			{"text":"Text Table", "correct" : false}
 		]
