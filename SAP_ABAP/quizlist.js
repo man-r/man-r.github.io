@@ -4705,6 +4705,555 @@ var quizlist = [
 			{"text":"Business Object Repository", "correct" : false},
 			{"text":"Function Bulider", "correct" : false}
 		]
+	},
+	{
+		"section": "ABAP",
+		"question":"An elementary search help is attached to a table field in the dictionary. Which of the following is TRUE for it?",
+		"options": [
+			{"text":"The help will be triggered if a program field is declared using the data element of this table field as its datatype", "correct" : false},
+			{"text":"The help will be triggered if a program field is declared using this field as its datatype", "correct" : true},
+			{"text":"The help may return values for a number of input fields from the search help when the user double clicks the result set", "correct" : true},
+			{"text":"The help will always return value only for the input field on which user clicked F4 from the result set on double click", "correct" : false},
+			{"text":"The search help attached to a table field will not be triggered if the user provides another help object to the program field.", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of these are the design features of an elementary search help in the ABAP dictionary?",
+		"options": [
+			{"text":"Selection Method", "correct" : true},
+			{"text":"Join fields", "correct" : false},
+			{"text":"Changing parameters", "correct" : false},
+			{"text":"Dialog behaviour", "correct" : true},
+			{"text":"Search help exit", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of these are TRUE during the design of an elementary search help?",
+		"options": [
+			{"text":"The import parameter transfers data from the search help to the screen", "correct" : false},
+			{"text":"If a default value is specified for a parameter then it must not have import flag checked", "correct" : true},
+			{"text":"The dialog behavior of the search help can be set to “Display values immediately” if the number of hits is less than 100", "correct" : true},
+			{"text":"The values for the Hit List of the search help can be derived from a database table or a database view", "correct" : true},
+			{"text":"The import/export parameter may be supressed in the Restriction Screen or the Hit List with ‘X’ in LPOS/SPOS", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Mark the correct presentation forms of an input help?",
+		"options": [
+			{"text":"List Box", "correct" : true},
+			{"text":"Control (amodal)", "correct" : true},
+			{"text":"Dialog (modal)", "correct" : true},
+			{"text":"Selection List", "correct" : false},
+			{"text":"Sub-screen List", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"When drawing a comparison between an internal table and a database table which of the following statements will you mark TRUE?",
+		"options": [
+			{"text":"Internal table is a temporary buffer whereas database table is permanent", "correct" : true},
+			{"text":"Internal table properties is defined only within the program whereas database table definition is global", "correct" : false},
+			{"text":"Internal table may contain duplicate records whereas database table cannot", "correct" : true},
+			{"text":"Internal table may store data sorted but whereas database table cannot", "correct" : true},
+			{"text":"Internal table can be deleted but whereas a database table cannot be deleted", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"What are the requirements that must be met by the input help of a screen field?",
+		"options": [
+			{"text":"It must know the values the user already made in the current dialog", "correct" : true},
+			{"text":"It must clear the values the user made in the previous dialog steps", "correct" : false},
+			{"text":"It must validate if the value entered by the user is existing in the result set", "correct" : false},
+			{"text":"It must present a dialog with supplementary information for the user to add conditions when the result set if fairly large", "correct" : true},
+			{"text":"It must return a value or if required values to the search fields and other input elements on the dialog screen", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following are to be addressed when defining the “Selection Method” for the search help?",
+		"options": [
+			{"text":"A database table that is client specific must contain client field when used as a selection method", "correct" : false},
+			{"text":"A database view used as a selection method might skip entries in the result set", "correct" : true},
+			{"text":"A help view must be created to use a main table along with its text table", "correct" : false},
+			{"text":"A help view must be used if result set is from several database tables", "correct" : true},
+			{"text":"A maintenance view may not be used as a selection method", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following accesses will proceed directly to the database and not use the buffer even if buffering was allowed for the table?",
+		"options": [
+			{"text":"SELECT DISTINCT...", "correct" : true},
+			{"text":"SELECT SINGLE...", "correct" : false},
+			{"text":"SELECT...ORDERBY", "correct" : true},
+			{"text":"SELECT...CLIENT SPECIFIED...INTO TABLE...", "correct" : false},
+			{"text":"SELECT MAX(Field)...", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A table is created at which point in the ABAP dictionary during user’s activity?",
+		"options": [
+			{"text":"When the user provides a table name and clicks on “Create” button", "correct" : false},
+			{"text":"When the user provides table fields and clicks on the “Save” button", "correct" : false},
+			{"text":"When the user maintains technical settings and clicks on “Save” button", "correct" : false},
+			{"text":"When the table has no inconsistencies after a syntax check", "correct" : false},
+			{"text":"When the table has no inconsistencies and is activated", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of these input checks are NOT derived from the ABAP dictionary definitions?",
+		"options": [
+			{"text":"Check Table validation", "correct" : false},
+			{"text":"Fixed values validation", "correct" : false},
+			{"text":"Required field validation", "correct" : true},
+			{"text":"Range Intervals validation", "correct" : false},
+			{"text":"Format validations", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"You are required to add a few fields to a table that was created by another developer in your project some time earlier. Which of the following would determine your approach?",
+		"options": [
+			{"text":"Create an append structure and use .APPEND to add new fields to the table", "correct" : false},
+			{"text":"Create an append structure and use .INCLUDE to add new fields ti the table", "correct" : false},
+			{"text":"Create a copy of the predecessor table into your own and add new fields to this table", "correct" : false},
+			{"text":"Create an include structure and use .INCLUDE to add new fields to the table", "correct" : true},
+			{"text":"Create an include structure and use .APPEND to add new fields to the table", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Select the entity that is NOT part of the procedure of creating a view in the ABAP dictionary?",
+		"options": [
+			{"text":"Base tables", "correct" : false},
+			{"text":"Search help", "correct" : true},
+			{"text":"View fields", "correct" : false},
+			{"text":"Selection Condition", "correct" : false},
+			{"text":"Maintenance status", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following correspond to the dialog behaviour and parameters of a search help?",
+		"options": [
+			{"text":"The screen where possible values are presented is the hit list dialog box", "correct" : false},
+			{"text":"The screen where user can define further restrictions is the hit list dialog box", "correct" : false},
+			{"text":"The IMPORT parameters correspond to further restrictions on the search help", "correct" : true},
+			{"text":"The EXPORT parameters correspond to the selected values from the search help", "correct" : false},
+			{"text":"The IMP/EXP parameters are defined using the field names of the selection method", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following are specific features of a database view in different view types in the ABAP dictionary?",
+		"options": [
+			{"text":"Database view can be formulated using equality relationships between any base fields", "correct" : true},
+			{"text":"Database view must be formulated using equality relationships between foreign keys only", "correct" : false},
+			{"text":"Database view can be read or changed if it comprises no more than one table", "correct" : true},
+			{"text":"Database view must avoid the index fields when defining view fields because it offers buffering", "correct" : false},
+			{"text":"Database view may be implemented with transparent, pool and cluster tables", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"If an input field/search field shows values when the user starts typing, then you can determine that the help object was designed with which enhanced technique?",
+		"options": [
+			{"text":"Field buffer feature", "correct" : false},
+			{"text":"Type ahead feature", "correct" : true},
+			{"text":"List box feature", "correct" : false},
+			{"text":"Full text search feature", "correct" : false},
+			{"text":"Fuzzy search feature", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following features must be remembered when designing a maintenance view in the database?",
+		"options": [
+			{"text":"Must have all tables in the view joined with foreign key relationship", "correct" : true},
+			{"text":"Can only add one primary table and one secondary table under the primary table when designing the join relationship", "correct" : false},
+			{"text":"Uses inner join to fetch data from the tables used in the join", "correct" : false},
+			{"text":"A maintenance interface must be generated to work on the data once the view is created", "correct" : true},
+			{"text":"A dialog program interface must be created to work on the data once the view is created", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The search help when used, should NOT be attached to which location during development?",
+		"options": [
+			{"text":"Data Element", "correct" : false},
+			{"text":"Table field", "correct" : false},
+			{"text":"Structure field", "correct" : false},
+			{"text":"Table", "correct" : false},
+			{"text":"Screen field", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Mark the TRUE statements that establish the characteristics of a foreign key relationship.",
+		"options": [
+			{"text":"A combination of fields in a table is a foreign key if this combination is the primary key of another table", "correct" : true},
+			{"text":"A foreign key links two or more tables in the dictionary", "correct" : false},
+			{"text":"The table whose key values are checked is called the Value table", "correct" : false},
+			{"text":"The foreign keys are checked by the system only during screen input and screen value help", "correct" : true},
+			{"text":"The check field and the referenced key field require the same domain", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"How is the relationship between the tables in a foreign key relationship defined?",
+		"options": [
+			{"text":"Table ratio", "correct" : false},
+			{"text":"Reliability", "correct" : false},
+			{"text":"Combinability", "correct" : false},
+			{"text":"Cardinality", "correct" : true},
+			{"text":"Dependability", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The property “key fields of a text table” was selected when establishing a foreign key link between two tables. What does this imply?",
+		"options": [
+			{"text":"The dependant table is a table for text symbols", "correct" : false},
+			{"text":"The dependant table is a table for descriptions", "correct" : true},
+			{"text":"The dependant table must have the check field marked as a key", "correct" : true},
+			{"text":"The referenced table can be assigned to more than one text table", "correct" : false},
+			{"text":"The dependant table must have a unique field with datatype CLNT", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following statements is NOT TRUE for a table being set to buffer in the ABAP dictionary?",
+		"options": [
+			{"text":"Buffer must be allowed only if key fields of the table are character type", "correct" : false},
+			{"text":"Buffer will compensate for delays in synchronization for an application with frequent write accesses", "correct" : true},
+			{"text":"Buffer must not be set for cluster tables as only transparent and pool tables are allowed buffering", "correct" : false},
+			{"text":"Buffer synchronization is not required for a central system with only one ABAP AS", "correct" : false},
+			{"text":"Buffer when activated, buffering type ‘single’ is the default setting unless the exact type is selected by the user", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following are NOT type categories that exist in the ABAP Dictionary?",
+		"options": [
+			{"text":"Data Element", "correct" : false},
+			{"text":"Indexes", "correct" : true},
+			{"text":"Table Type", "correct" : false},
+			{"text":"Structure", "correct" : false},
+			{"text":"Views", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following may be used in an elementary search help as a selection method?",
+		"options": [
+			{"text":"Database View", "correct" : false},
+			{"text":"Projection View", "correct" : false},
+			{"text":"Help View", "correct" : false},
+			{"text":"Maintenance View", "correct" : false},
+			{"text":"Text Table", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following is the correct sequence to create a maintenance view?",
+		"options": [
+			{"text":"Selection Condition->View fields->Base tables->Join Fields->Maintenance->Activate", "correct" : false},
+			{"text":"Base tables->Join fields->View fields->Selection Condition->Maintenance->Activate", "correct" : true},
+			{"text":"View Fields->Base tables->Join Fields->Maintenance->Selection Condition->Activate", "correct" : false},
+			{"text":"Base tables->Selection Condition->View fields->Join Fields->Maintenance->Activate", "correct" : false},
+			{"text":"Base tables->Maintenance->Selection Condition->Join Fields->View Fields->Activate", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following are parameters specified in the definition of the maintenance dialog for the maintenance view?",
+		"options": [
+			{"text":"View Name", "correct" : false},
+			{"text":"Function Group", "correct" : true},
+			{"text":"One step or Two step process", "correct" : true},
+			{"text":"Authorization Object", "correct" : false},
+			{"text":"Authorization Group", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which is the processor that handles the logic coded within MODULE...ENDMODULE?",
+		"options": [
+			{"text":"Dispatcher", "correct" : false},
+			{"text":"Screen Processor", "correct" : true},
+			{"text":"ABAP Processor", "correct" : false},
+			{"text":"Message Processor", "correct" : false},
+			{"text":"Gateway", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Mark the possible values that may be given for an input field using the SCREEN-REQUIRED property during dynamic validation.",
+		"options": [
+			{"text":"0", "correct" : true},
+			{"text":"1", "correct" : true},
+			{"text":"2", "correct" : true},
+			{"text":"3", "correct" : false},
+			{"text":"4", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following statements are correct for the ABAP statement given below? SELECT * FROM dbtable INTO TABLE itab WHERE condition.",
+		"options": [
+			{"text":"ENDSELECT is required after processing the data in the next line", "correct" : false},
+			{"text":"ENDSELECT is required after processing the data if the addition PACKAGE SIZE is used", "correct" : true},
+			{"text":"The order of the fields in source “dbtable” and the target “itab” must be the same ", "correct" : true},
+			{"text":"The field names between source “dbtable” and the target “itab” must be the same", "correct" : false},
+			{"text":"When the same query is used again with another WHERE condition, the data is added along with the previous records", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"What must the developer do to prevent the function code from causing unexpected processing on the next screen?",
+		"options": [
+			{"text":"Clear the OK_CODE field", "correct" : true},
+			{"text":"Clear the SY-DYNNR field", "correct" : false},
+			{"text":"Clear the SY-UCOMM field", "correct" : true},
+			{"text":"Clear the SY-TITLE field", "correct" : false},
+			{"text":"Clear the SY-CPROG field", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A processing block of code in ABAP generally requires an explicit END keyword, like SELECT..ENDSELECT, IF..ENDIF and so on. Which of the following statements about nesting is TRUE while coding?",
+		"options": [
+			{"text":"You can have SELECT...ENDSELECT within SELECT...ENDSELECT", "correct" : true},
+			{"text":"You can have FORM...ENDFORM within FORM...ENDFORM", "correct" : false},
+			{"text":"You can have CASE...ENDCASE within CASE...ENDCASE", "correct" : true},
+			{"text":"You can have MODULE...ENDMODULE within MODULE...ENDMODULE", "correct" : false},
+			{"text":"You can have CLASS...ENDCLASS within CLASS...ENDCLASS", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which ABAP keyword may be used to remove a single line from an internal table?",
+		"options": [
+			{"text":"READ TABLE ITAB...", "correct" : false},
+			{"text":"MODIFY TABLE ITAB...", "correct" : false},
+			{"text":"CLEAR ITAB.", "correct" : false},
+			{"text":"DELETE TABLE ITAB..", "correct" : true},
+			{"text":"REFRESH ITAB.", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A set of records are being fetched from the database into a target internal table. Which keyword addition may be specified if the records were to be stored sorted in the internal table?",
+		"options": [
+			{"text":"SELECT * FROM DBTABLE INTO TABLE ITAB SORT BY f1 f2 f3...", "correct" : false},
+			{"text":"SELECT * FROM DBTABLE INTO TABLE ITAB SORT BY PRIMARY KEY.", "correct" : false},
+			{"text":"SELECT * FROM DBTABLE INTO TABLE ITAB GROUP BY f1 f2 f3...", "correct" : false},
+			{"text":"SELECT * FROM DBTABLE INTO TABLE ITAB ORDER BY f1 f2 f3...", "correct" : true},
+			{"text":"SELECT * FROM DBTABLE INTO TABLE ITAB ORDER BY PRIMARY KEY.", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Mark the options TRUE when declarations are made within the definition of the subroutine? DATA: V1 TYPE D, V2 TYPE T. PERFORM DISPLAY_DATA USING P1 P2. FORM DISPLAY_DATA USING A1 TYPE ANY A2 TYPE ANY. DATA: V1 TYPE D, V2 TYPE T. ENDFORM.",
+		"options": [
+			{"text":"Data objects V1 and V2 are local variables and will shadow the data objects with the same name of the main program", "correct" : true},
+			{"text":"Data objects A1 and A2 are local variables and are not visible in the main program", "correct" : true},
+			{"text":"Data objects A1, A2, V1, V2 will only exist for the duration of the call of the subroutine", "correct" : true},
+			{"text":"If within the subroutine V1 is assigned a value 100, then V1 in the main program also is set to 100.", "correct" : false},
+			{"text":"If in the main program V1 is assigned a value 100, then V1 in the subroutine also is set to 100.", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A function module was designed with an IMPORTING parameter IM_VALUE1 and having the checkbox “optional” ->[selected]. Which of the following statements are TRUE?",
+		"options": [
+			{"text":"The parameter exchanges data from the function module to the program", "correct" : false},
+			{"text":"The parameter exchanges data from the program to the function module", "correct" : true},
+			{"text":"The parameter must be supplied with a value (mandatory) when the function module is called in the program", "correct" : false},
+			{"text":"The parameter may be supplied with a value (optional) when the function module is called in the program", "correct" : true},
+			{"text":"The parameter is passed as ‘pass by value’ to the function module", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The SELECT statement that may be used to fetch a limited number of records (e.g. 300) from the database table is:",
+		"options": [
+			{"text":"SELECT * FROM dbtable INTO TABLE itab WHERE DBCNT EQ 300.", "correct" : false},
+			{"text":"SELECT * FROM dbtable INTO ls_str. IF SY-DBCNT GT 300. EXIT. ENDIF. ENDSELECT", "correct" : false},
+			{"text":"SELECT * COUNT(300) FROM dbtable INTO TABLE itab...", "correct" : false},
+			{"text":"SELECT * FROM dbtable UP TO 300 ROWS INTO TABLE itab...", "correct" : true},
+			{"text":"SELECT * FROM dbtable LIMIT 300 ROWS INTO TABLE itab...", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following is the default when passing parameters to a function module?",
+		"options": [
+			{"text":"Pass by Value", "correct" : false},
+			{"text":"Pass by Reference", "correct" : true},
+			{"text":"Pass by Value and Result", "correct" : false},
+			{"text":"Pass by field symbol", "correct" : false},
+			{"text":"Pass by read-only", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"DO. WRITE: / SY-INDEX. ENDDO. Which keyword is a must to use within the looping command shown above?",
+		"options": [
+			{"text":"CONTINUE", "correct" : false},
+			{"text":"RETURN", "correct" : false},
+			{"text":"EXIT", "correct" : true},
+			{"text":"CHECK", "correct" : false},
+			{"text":"RESUME", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Identify the correct syntax to define a constant in the program.",
+		"options": [
+			{"text":"CONSTANTS: C1 TYPE I.", "correct" : false},
+			{"text":"CONSTANTS: C1 TYPE I DEFAULT 100.", "correct" : false},
+			{"text":"CONSTANTS: C1 TYPE I VALUE 100.", "correct" : true},
+			{"text":"CONSTANTS: C1 LIKE I DEFAULT 100.", "correct" : false},
+			{"text":"CONSTANTS: C1 LIKE I VALUE 100.", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"The CONTINUE keyword when used within any looping commands of the ABAP logic will perform which of the given activities?",
+		"options": [
+			{"text":"Comes out of the loop and continues with the lines after the loop", "correct" : false},
+			{"text":"Comes out of the loop and continues to the END OF SELECTION event", "correct" : false},
+			{"text":"Comes out of the current loop pass and continues with the next loop pass", "correct" : true},
+			{"text":"Comes out of the “IF condition” and continues to process the remaining logic of the current loop pass", "correct" : false},
+			{"text":"Comes out of the program to the point where the program call was made", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"An internal table LT_FLIGHTS contains data about 100 records of flights available between two destinations CITYFROM & CITYTO. The components CARRID, CONNID, and FLDATE were defined as the keys for the internal table. If you would wish to process only the data for which the date is current or future, then which of the following can you use in the code?",
+		"options": [
+			{"text":"Check for a condition, IF LT_FLIGHTS-FLDATE LT SY-DATUM. And EXIT the loop if the condition satisfies", "correct" : false},
+			{"text":"Check for a condition, IF LT_FLIGHTS-FLDATE LT SY-DATUM. And CONTINUE the loop if the condition satisfies", "correct" : true},
+			{"text":"Check for a condition, IF LT_FLIGHTS-FLDATE LT SY-DATUM. And STOP the loop if the condition satisfies", "correct" : false},
+			{"text":"Check for condition, LOOP AT LT_FLIGHTS WHERE FLDATE GE SY-DATUM. In the WHERE clause of the internal table loop", "correct" : true},
+			{"text":"Check for condition, LOOP AT LT_FLIGHTS WITH WHERE FLDATE LE SY-DATUM. In the internal table loop", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following are suitable keywords for passing parameters for a subroutine call?",
+		"options": [
+			{"text":"USING F1 F2 F3...", "correct" : true},
+			{"text":"CHANGING F1 F2 F3...", "correct" : true},
+			{"text":"EXPORTING F1 F2 F3...", "correct" : false},
+			{"text":"TABLES F1 F2 F3...", "correct" : true},
+			{"text":"RETURNING F1 F2 F3...", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"How will you ensure that the SELECT query framed in your program uses a suitable index that is available for the table?",
+		"options": [
+			{"text":"Use all the key fields in my query under the WHERE clause in the correct order", "correct" : true},
+			{"text":"Use keyword INDEX index_name in the SELECT query as an addition", "correct" : false},
+			{"text":"Use MANDT field in the WHERE clause of the query", "correct" : false},
+			{"text":"Use index fields of secondary index in the WHERE clause in the correct order", "correct" : true},
+			{"text":"Use index name in the query: SELECT * FROM index_name INTO TABLE itab...", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"From the given list of SELECT statement variants, mark the ones with wrong design or use.",
+		"options": [
+			{"text":"SELECT * FROM dbtable INTO TABLE itab WHERE field1 = value1.", "correct" : false},
+			{"text":"SELECT SINGLE * FROM dbtable INTO ls_str...ENDSELECT.", "correct" : true},
+			{"text":"SELECT * FROM dbtable CLIENT-SPECIFIED INTO TABLE itab WHERE fieldx = value1 AND fieldy = value2.", "correct" : true},
+			{"text":"SELECT f4 f5 f6 f7 FROM dbtable INTO TABLE itab ORDER BY f1 f2 f3.", "correct" : true},
+			{"text":"SELECT * FROM dbtable UP TO N ROWS INTO TABLE itab WHERE field1 = value1.", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following is NOT a valid type of break-point in debugging concept?",
+		"options": [
+			{"text":"Session Breakpoint", "correct" : false},
+			{"text":"External Breakpoint", "correct" : false},
+			{"text":"Debugger Breakpoint", "correct" : false},
+			{"text":"Control Breakpoint", "correct" : true},
+			{"text":"BREAK-POINT keyword", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"A function module when called within a program will form which part of the memory exactly during the runtime?",
+		"options": [
+			{"text":"External Session", "correct" : false},
+			{"text":"Additional Program Group", "correct" : true},
+			{"text":"Main Program Group", "correct" : false},
+			{"text":"User Session", "correct" : false},
+			{"text":"Internal Session", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Select the features of a breakpoint when used to debug the ABAP program:",
+		"options": [
+			{"text":"Breakpoint that may be set or deleted only within an internal session is called as a session breakpoint", "correct" : false},
+			{"text":"Breakpoint that may be active only for period that the user is logged in the SAP system is a session breakpoint", "correct" : true},
+			{"text":"Breakpoint that is set by the user and is active in the future logon as well is called - user breakpoint", "correct" : true},
+			{"text":"Breakpoint: External breakpoint is cleared after a user logs off the SAP system", "correct" : false},
+			{"text":"Debugger breakpoint is deleted when the debugger is closed", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of the following corresponds to the use of watch points while debugging a program?",
+		"options": [
+			{"text":"Watch point allows you to monitor the content of individual variables", "correct" : true},
+			{"text":"Watch point can be defined in the Editor menu-bar Extras->Create Watch point", "correct" : false},
+			{"text":"Watch point creates a clone of the variable being monitored", "correct" : true},
+			{"text":"Watch point cannot be defined for an internal table", "correct" : false},
+			{"text":"Watch point when reached the user can view the old and the new value", "correct" : true}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of these is TRUE for a declaration using STRING data type?",
+		"options": [
+			{"text":"STRING is an incomplete data type", "correct" : false},
+			{"text":"A declared data object is a deep object", "correct" : true},
+			{"text":"A declared variable takes default length of 255 characters", "correct" : false},
+			{"text":"A declared variable takes actual length once value is assigned to it", "correct" : true},
+			{"text":"A STRING parameter declaration is not possible for a Selection Screen", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"Which of these entities within a program may NOT be translated?",
+		"options": [
+			{"text":"Text Symbol", "correct" : false},
+			{"text":"Text Literal", "correct" : true},
+			{"text":"Numeric Literal", "correct" : true},
+			{"text":"String Literal", "correct" : true},
+			{"text":"Selection Text", "correct" : false}
+		]
+	},
+	{
+		"section": "ABAP",
+		"question":"How do you include comment lines within a program in the ABAP Editor?",
+		"options": [
+			{"text":"Begin the line with a pound # in the first column", "correct" : false},
+			{"text":"Begin the line with an asterisk * in the first column", "correct" : true},
+			{"text":"End the line with an double quote in any position", "correct" : true},
+			{"text":"End the line with an asterisk * in the last column", "correct" : false},
+			{"text":"End the line with an single quote in any position", "correct" : false}
+		]
 	}
-
 ]
