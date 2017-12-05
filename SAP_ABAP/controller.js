@@ -20,7 +20,7 @@ $(document).ready(function () {
 
 	var correct = document.createElement('div');
 	var wrong = document.createElement('div');
-
+	wrong.addEventListener("click", changeQuestion());
 	questionText.className ="questionText";
 	
 	
@@ -108,6 +108,7 @@ $(document).ready(function () {
 	    		}
 	    		else {
 	    			document.getElementById(htmlstage).appendChild(wrong);
+				
 	    			i = 0;
 			 	j = 0;
 			 	x = document.getElementsByClassName('option');
@@ -133,7 +134,7 @@ $(document).ready(function () {
 		        			}
 		        		}
 		    		}
-				setTimeout(function(){changeQuestion()},5000);
+				//setTimeout(function(){changeQuestion()},5000);
 	    		}
 	    		
 		 	}
