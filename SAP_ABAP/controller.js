@@ -20,7 +20,7 @@ $(document).ready(function () {
 
 	var correct = document.createElement('div');
 	var wrong = document.createElement('div');
-	wrong.addEventListener("click", changeQuestion());
+	
 	questionText.className ="questionText";
 	
 	
@@ -37,8 +37,9 @@ $(document).ready(function () {
 
 
 	correct.appendChild(document.createTextNode('CORRECT'));
-	wrong.appendChild(document.createTextNode('WRONG'));
-
+	wrong.appendChild(document.createTextNode('WRONG/NEXT'));
+	wrong.addEventListener("click", changeQuestion);
+	
 	var quizlistvarsion = suarray(shuffle(quizlist), totalQuizQ);
 	for (i=0;i<quizlistvarsion.length;i++) {
 		questionBank[i]=new Array;
